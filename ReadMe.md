@@ -1,19 +1,16 @@
 # Mysite
 
-A Django-based mysite system with Telegram bot integration for client registration.
+A Django-based mysite.
 
 ## Features
 
 - Admin panel with DaisyUI theme
-- Telegram bot for client registration
 - PostgreSQL database integration
-- Client management system
 
 ## Prerequisites
 
 - Python 3.8+
 - PostgreSQL
-- Telegram Bot Token
 
 ## Installation
 
