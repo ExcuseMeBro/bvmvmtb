@@ -48,3 +48,5 @@ ENV/
 # Migrations
 **/migrations/*.py
 !**/migrations/__init__.py 
+
+staticfiles/
