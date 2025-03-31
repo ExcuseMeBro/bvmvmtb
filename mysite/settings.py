@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-v5qq9gq_i%%20pj_6as$3=cajyl#-$5zsa@66m=o$_2w(a063n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -114,11 +114,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uz'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
+USE_L10N = True
 
 USE_TZ = True
 
@@ -196,7 +197,6 @@ from django.utils.translation import gettext_lazy as _
 
 LANGUAGES = [
     ("uz", _("Uzbek")),
-    ("en", _("English")),
     ("ru", _("Russian")),
 ]
 
