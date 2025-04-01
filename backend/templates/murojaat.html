@@ -209,78 +209,83 @@
                     </div>
                   </div>
                   <div class="contact-two-from-wrap border-radius-twenty">
+                    {% if messages %}
+                      {% for message in messages %}
+                        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}" style="padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; {% if message.tags == 'success' %}background-color: #dff0d8; border-color: #d6e9c6; color: #3c763d;{% else %}background-color: #f2dede; border-color: #ebccd1; color: #a94442;{% endif %}">
+                          {{ message }}
+                        </div>
+                      {% endfor %}
+                    {% endif %}
                     <div class="contact-one-form-block w-form">
-                      <form id="email-form" name="email-form" data-name="Email Form" method="get"
-                        class="contact-one-form form-two" data-wf-page-id="6765328706b8a69ed405ea67"
-                        data-wf-element-id="66d8d2b5-09e4-2997-5d70-fe41830eff8f" aria-label="Email Form">
+                      <form id="email-form" name="email-form" data-name="Email Form" method="post" enctype="multipart/form-data"
+                        class="contact-one-form form-two" aria-label="Email Form">
+                        {% csrf_token %}
                         <div class="w-layout-hflex contact-one-input-wrap">
-                          <div class="contact-one-input-box contact-two-input-box"><label for="First-Name-2"
+                          <div class="contact-one-input-box contact-two-input-box"><label for="subject"
                               class="admission-one-label">
                               {% blocktranslate %}Murojaat mavzusi{% endblocktranslate %}
                             </label><input class="admission-one-form-input-item contact-two-form-input w-input"
-                              maxlength="256" name="First-Name-2" data-name="First Name 2" placeholder="" type="text"
-                              id="First-Name-2" required="" style="color: black;"></div>
-                          <div class="contact-one-input-box contact-two-input-box"><label for="Last-Name-2"
+                              maxlength="255" name="subject" placeholder="" type="text"
+                              id="subject" required style="color: black;"></div>
+                          <div class="contact-one-input-box contact-two-input-box"><label for="first_name"
                               class="admission-one-label">
                               {% blocktranslate %}Ism{% endblocktranslate %}
                             </label><input class="admission-one-form-input-item contact-two-form-input w-input"
-                              maxlength="256" name="Last-Name-2" data-name="Last Name 2" placeholder="" type="text"
-                              id="Last-Name-2" required="" style="color: black;"></div>
+                              maxlength="100" name="first_name" placeholder="" type="text"
+                              id="first_name" required style="color: black;"></div>
                         </div>
                         <div class="w-layout-hflex contact-one-input-wrap">
-                          <div class="contact-one-input-box contact-two-input-box"><label for="First-Name-2"
+                          <div class="contact-one-input-box contact-two-input-box"><label for="last_name"
                               class="admission-one-label">
                               {% blocktranslate %}Familiya{% endblocktranslate %}
                             </label><input class="admission-one-form-input-item contact-two-form-input w-input"
-                              maxlength="256" name="First-Name-2" data-name="First Name 2" placeholder="" type="text"
-                              id="First-Name-2" required="" style="color: black;"></div>
-                          <div class="contact-one-input-box contact-two-input-box"><label for="Last-Name-2"
+                              maxlength="100" name="last_name" placeholder="" type="text"
+                              id="last_name" required style="color: black;"></div>
+                          <div class="contact-one-input-box contact-two-input-box"><label for="father_name"
                               class="admission-one-label">
                               {% blocktranslate %}Otasining ismi{% endblocktranslate %}
                             </label><input class="admission-one-form-input-item contact-two-form-input w-input"
-                              maxlength="256" name="Last-Name-2" data-name="Last Name 2" placeholder="" type="text"
-                              id="Last-Name-2" required="" style="color: black;"></div>
+                              maxlength="100" name="father_name" placeholder="" type="text"
+                              id="father_name" required style="color: black;"></div>
                         </div>
                         <div class="w-layout-hflex contact-one-input-wrap">
-                          <div class="contact-one-input-box contact-two-input-box"><label for="Email-2"
+                          <div class="contact-one-input-box contact-two-input-box"><label for="email"
                               class="admission-one-label">{% blocktranslate %}E-mail{% endblocktranslate%}
                             </label><input class="admission-one-form-input-item contact-two-form-input w-input"
-                              maxlength="256" name="Email-2" data-name="Email 2" placeholder=" info@example.com"
-                              type="email" id="Email-2" required="" style="color: black;"></div>
-                          <div class="contact-one-input-box contact-two-input-box"><label for="Phone-2"
+                              maxlength="254" name="email" placeholder="info@example.com"
+                              type="email" id="email" required style="color: black;"></div>
+                          <div class="contact-one-input-box contact-two-input-box"><label for="phone"
                               class="admission-one-label">{% blocktranslate %}Telefon{% endblocktranslate %}
                             </label><input class="admission-one-form-input-item contact-two-form-input w-input"
-                              maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="+998 (99) 123-45-67"
-                              type="tel" id="Phone-2" required="" style="color: black;"></div>
+                              maxlength="20" name="phone" placeholder="+998 (99) 123-45-67"
+                              type="tel" id="phone" required style="color: black;"></div>
                         </div>
                         <div class="w-layout-hflex contact-one-input-wrap">
-                          <div class="admission-form-input-box"><label for="Year" class="admission-one-label">
+                          <div class="admission-form-input-box"><label for="region" class="admission-one-label">
                               {% blocktranslate %}Hudud{% endblocktranslate %}
-                            </label><select class="admission-form-select w-select" style="color: black;">
-                              <option value="2025">2025</option>
-                              <option value="2024">2024</option>
-                              <option value="2023">2023</option>
-                              <option value="2022">2022</option>
-                              <option value="2021">2021</option>
-                              <option value="2020">2020</option>
+                            </label><select name="region" id="region" class="admission-form-select w-select" required style="color: black;">
+                              <option value="">{% blocktranslate %}Hududni tanlang{% endblocktranslate %}</option>
+                              {% for region in regions %}
+                              <option value="{{ region.id }}">{{ region.name }}</option>
+                              {% endfor %}
                             </select></div>
-                          <div class="contact-one-input-box contact-two-input-box"><label for="Email-2"
+                          <div class="contact-one-input-box contact-two-input-box"><label for="attachment"
                               class="admission-one-label">
                               {% blocktranslate %}
                               Fayl tanlang
                               {% endblocktranslate%}
                             </label>
-                            <input type="file"
+                            <input type="file" name="attachment" id="attachment" accept=".txt,.doc,.rtf,.xls,.ppt,.pdf,.jpg,.bmp,.png,.tiff,.gif"
                               style="display: inline-block; padding: 15px; background: #f0f0f0; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-family: Arial, sans-serif; color: #333;">
                           </div>
                         </div>
-                        <div class="admission-form-input-box-full-width contact-form-bottom-gap"><label for="Message-2"
+                        <div class="admission-form-input-box-full-width contact-form-bottom-gap"><label for="message"
                             class="admission-one-label">
                             {% blocktranslate %}
                             Taklif, bayonot yoki shikoyatning mohiyatini ayting
                             {% endblocktranslate%}
-                          </label><textarea required="" placeholder="" maxlength="5000" id="Message-2" name="Message-2"
-                            data-name="Message 2" class="admission-form-textarea contact-two-form-input w-input"
+                          </label><textarea required placeholder="" maxlength="5000" id="message" name="message"
+                            class="admission-form-textarea contact-two-form-input w-input"
                             style="color: black;"></textarea></div>
                         <div class="w-layout-hflex admission-form-button-wrap">
                           <button type="submit" class="button-style-one border-radius-five w-button">

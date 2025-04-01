@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.utils.translation import gettext as _
 from .models import *
 
 def home(request):
@@ -8,6 +10,30 @@ def home(request):
 
 
 def murojaat(request):
+    if request.method == 'POST':
+        try:
+            email_form = EmailForm(
+                subject=request.POST.get('subject'),
+                first_name=request.POST.get('first_name'),
+                last_name=request.POST.get('last_name'),
+                father_name=request.POST.get('father_name'),
+                email=request.POST.get('email'),
+                phone=request.POST.get('phone'),
+                region_id=request.POST.get('region'),
+                message=request.POST.get('message')
+            )
+            if 'attachment' in request.FILES:
+                email_form.attachment = request.FILES['attachment']
+            email_form.save()
+            messages.success(request, _('Murojaat muvaffaqiyatli yuborildi'))
+            return redirect('murojaat')
+        except Exception as e:
+            messages.error(request, _('Xatolik yuz berdi. Iltimos qayta urinib ko\'ring'))
+    
     employee = Employee.objects.all()
-    context = {'employees': employee}
+    regions = Region.objects.all()
+    context = {
+        'employees': employee,
+        'regions': regions,
+    }
     return render(request, 'murojaat.html', context)
