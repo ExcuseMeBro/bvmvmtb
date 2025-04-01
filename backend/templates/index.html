@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block content %}
 <section data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9a53" class="hero-two-hero">
@@ -1379,27 +1380,27 @@
                     rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 5deg);
                   transform-style: preserve-3d;
                 ">
-            Frequently Asked Questions about Eduvolv
+            {% blocktranslate %} Ko'p beriladigan savollar {% endblocktranslate %}
           </h2>
         </div>
         <p class="no-margin">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          aliquet lacus lorem, eu facilisis ligula iaculis sit semper
-          posuere neque amet.
+          {% blocktranslate %} O'zingizni qiziqtirgan savollarga tezda javob olishingiz mumkin {% endblocktranslate %}
         </p>
         <div data-wf--faq-style-one--variant="base" class="accrodian-one-wrap">
+          {% for faq in faqs %}
           <div data-w-id="f8be738e-e704-aa09-efbb-b40cf55ca73a" class="w-layout-hflex accrodian-one" style="opacity: 0">
             <div class="w-layout-vflex faq-three-text">
               <div class="accrodian-one-toggle">
                 <div class="heading-style-h6 line-break">
-                  How Should We Prepare For School Interview?
+                  {{ faq.question }}
                 </div>
                 <div class="accrodan-one-arrow" style="
-                        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      ">
+              transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                skew(0deg, 0deg);
+              transform-style: preserve-3d;
+              flex-shrink: 0 !important;
+            ">
                   <img loading="lazy"
                     src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f38_Vector(2).svg"
                     alt="icon" />
@@ -1407,68 +1408,12 @@
               </div>
               <div class="overflow-none" style="height: 0px">
                 <p class="faq-three-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Sed non nisl placerat, tristique eros et, mollis ipsum.
-                  Donec urna arcu, tristique quis metus sit amet, maximus
-                  sollicitudin tellus.
+                  {{ faq.answer }}
                 </p>
               </div>
             </div>
           </div>
-          <div data-w-id="f8be738e-e704-aa09-efbb-b40cf55ca744" class="w-layout-hflex accrodian-one" style="opacity: 0">
-            <div class="w-layout-vflex faq-three-text">
-              <div class="accrodian-one-toggle">
-                <div class="heading-style-h6 line-break">
-                  How Can I Write A Compelling Admissions Easy?
-                </div>
-                <div class="accrodan-one-arrow" style="
-                        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      ">
-                  <img loading="lazy"
-                    src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f38_Vector(2).svg"
-                    alt="icon" />
-                </div>
-              </div>
-              <div class="overflow-none" style="height: 0px">
-                <p class="faq-three-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Sed non nisl placerat, tristique eros et, mollis ipsum.
-                  Donec urna arcu, tristique quis metus sit amet, maximus
-                  sollicitudin tellus.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div data-w-id="f8be738e-e704-aa09-efbb-b40cf55ca74e" class="w-layout-hflex accrodian-one" style="opacity: 0">
-            <div class="w-layout-vflex faq-three-text">
-              <div class="accrodian-one-toggle">
-                <div class="heading-style-h6 line-break">
-                  What Financial Aid Options Are Available For Students?
-                </div>
-                <div class="accrodan-one-arrow" style="
-                        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      ">
-                  <img loading="lazy"
-                    src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f38_Vector(2).svg"
-                    alt="icon" />
-                </div>
-              </div>
-              <div class="overflow-none" style="height: 0px">
-                <p class="faq-three-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Sed non nisl placerat, tristique eros et, mollis ipsum.
-                  Donec urna arcu, tristique quis metus sit amet, maximus
-                  sollicitudin tellus.
-                </p>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
       <div class="faq-image-wrap position-relative border-radius-twenty">
