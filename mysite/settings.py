@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',  # Swagger uchun
     'corsheaders',
+    'modeltranslation',
 ]
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -115,6 +116,19 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
 LANGUAGE_CODE = 'uz'
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
+
+from django.utils.translation import gettext_lazy as _
+
+LANGUAGES = [
+    ("uz", _("Uzbek")),
+    ("ru", _("Russian")),
+]
+
+LOCALE_PATHS = [
+    BASE_DIR / "locale",
+]
 
 TIME_ZONE = 'UTC'
 
@@ -192,14 +206,3 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',  # Optional: Require authentication for all views
     ),
 }
-
-from django.utils.translation import gettext_lazy as _
-
-LANGUAGES = [
-    ("uz", _("Uzbek")),
-    ("ru", _("Russian")),
-]
-
-LOCALE_PATHS = [
-    BASE_DIR / "locale",
-]

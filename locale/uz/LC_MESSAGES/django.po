@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 04:18+0000\n"
+"POT-Creation-Date: 2025-04-01 01:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,16 +22,48 @@ msgstr ""
 msgid "Page Not Found"
 msgstr "Sahifa topilmadi"
 
-#: backend/templates/base.html:457 backend/templates/base.html:599
+#: backend/templates/base.html:288
+msgid " Asosiy "
+msgstr ""
+
+#: backend/templates/base.html:310 backend/templates/base.html:708
+msgid " O'qituvchi ish o'rinlari "
+msgstr ""
+
+#: backend/templates/base.html:313 backend/templates/base.html:711
+msgid " Hujjatlar "
+msgstr ""
+
+#: backend/templates/base.html:316 backend/templates/base.html:714
+msgid " Loyihalar "
+msgstr ""
+
+#: backend/templates/base.html:318 backend/templates/base.html:716
+msgid " Ko‘p beriladigan savollar "
+msgstr ""
+
+#: backend/templates/base.html:320 backend/templates/base.html:718
+msgid " Fuqarolar murojaati "
+msgstr ""
+
+#: backend/templates/base.html:460 backend/templates/base.html:623
 msgid "follow us:"
 msgstr "Bizga qo'shiling:"
 
-#: mysite/settings.py:198
-msgid "Uzbek"
+#: backend/templates/base.html:686
+msgid "Asosiy"
+msgstr ""
+
+#: backend/templates/index.html:1383
+msgid " Ko'p beriladigan savollar "
+msgstr ""
+
+#: backend/templates/index.html:1387
+msgid " O'zingizni qiziqtirgan savollarga tezda javob olishingiz mumkin "
 msgstr ""
 
 #: mysite/settings.py:199
-msgid "English"
+msgid "Uzbek"
 msgstr ""
 
 #: mysite/settings.py:200
@@ -1288,4 +1320,8 @@ msgid ""
 "    - YAML: application/vnd.oai.openapi\n"
 "    - JSON: application/vnd.oai.openapi+json\n"
 "    "
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/modeltranslation/widgets.py:32
+msgid "None"
 msgstr ""
