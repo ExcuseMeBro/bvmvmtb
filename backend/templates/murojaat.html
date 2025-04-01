@@ -1,0 +1,359 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section data-w-id="1b8a36f8-cc33-f35d-6e70-422da3371bbc" class="blog-one-hero tution-fees-hero">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="blog-one-hero-content tution-fee">
+      <div class="subheading color-white">
+        {% blocktranslate %}Asosiy{% endblocktranslate %}
+      </div>
+      <div class="headinng-one-margin overflow-hidden">
+        <h1 class="slide-title no-margin color-white" style="
+          transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
+            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform-style: preserve-3d;
+        ">
+          {% blocktranslate %}Fuqaro murojaati{% endblocktranslate %}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="tution-form">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="w-layout-hflex tution-form-flex-wrap">
+      <div class="w-layout-vflex image-full-width">
+        <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+          <div class="tabs-menu w-tab-menu" role="tablist">
+            <a data-w-tab="Tab 1" class="tab-fee-school w-inline-block w-tab-link w--current" id="w-tabs-0-data-w-tab-0"
+              href="#w-tabs-0-data-w-pane-0" role="tab" aria-controls="w-tabs-0-data-w-pane-0" aria-selected="true">
+              <div>
+                {% blocktranslate %}Fuqarolarni shaxsiy qabul qilish{% endblocktranslate %}
+              </div>
+            </a><a data-w-tab="Tab 2" class="tab-fee-school w-inline-block w-tab-link" tabindex="-1"
+              id="w-tabs-0-data-w-tab-1" href="#w-tabs-0-data-w-pane-1" role="tab"
+              aria-controls="w-tabs-0-data-w-pane-1" aria-selected="false">
+              <div>
+                {% blocktranslate %}Fuqarolarning murojaatlarini ko'rib chiqish tartibi{% endblocktranslate %}
+              </div>
+            </a><a data-w-tab="Tab 3" class="tab-fee-school w-inline-block w-tab-link" tabindex="-1"
+              id="w-tabs-0-data-w-tab-2" href="#w-tabs-0-data-w-pane-2" role="tab"
+              aria-controls="w-tabs-0-data-w-pane-2" aria-selected="false">
+              <div>
+                {% blocktranslate %}Elektron murojaat shakli{% endblocktranslate %}
+              </div>
+            </a>
+            <a data-w-tab="Tab 4" class="tab-fee-school w-inline-block w-tab-link" tabindex="-1"
+              id="w-tabs-0-data-w-tab-3" href="#w-tabs-0-data-w-pane-3" role="tab"
+              aria-controls="w-tabs-0-data-w-pane-3" aria-selected="false">
+              <div>
+                {% blocktranslate %}Huquqiy asos{% endblocktranslate %}
+              </div>
+            </a>
+          </div>
+          <div class="w-tab-content">
+            <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active" id="w-tabs-0-data-w-pane-0" role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-0">
+              <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100"
+                class="w-tabs">
+                <div class="w-layout-grid teachers-card-wrap">
+                  {% for person in employees %}
+                  <div class="w-dyn-list">
+                    <div role="list" class="w-dyn-items">
+                      <div role="listitem" class="w-dyn-item"><a data-w-id="a7719ebb-3894-06ba-56b2-4268226329c6"
+                          href="#" class="teachers-card w-inline-block">
+                          <div class="teacher-s-card-image overflow-hidden">
+                            <img src="/media/{{ person.avatar }}" loading="lazy" width="300" height="290" alt=""
+                              sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 23vw, 300px"
+                              class="image-box-two-image-main image-full-width"
+                              style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                          </div>
+                          <div class="teachers-card-bottom teachers-experience-div text-align-center">
+                            <div class="w-layout-hflex teachers-experience-wrap position-relative">
+                              <div class="teachers-experience-content">
+                                <div>{{ person.get_working_day_display }}</div> |
+                                <div class="semi-bold">{{ person.working_hours_start }}</div>-
+                                <div class="semi-bold">{{ person.working_hours_end }}</div>
+                              </div>
+                              <div class="teachers-experience-wrap-background"></div>
+                            </div>
+                            <div class="margin-bottom-five">
+                              <div class="heading-style-h6">{{ person.fullname }}</div>
+                            </div>
+                            <div>{{ person.position }}</div>
+                          </div>
+                        </a></div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            <div data-w-tab="Tab 2" class="w-tab-pane" id="w-tabs-0-data-w-pane-1" role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-1" style="text-align: justify;">
+              <br />
+              {% blocktranslate %}
+              O'zbekiston Respublikasi Maktabgacha va maktab ta'limi vazirligiga murojaat yozma shaklda yoki elektron
+              hujjat shaklida yuborilishi mumkin va taklif, ariza yoki shikoyatning mohiyatini o'z ichiga olishi kerak.
+
+              - Taklif-fuqarolarning qonunlar va boshqa normativ-huquqiy hujjatlarni takomillashtirish, davlat organlari
+              va mahalliy o'zini o'zi boshqarish organlarining faoliyati, jamoatchilik munosabatlarini rivojlantirish,
+              davlat va jamiyat faoliyatining ijtimoiy-iqtisodiy va boshqa sohalarini yaxshilash bo'yicha tavsiyasi.
+
+              - Ariza-fuqarolarning konstitutsiyaviy huquqlari va erkinliklarini yoki boshqa shaxslarning
+              konstitutsiyaviy huquqlari va erkinliklarini amalga oshirishga ko'maklashish yoki qonunlar va boshqa
+              normativ-huquqiy hujjatlar buzilganligi, davlat organlari, mahalliy o'zini o'zi boshqarish organlari va
+              mansabdor shaxslarning ishdagi kamchiliklari yoki ushbu organlar va mansabdor shaxslarning faoliyatini
+              tanqid qilish to'g'risidagi iltimosi.
+
+              - Shikoyat-fuqaroning uning buzilgan huquqlari, erkinliklari yoki qonuniy manfaatlari yoxud boshqalarning
+              huquqlari, erkinliklari yoki qonuniy manfaatlarini tiklash yoki himoya qilish to'g'risidagi iltimosi.
+
+              O'zbekiston Respublikasi Maktabgacha va maktab ta'limi vazirligiga kelib tushgan murojaat kamida uch kun
+              muddatda ma'muriy departament tomonidan ro'yxatga olinadi va vazirlikning tarkibiy bo'linmalariga ko'rib
+              chiqish uchun (ulardagi muammolarga bog'liq holda) yuboriladi yoki ro'yxatga olingan kundan e'tiboran
+              yetti kun ichida tegishli davlat organiga, murojaatni qayta yo'naltirish to'g'risida murojaatni yuborgan
+              fuqaroning xabardorligi bilan murojaatda qo'yilgan masalalarni hal etish vakolatiga kiradigan O'zbekiston
+              sub'ektining ijro etuvchi hokimiyat organiga yuboriladi.
+
+              Agar murojaat elektron hujjat shaklida kelib tushgan bo'lsa, murojaat yozma shaklda yoki uni boshqa
+              raqamga yo'naltirish to'g'risidagi bildirishnoma pochta manziliga yuboriladi.
+
+              Murojaatni ko'rib chiqishda murojaatnomada keltirilgan ma'lumotlarni, shuningdek fuqaroning shaxsiy
+              hayotiga oid ma'lumotlarni uning roziligisiz oshkor qilishga yo'l qo'yilmaydi. Elektron shaklda yuborilgan
+              murojaatlarning mualliflarining shaxsiy ma'lumotlari to'g'risidagi ma'lumotlar O‘zbekiston
+              Respublikasining shaxsiy ma'lumotlar to'g'risidagi qonun hujjatlari talablariga muvofiq saqlanadi va qayta
+              ishlanadi.
+
+              Sud qarorlari ustidan shikoyat qilishga doir murojaatlarni yuborishda quyidagilarni yodda tutish lozim.
+              O'zbekiston Konstitutsiyasiga ko'ra, O'zbekistonda adolat faqat sud tomonidan amalga oshiriladi. Sud
+              hokimiyati organlari mustaqildir va qonun chiqaruvchi va ijro etuvchi hokimiyatlardan qat'iy nazar harakat
+              qiladi. Sud organlarining qarorlari ustidan qonunda belgilangan protsessual tartibda shikoyat qilinadi.
+
+              Yozma yoki elektron murojaatlarga quyidagi hollarda javob berilmaydi:
+
+              1) agar murojaatda murojaatni yuborgan fuqaroning familiyasi, ismi va otasining ismi (oxirgi bo'lsa), yoki
+              javob yuborilishi kerak bo'lgan pochta manzili yoki elektron pochta manzili (e – mail) ko'rsatilmagan
+              bo'lsa;
+
+              2) murojaatda haqoratli so'zlar, tahdidlar mavjud bo'lsa;
+
+              3) agar yozma murojaat matni o'qilmasa;
+
+              4) agar fuqaroning yozma yoki elektron murojaatida ilgari yuborilgan murojaatlar bilan bog'liq holda, unga
+              bir necha bor yozma javoblar berilgan va shu bilan birga murojaatda yangi vajlari yoki holatlari
+              ko'rsatilmagan bo'lsa;
+
+              5) agar murojaatda berilgan savolning mohiyatiga javob davlat yoki boshqa qonun bilan himoyalangan sirni
+              tashkil etuvchi ma'lumotlarni oshkor qilmasdan berilishi mumkin bo'lmasa.
+
+              Hurmatli foydalanuvchilar! Elektron hujjat shaklidagi murojaatlarni taqdim etishda katta axborot
+              oqimlarini qayta ishlash xususiyatlari bilan bog'liq ayrim cheklovlarni tushunish bilan murojaat qiling:
+
+              1. Elektron murojaat hajmi 5 000 belgidan oshmasligi kerak.
+
+              2. Agar kerak bo'lsa, murojaatga arxivlashsiz kerakli hujjatlar va materiallarni elektron shaklda bitta
+              fayl shaklida biriktirish huquqiga egasiz. Ilova faylining hajmi 5 Mb dan oshmasligi kerak. Qo'shimchalar
+              uchun quyidagi fayl formatlari qabul qilinadi: txt, doc, rtf, xls, ppt, pdf, jpg, bmp, png, tif f, gif.
+              {% endblocktranslate %}
+            </div>
+            <div data-w-tab="Tab 3" class="w-tab-pane" id="w-tabs-0-data-w-pane-2" role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-2">
+              <div class="w-layout-blockcontainer container w-container" style="padding: 20px 0;">
+                <div class="w-layout-hflex contact-two-hero-wrap">
+                  <div class="contact-two-hero-main">
+                    <div class="heading-two-top-margin margin-bottom-fifteen overflow-hidden">
+                      <h5 class="slide-title no-margin">
+                        {% blocktranslate %}Hurmatli fuqarolar-O'zbekiston Respublikasi Maktabgacha va maktab ta'limi
+                        vazirligi rasmiy saytiga tashrif buyurganlar!{% endblocktranslate %}
+                        </h1>
+                    </div>
+                    <p>
+                      {% blocktranslate %}
+                      Murojaatni elektron shaklda yuborishdan oldin, O'zbekiston Respublikasi Maktabgacha va maktab
+                      ta'limi vazirligi vakolatlariga qarang va sizning savolingiz O'zbekiston Respublikasi fan va oliy
+                      ta'lim vazirligining vakolat doirasiga tegishli ekanligiga ishonch hosil qiling
+                      {% endblocktranslate %}
+                      <br />
+                      <br />
+                      {% blocktranslate %}
+                      Fuqarolarning murojaatlarini "O'zbekiston fuqarolarining murojaatlarini ko'rib chiqish tartibi
+                      to'g'risida" gi 59 - qonunga muvofiq ko'rib chiqish muddati-Vazirlikda ro'yxatdan o'tgan kundan
+                      boshlab 30 kun.
+                      {% endblocktranslate %}
+                      <br />
+                      <br />
+                      {% blocktranslate %}
+                      shuningdek, vazirlikning rasmiy veb-saytining "vazirlik to'g'risida" bo'limida ko'rsatilgan
+                      telefon raqamlari orqali Vazirlikning departamentlariga qo'ng'iroq qilishingiz mumkin.
+                      {% endblocktranslate %}
+                    </p>
+                    <div data-w-id="66d8d2b5-09e4-2997-5d70-fe41830eff78"
+                      class="w-layout-hflex contact-us-card contact-us-two-card"
+                      style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                      <div class="w-layout-hflex contact-one-card-icon border-radius-fifty"><img
+                          src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/6765320fa71a161e17e30600_email%20us.svg"
+                          loading="lazy" width="28" height="21" alt="icon"></div>
+                      <div class="contact-one-card-content">
+                        <div class="heading-style-h6">
+                          {% blocktranslate %}
+                          Qabul qilingan murojaatlar:
+                          {% endblocktranslate %}
+                        </div>
+                        <div class="margin-top-five"><a href="mailto:info@example.com">
+                            1230
+                          </a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-two-from-wrap border-radius-twenty">
+                    <div class="contact-one-form-block w-form">
+                      <form id="email-form" name="email-form" data-name="Email Form" method="get"
+                        class="contact-one-form form-two" data-wf-page-id="6765328706b8a69ed405ea67"
+                        data-wf-element-id="66d8d2b5-09e4-2997-5d70-fe41830eff8f" aria-label="Email Form">
+                        <div class="w-layout-hflex contact-one-input-wrap">
+                          <div class="contact-one-input-box contact-two-input-box"><label for="First-Name-2"
+                              class="admission-one-label">
+                              {% blocktranslate %}Murojaat mavzusi{% endblocktranslate %}
+                            </label><input class="admission-one-form-input-item contact-two-form-input w-input"
+                              maxlength="256" name="First-Name-2" data-name="First Name 2" placeholder="" type="text"
+                              id="First-Name-2" required="" style="color: black;"></div>
+                          <div class="contact-one-input-box contact-two-input-box"><label for="Last-Name-2"
+                              class="admission-one-label">
+                              {% blocktranslate %}Ism{% endblocktranslate %}
+                            </label><input class="admission-one-form-input-item contact-two-form-input w-input"
+                              maxlength="256" name="Last-Name-2" data-name="Last Name 2" placeholder="" type="text"
+                              id="Last-Name-2" required="" style="color: black;"></div>
+                        </div>
+                        <div class="w-layout-hflex contact-one-input-wrap">
+                          <div class="contact-one-input-box contact-two-input-box"><label for="First-Name-2"
+                              class="admission-one-label">
+                              {% blocktranslate %}Familiya{% endblocktranslate %}
+                            </label><input class="admission-one-form-input-item contact-two-form-input w-input"
+                              maxlength="256" name="First-Name-2" data-name="First Name 2" placeholder="" type="text"
+                              id="First-Name-2" required="" style="color: black;"></div>
+                          <div class="contact-one-input-box contact-two-input-box"><label for="Last-Name-2"
+                              class="admission-one-label">
+                              {% blocktranslate %}Otasining ismi{% endblocktranslate %}
+                            </label><input class="admission-one-form-input-item contact-two-form-input w-input"
+                              maxlength="256" name="Last-Name-2" data-name="Last Name 2" placeholder="" type="text"
+                              id="Last-Name-2" required="" style="color: black;"></div>
+                        </div>
+                        <div class="w-layout-hflex contact-one-input-wrap">
+                          <div class="contact-one-input-box contact-two-input-box"><label for="Email-2"
+                              class="admission-one-label">{% blocktranslate %}E-mail{% endblocktranslate%}
+                            </label><input class="admission-one-form-input-item contact-two-form-input w-input"
+                              maxlength="256" name="Email-2" data-name="Email 2" placeholder=" info@example.com"
+                              type="email" id="Email-2" required="" style="color: black;"></div>
+                          <div class="contact-one-input-box contact-two-input-box"><label for="Phone-2"
+                              class="admission-one-label">{% blocktranslate %}Telefon{% endblocktranslate %}
+                            </label><input class="admission-one-form-input-item contact-two-form-input w-input"
+                              maxlength="256" name="Phone-2" data-name="Phone 2" placeholder="+998 (99) 123-45-67"
+                              type="tel" id="Phone-2" required="" style="color: black;"></div>
+                        </div>
+                        <div class="w-layout-hflex contact-one-input-wrap">
+                          <div class="admission-form-input-box"><label for="Year" class="admission-one-label">
+                              {% blocktranslate %}Hudud{% endblocktranslate %}
+                            </label><select class="admission-form-select w-select" style="color: black;">
+                              <option value="2025">2025</option>
+                              <option value="2024">2024</option>
+                              <option value="2023">2023</option>
+                              <option value="2022">2022</option>
+                              <option value="2021">2021</option>
+                              <option value="2020">2020</option>
+                            </select></div>
+                          <div class="contact-one-input-box contact-two-input-box"><label for="Email-2"
+                              class="admission-one-label">
+                              {% blocktranslate %}
+                              Fayl tanlang
+                              {% endblocktranslate%}
+                            </label>
+                            <input type="file"
+                              style="display: inline-block; padding: 15px; background: #f0f0f0; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-family: Arial, sans-serif; color: #333;">
+                          </div>
+                        </div>
+                        <div class="admission-form-input-box-full-width contact-form-bottom-gap"><label for="Message-2"
+                            class="admission-one-label">
+                            {% blocktranslate %}
+                            Taklif, bayonot yoki shikoyatning mohiyatini ayting
+                            {% endblocktranslate%}
+                          </label><textarea required="" placeholder="" maxlength="5000" id="Message-2" name="Message-2"
+                            data-name="Message 2" class="admission-form-textarea contact-two-form-input w-input"
+                            style="color: black;"></textarea></div>
+                        <div class="w-layout-hflex admission-form-button-wrap">
+                          <button type="submit" class="button-style-one border-radius-five w-button">
+                            {% blocktranslate %}
+                            Yuborish
+                            {% endblocktranslate %}
+                          </button>
+                        </div>
+                      </form>
+                      <div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
+                        <div>
+                          {% blocktranslate %}
+                          Rahmat! Sizning arizangiz qabul qilindi!
+                          {% endblocktranslate %}
+                        </div>
+                      </div>
+                      <div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+                        <div>
+                          {% blocktranslate %}
+                          Xatolik! Arizangizni qayta yuboring.
+                          {% endblocktranslate %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-w-tab="Tab 4" class="w-tab-pane" id="w-tabs-0-data-w-pane-3" role="tabpanel"
+              aria-labelledby="w-tabs-0-data-w-tab-3">
+              <div class="tab-pane fade active show" id="tab4" role="tabpanel">
+                <br />
+                <br />
+                <p><a href="https://lex.uz/docs/-3336169">
+                    {% blocktranslate %}
+                    “Jismoniy va yuridik shaxslarning murojaatlari to‘g‘risida”gi
+                    O‘zbekiston Respublikasi Qonuniga o‘zgartish va qo‘shimchalar kiritish haqida
+                    {% endblocktranslate %}
+                  </a></p>
+
+                <p><a href="https://old.uzedu.uz/uploads/2022/04/123-ilova.pdf">
+                    {% blocktranslate %}
+                    Xalq taʼlimi vazirligi hamda tizimdagi
+                    tashkilot va muassasalarda jismoniy va yuridik shaxslarning murojaatlari bilan ishlash tartibi
+                    to‘g‘risida namunaviy nizom
+                    {% endblocktranslate %}
+                  </a></p>
+
+                <p><a href="https://ustozovozi.uzedu.uz/">
+                    {% blocktranslate %}
+                    "Ustoz ovozi"
+                    {% endblocktranslate %}
+                  </a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section data-w-id="197e7b8b-b1a5-466c-7b24-655abaf6bd69" class="pricing-middle-section">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="w-layout-hflex pricing-middlie-wrap border-radius-twenty">
+      <div class="pricing-middle-content">
+        <div class="overflow-hidden">
+          <div class="heading-style-h3 slide-title no-margin color-white" style="text-transform: none;">
+            {% blocktranslate %}Izoh: Murojaatlar va boshqa turli masalalar bilan kelgan shaxslar uchun qabul jadvali
+            (dushanba-juma soat 09:00 dan 18:00 gacha) tashkil etilgan.{% endblocktranslate %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
