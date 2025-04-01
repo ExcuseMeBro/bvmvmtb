@@ -1,6 +1,8 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator, FileExtensionValidator
 from django.utils.translation import gettext as _
+from django.utils.text import slugify
+from ckeditor_uploader.fields import RichTextUploadingField
 
 class Region(models.Model):
     name = models.CharField(_('Name'), max_length=100)
@@ -88,3 +90,33 @@ class Employee(models.Model):
     
     def __str__(self):
         return self.fullname
+
+class NewsType(models.Model):
+    name = models.CharField(_('Name'), max_length=100)
+    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
+    
+    class Meta:
+        ordering = ['name']
+        verbose_name = _('News Type')
+        verbose_name_plural = _('News Types')
+    
+    def __str__(self):
+        return self.name
+
+class News(models.Model):
+    title = models.CharField(_('Title'), max_length=200)
+    image = models.ImageField(_('Image'), upload_to='news/')
+    news_type = models.ForeignKey(NewsType, on_delete=models.CASCADE, verbose_name=_('News Type'))
+    description = RichTextUploadingField(_('Description'))
+    hashtag = models.CharField(_('Hashtag'), max_length=100)
+    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
+    
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = _('News')
+        verbose_name_plural = _('News')
+    
+    def __str__(self):
+        return self.title

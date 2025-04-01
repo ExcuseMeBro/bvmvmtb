@@ -43,7 +43,19 @@ INSTALLED_APPS = [
     'drf_yasg',  # Swagger uchun
     'corsheaders',
     'modeltranslation',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
+
+# CKEditor Configuration
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': '100%',
+    },
+}
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
