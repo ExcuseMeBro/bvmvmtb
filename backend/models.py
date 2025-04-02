@@ -1,13 +1,11 @@
 from django.db import models
-from django.core.validators import MinValueValidator, MaxValueValidator, FileExtensionValidator
+from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 from django.utils.text import slugify
 from ckeditor_uploader.fields import RichTextUploadingField
 
 class Region(models.Model):
     name = models.CharField(_('Name'), max_length=100)
-    name_uz = models.CharField(_('Name (Uzbek)'), max_length=100)
-    name_ru = models.CharField(_('Name (Russian)'), max_length=100)
     code = models.CharField(_('Region Code'), max_length=10, unique=True, help_text=_('Unique identifier for the region'))
     is_active = models.BooleanField(_('Active'), default=True)
     created_at = models.DateTimeField(auto_now_add=True)

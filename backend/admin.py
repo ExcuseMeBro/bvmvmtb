@@ -25,9 +25,9 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 @admin.register(Region)
 class RegionAdmin(admin.ModelAdmin):
-    list_display = ('name', 'name_uz', 'name_ru', 'code', 'is_active', 'created_at')
+    list_display = ('name', 'code', 'is_active', 'created_at')
     list_filter = ('is_active', 'created_at')
-    search_fields = ('name', 'name_uz', 'name_ru', 'code')
+    search_fields = ('name', 'code')
     ordering = ('name', '-created_at')
 
 @admin.register(NewsType)

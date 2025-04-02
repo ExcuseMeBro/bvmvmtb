@@ -11,10 +11,10 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -26,7 +26,6 @@ SECRET_KEY = 'django-insecure-v5qq9gq_i%%20pj_6as$3=cajyl#-$5zsa@66m=o$_2w(a063n
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -56,6 +55,7 @@ CKEDITOR_CONFIGS = {
         'width': '100%',
     },
 }
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -104,7 +104,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
@@ -123,7 +122,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -131,12 +129,23 @@ LANGUAGE_CODE = 'uz'
 
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
 
-from django.utils.translation import gettext_lazy as _
+MODELTRANSLATION_LANGUAGES = ('oz', 'uz', 'ru')
 
-LANGUAGES = [
-    ("uz", _("Uzbek")),
-    ("ru", _("Russian")),
-]
+MODELTRANSLATION_FALLBACK_LANGUAGES = {
+    'default': ('oz', 'uz', 'ru'),
+}
+
+MODELTRANSLATION_LANGUAGES_CHOICES = (
+    ('oz', _('Uzbek (Latin)')),
+    ('uz', _('Uzbek (Cyrillic)')),
+    ('ru', _('Russian')),
+)
+
+LANGUAGES = (
+    ('oz', _('Uzbek (Latin)')),
+    ('uz', _('Uzbek (Cyrillic)')),
+    ('ru', _('Russian')),
+)
 
 LOCALE_PATHS = [
     BASE_DIR / "locale",
@@ -148,7 +157,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
@@ -166,31 +174,30 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DAISY_SETTINGS = {
-    'SITE_TITLE': 'MYSITE',  # The title of the site 
-    'SITE_HEADER': 'MYSITE',  # Header text displayed in the admin panel
-    'INDEX_TITLE': 'Hi, welcome to your dashboard',  # The title for the index page of dashboard
-    'SITE_LOGO': '/static/admin/img/daisyui-logomark.svg',  # Path to the logo image displayed in the sidebar
-    'EXTRA_STYLES': [],  # List of extra stylesheets to be loaded in base.html (optional)
-    'EXTRA_SCRIPTS': [],  # List of extra script URLs to be loaded in base.html (optional)
-    'LOAD_FULL_STYLES': False,  # If True, loads full DaisyUI components in the admin (useful if you have custom template overrides)
-    'SHOW_CHANGELIST_FILTER': False,  # If True, the filter sidebar will open by default on changelist views
+    'SITE_TITLE': 'MYSITE',
+    'SITE_HEADER': 'MYSITE',
+    'INDEX_TITLE': 'Hi, welcome to your dashboard',
+    'SITE_LOGO': '/static/admin/img/daisyui-logomark.svg',
+    'EXTRA_STYLES': [],
+    'EXTRA_SCRIPTS': [],
+    'LOAD_FULL_STYLES': False,
+    'SHOW_CHANGELIST_FILTER': False,
     'APPS_REORDER': {
-        # Custom configurations for third-party apps that can't be modified directly in their `apps.py`
         'auth': {
-            'icon': 'fa-solid fa-person-military-pointing', # FontAwesome icon for the 'auth' app
-            'name': 'Group',  # Custom name for the 'auth' app
-            'hide': False,  # Whether to hide the 'auth' app from the sidebar (set to True to hide)
-            'app': 'users',  # The actual app to display in the sidebar (e.g., rename 'auth' to 'users')
-            'divider_title': "Management",  # Divider title for the 'auth' section
+            'icon': 'fa-solid fa-person-military-pointing',
+            'name': 'Group',
+            'hide': False,
+            'app': 'users',
+            'divider_title': "Management",
         },
         'social_django': {
-            'icon': 'fa-solid fa-users-gear',  # Custom FontAwesome icon for the 'social_django' app
+            'icon': 'fa-solid fa-users-gear',
         },
         'backend': {
-            'icon': 'fa-solid fa-user-group', # Custom FontAwesome icon for the 'backend' app
-            'name': 'Users MNG', # Custom name for the 'backend' app
-            'hide': False, # Whether to hide the 'backend' app from the sidebar (set to True to hide)
-            'app': 'clients', # The actual app to display in the sidebar (e.g., rename 'backend' to 'clients')
+            'icon': 'fa-solid fa-user-group',
+            'name': 'Users MNG',
+            'hide': False,
+            'app': 'clients',
         },
     },
 }
@@ -200,18 +207,18 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Example for a local frontend
-    "https://yourfrontend.com",  # Replace with your actual frontend URL
+    "http://localhost:3000",
+    "https://yourfrontend.com",
 ]
 
 # CORS settings
-CORS_ALLOW_ALL_ORIGINS = True  # Or use CORS_ALLOWED_ORIGINS for specific domains
+CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',  # Optional: Require authentication for all views
+        'rest_framework.permissions.IsAuthenticated',
     ),
 }

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-01 01:39+0000\n"
+"POT-Creation-Date: 2025-04-02 22:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,56 +18,530 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: backend/models.py:8 backend/models.py:93
+msgid "Name"
+msgstr ""
+
+#: backend/models.py:9
+msgid "Region Code"
+msgstr ""
+
+#: backend/models.py:9
+msgid "Unique identifier for the region"
+msgstr ""
+
+#: backend/models.py:10
+msgid "Active"
+msgstr ""
+
+#: backend/models.py:16 backend/models.py:44
+msgid "Region"
+msgstr ""
+
+#: backend/models.py:17
+msgid "Regions"
+msgstr ""
+
+#: backend/models.py:38
+msgid "Subject"
+msgstr ""
+
+#: backend/models.py:39
+msgid "First Name"
+msgstr ""
+
+#: backend/models.py:40
+msgid "Last Name"
+msgstr ""
+
+#: backend/models.py:41
+msgid "Father's Name"
+msgstr ""
+
+#: backend/models.py:42
+msgid "Email"
+msgstr ""
+
+#: backend/models.py:43
+msgid "Phone"
+msgstr ""
+
+#: backend/models.py:51
+msgid "Attachment"
+msgstr ""
+
+#: backend/models.py:53
+msgid "Message"
+msgstr ""
+
+#: backend/models.py:54 backend/models.py:94 backend/models.py:111
+msgid "Created At"
+msgstr ""
+
+#: backend/models.py:66
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: backend/models.py:67
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: backend/models.py:68
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: backend/models.py:69
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: backend/models.py:70
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: backend/models.py:71
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: backend/models.py:72
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: backend/models.py:95 backend/models.py:112
+msgid "Updated At"
+msgstr ""
+
+#: backend/models.py:99 backend/models.py:108
+msgid "News Type"
+msgstr ""
+
+#: backend/models.py:100
+msgid "News Types"
+msgstr ""
+
+#: backend/models.py:106
+msgid "Title"
+msgstr ""
+
+#: backend/models.py:107
+#: venv/lib/python3.13/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
+msgstr ""
+
+#: backend/models.py:109
+msgid "Description"
+msgstr ""
+
+#: backend/models.py:110
+msgid "Hashtag"
+msgstr ""
+
+#: backend/models.py:116 backend/models.py:117
+#: backend/templates/mainnavbar.html:292
+msgid "News"
+msgstr ""
+
 #: backend/templates/404.html:260
 msgid "Page Not Found"
-msgstr "Sahifa topilmadi"
-
-#: backend/templates/base.html:288
-msgid " Asosiy "
 msgstr ""
 
-#: backend/templates/base.html:310 backend/templates/base.html:708
-msgid " O'qituvchi ish o'rinlari "
-msgstr ""
-
-#: backend/templates/base.html:313 backend/templates/base.html:711
-msgid " Hujjatlar "
-msgstr ""
-
-#: backend/templates/base.html:316 backend/templates/base.html:714
-msgid " Loyihalar "
-msgstr ""
-
-#: backend/templates/base.html:318 backend/templates/base.html:716
-msgid " Ko‘p beriladigan savollar "
-msgstr ""
-
-#: backend/templates/base.html:320 backend/templates/base.html:718
-msgid " Fuqarolar murojaati "
-msgstr ""
-
-#: backend/templates/base.html:460 backend/templates/base.html:623
-msgid "follow us:"
-msgstr "Bizga qo'shiling:"
-
-#: backend/templates/base.html:686
-msgid "Asosiy"
-msgstr ""
-
-#: backend/templates/index.html:1383
+#: backend/templates/faq.html:13
 msgid " Ko'p beriladigan savollar "
 msgstr ""
 
-#: backend/templates/index.html:1387
+#: backend/templates/faq.html:17
 msgid " O'zingizni qiziqtirgan savollarga tezda javob olishingiz mumkin "
 msgstr ""
 
-#: mysite/settings.py:199
-msgid "Uzbek"
+#: backend/templates/mainnavbar.html:36
+msgid " Asosiy "
 msgstr ""
 
-#: mysite/settings.py:200
+#: backend/templates/mainnavbar.html:58 backend/templates/mobilenavbar.html:115
+msgid " O'qituvchi ish o'rinlari "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:61 backend/templates/mobilenavbar.html:118
+msgid " Hujjatlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:64 backend/templates/mobilenavbar.html:121
+msgid " Loyihalar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:66 backend/templates/mobilenavbar.html:123
+msgid " Ko‘p beriladigan savollar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:68 backend/templates/mobilenavbar.html:125
+msgid " Fuqarolar murojaati "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:208 backend/templates/mobilenavbar.html:30
+msgid "follow us:"
+msgstr ""
+
+#: backend/templates/mobilenavbar.html:93 backend/templates/murojaat.html:10
+msgid "Asosiy"
+msgstr ""
+
+#: backend/templates/murojaat.html:18
+msgid "Fuqaro murojaati"
+msgstr ""
+
+#: backend/templates/murojaat.html:33
+msgid "Fuqarolarni shaxsiy qabul qilish"
+msgstr ""
+
+#: backend/templates/murojaat.html:39
+msgid "Fuqarolarning murojaatlarini ko'rib chiqish tartibi"
+msgstr ""
+
+#: backend/templates/murojaat.html:45
+msgid "Elektron murojaat shakli"
+msgstr ""
+
+#: backend/templates/murojaat.html:52
+msgid "Huquqiy asos"
+msgstr ""
+
+#: backend/templates/murojaat.html:97
+msgid ""
+"\n"
+"              O'zbekiston Respublikasi Maktabgacha va maktab ta'limi "
+"vazirligiga murojaat yozma shaklda yoki elektron\n"
+"              hujjat shaklida yuborilishi mumkin va taklif, ariza yoki "
+"shikoyatning mohiyatini o'z ichiga olishi kerak.\n"
+"\n"
+"              - Taklif-fuqarolarning qonunlar va boshqa normativ-huquqiy "
+"hujjatlarni takomillashtirish, davlat organlari\n"
+"              va mahalliy o'zini o'zi boshqarish organlarining faoliyati, "
+"jamoatchilik munosabatlarini rivojlantirish,\n"
+"              davlat va jamiyat faoliyatining ijtimoiy-iqtisodiy va boshqa "
+"sohalarini yaxshilash bo'yicha tavsiyasi.\n"
+"\n"
+"              - Ariza-fuqarolarning konstitutsiyaviy huquqlari va "
+"erkinliklarini yoki boshqa shaxslarning\n"
+"              konstitutsiyaviy huquqlari va erkinliklarini amalga oshirishga "
+"ko'maklashish yoki qonunlar va boshqa\n"
+"              normativ-huquqiy hujjatlar buzilganligi, davlat organlari, "
+"mahalliy o'zini o'zi boshqarish organlari va\n"
+"              mansabdor shaxslarning ishdagi kamchiliklari yoki ushbu "
+"organlar va mansabdor shaxslarning faoliyatini\n"
+"              tanqid qilish to'g'risidagi iltimosi.\n"
+"\n"
+"              - Shikoyat-fuqaroning uning buzilgan huquqlari, erkinliklari "
+"yoki qonuniy manfaatlari yoxud boshqalarning\n"
+"              huquqlari, erkinliklari yoki qonuniy manfaatlarini tiklash "
+"yoki himoya qilish to'g'risidagi iltimosi.\n"
+"\n"
+"              O'zbekiston Respublikasi Maktabgacha va maktab ta'limi "
+"vazirligiga kelib tushgan murojaat kamida uch kun\n"
+"              muddatda ma'muriy departament tomonidan ro'yxatga olinadi va "
+"vazirlikning tarkibiy bo'linmalariga ko'rib\n"
+"              chiqish uchun (ulardagi muammolarga bog'liq holda) yuboriladi "
+"yoki ro'yxatga olingan kundan e'tiboran\n"
+"              yetti kun ichida tegishli davlat organiga, murojaatni qayta "
+"yo'naltirish to'g'risida murojaatni yuborgan\n"
+"              fuqaroning xabardorligi bilan murojaatda qo'yilgan masalalarni "
+"hal etish vakolatiga kiradigan O'zbekiston\n"
+"              sub'ektining ijro etuvchi hokimiyat organiga yuboriladi.\n"
+"\n"
+"              Agar murojaat elektron hujjat shaklida kelib tushgan bo'lsa, "
+"murojaat yozma shaklda yoki uni boshqa\n"
+"              raqamga yo'naltirish to'g'risidagi bildirishnoma pochta "
+"manziliga yuboriladi.\n"
+"\n"
+"              Murojaatni ko'rib chiqishda murojaatnomada keltirilgan "
+"ma'lumotlarni, shuningdek fuqaroning shaxsiy\n"
+"              hayotiga oid ma'lumotlarni uning roziligisiz oshkor qilishga "
+"yo'l qo'yilmaydi. Elektron shaklda yuborilgan\n"
+"              murojaatlarning mualliflarining shaxsiy ma'lumotlari "
+"to'g'risidagi ma'lumotlar O‘zbekiston\n"
+"              Respublikasining shaxsiy ma'lumotlar to'g'risidagi qonun "
+"hujjatlari talablariga muvofiq saqlanadi va qayta\n"
+"              ishlanadi.\n"
+"\n"
+"              Sud qarorlari ustidan shikoyat qilishga doir murojaatlarni "
+"yuborishda quyidagilarni yodda tutish lozim.\n"
+"              O'zbekiston Konstitutsiyasiga ko'ra, O'zbekistonda adolat "
+"faqat sud tomonidan amalga oshiriladi. Sud\n"
+"              hokimiyati organlari mustaqildir va qonun chiqaruvchi va ijro "
+"etuvchi hokimiyatlardan qat'iy nazar harakat\n"
+"              qiladi. Sud organlarining qarorlari ustidan qonunda "
+"belgilangan protsessual tartibda shikoyat qilinadi.\n"
+"\n"
+"              Yozma yoki elektron murojaatlarga quyidagi hollarda javob "
+"berilmaydi:\n"
+"\n"
+"              1) agar murojaatda murojaatni yuborgan fuqaroning familiyasi, "
+"ismi va otasining ismi (oxirgi bo'lsa), yoki\n"
+"              javob yuborilishi kerak bo'lgan pochta manzili yoki elektron "
+"pochta manzili (e – mail) ko'rsatilmagan\n"
+"              bo'lsa;\n"
+"\n"
+"              2) murojaatda haqoratli so'zlar, tahdidlar mavjud bo'lsa;\n"
+"\n"
+"              3) agar yozma murojaat matni o'qilmasa;\n"
+"\n"
+"              4) agar fuqaroning yozma yoki elektron murojaatida ilgari "
+"yuborilgan murojaatlar bilan bog'liq holda, unga\n"
+"              bir necha bor yozma javoblar berilgan va shu bilan birga "
+"murojaatda yangi vajlari yoki holatlari\n"
+"              ko'rsatilmagan bo'lsa;\n"
+"\n"
+"              5) agar murojaatda berilgan savolning mohiyatiga javob davlat "
+"yoki boshqa qonun bilan himoyalangan sirni\n"
+"              tashkil etuvchi ma'lumotlarni oshkor qilmasdan berilishi "
+"mumkin bo'lmasa.\n"
+"\n"
+"              Hurmatli foydalanuvchilar! Elektron hujjat shaklidagi "
+"murojaatlarni taqdim etishda katta axborot\n"
+"              oqimlarini qayta ishlash xususiyatlari bilan bog'liq ayrim "
+"cheklovlarni tushunish bilan murojaat qiling:\n"
+"\n"
+"              1. Elektron murojaat hajmi 5 000 belgidan oshmasligi kerak.\n"
+"\n"
+"              2. Agar kerak bo'lsa, murojaatga arxivlashsiz kerakli "
+"hujjatlar va materiallarni elektron shaklda bitta\n"
+"              fayl shaklida biriktirish huquqiga egasiz. Ilova faylining "
+"hajmi 5 Mb dan oshmasligi kerak. Qo'shimchalar\n"
+"              uchun quyidagi fayl formatlari qabul qilinadi: txt, doc, rtf, "
+"xls, ppt, pdf, jpg, bmp, png, tif f, gif.\n"
+"              "
+msgstr ""
+
+#: backend/templates/murojaat.html:169
+msgid ""
+"Hurmatli fuqarolar-O'zbekiston Respublikasi Maktabgacha va maktab ta'limi\n"
+"                        vazirligi rasmiy saytiga tashrif buyurganlar!"
+msgstr ""
+
+#: backend/templates/murojaat.html:174
+msgid ""
+"\n"
+"                      Murojaatni elektron shaklda yuborishdan oldin, "
+"O'zbekiston Respublikasi Maktabgacha va maktab\n"
+"                      ta'limi vazirligi vakolatlariga qarang va sizning "
+"savolingiz O'zbekiston Respublikasi fan va oliy\n"
+"                      ta'lim vazirligining vakolat doirasiga tegishli "
+"ekanligiga ishonch hosil qiling\n"
+"                      "
+msgstr ""
+
+#: backend/templates/murojaat.html:181
+msgid ""
+"\n"
+"                      Fuqarolarning murojaatlarini \"O'zbekiston "
+"fuqarolarining murojaatlarini ko'rib chiqish tartibi\n"
+"                      to'g'risida\" gi 59 - qonunga muvofiq ko'rib chiqish "
+"muddati-Vazirlikda ro'yxatdan o'tgan kundan\n"
+"                      boshlab 30 kun.\n"
+"                      "
+msgstr ""
+
+#: backend/templates/murojaat.html:188
+msgid ""
+"\n"
+"                      shuningdek, vazirlikning rasmiy veb-saytining "
+"\"vazirlik to'g'risida\" bo'limida ko'rsatilgan\n"
+"                      telefon raqamlari orqali Vazirlikning "
+"departamentlariga qo'ng'iroq qilishingiz mumkin.\n"
+"                      "
+msgstr ""
+
+#: backend/templates/murojaat.html:201
+msgid ""
+"\n"
+"                          Qabul qilingan murojaatlar:\n"
+"                          "
+msgstr ""
+
+#: backend/templates/murojaat.html:226
+msgid "Murojaat mavzusi"
+msgstr ""
+
+#: backend/templates/murojaat.html:232
+msgid "Ism"
+msgstr ""
+
+#: backend/templates/murojaat.html:240
+msgid "Familiya"
+msgstr ""
+
+#: backend/templates/murojaat.html:246
+msgid "Otasining ismi"
+msgstr ""
+
+#: backend/templates/murojaat.html:253
+msgid "E-mail"
+msgstr ""
+
+#: backend/templates/murojaat.html:258
+msgid "Telefon"
+msgstr ""
+
+#: backend/templates/murojaat.html:265
+msgid "Hudud"
+msgstr ""
+
+#: backend/templates/murojaat.html:267
+msgid "Hududni tanlang"
+msgstr ""
+
+#: backend/templates/murojaat.html:274
+msgid ""
+"\n"
+"                              Fayl tanlang\n"
+"                              "
+msgstr ""
+
+#: backend/templates/murojaat.html:284
+msgid ""
+"\n"
+"                            Taklif, bayonot yoki shikoyatning mohiyatini "
+"ayting\n"
+"                            "
+msgstr ""
+
+#: backend/templates/murojaat.html:292
+msgid ""
+"\n"
+"                            Yuborish\n"
+"                            "
+msgstr ""
+
+#: backend/templates/murojaat.html:300
+msgid ""
+"\n"
+"                          Rahmat! Sizning arizangiz qabul qilindi!\n"
+"                          "
+msgstr ""
+
+#: backend/templates/murojaat.html:307
+msgid ""
+"\n"
+"                          Xatolik! Arizangizni qayta yuboring.\n"
+"                          "
+msgstr ""
+
+#: backend/templates/murojaat.html:323
+msgid ""
+"\n"
+"                    “Jismoniy va yuridik shaxslarning murojaatlari "
+"to‘g‘risida”gi\n"
+"                    O‘zbekiston Respublikasi Qonuniga o‘zgartish va "
+"qo‘shimchalar kiritish haqida\n"
+"                    "
+msgstr ""
+
+#: backend/templates/murojaat.html:330
+msgid ""
+"\n"
+"                    Xalq taʼlimi vazirligi hamda tizimdagi\n"
+"                    tashkilot va muassasalarda jismoniy va yuridik "
+"shaxslarning murojaatlari bilan ishlash tartibi\n"
+"                    to‘g‘risida namunaviy nizom\n"
+"                    "
+msgstr ""
+
+#: backend/templates/murojaat.html:338
+msgid ""
+"\n"
+"                    \"Ustoz ovozi\"\n"
+"                    "
+msgstr ""
+
+#: backend/templates/murojaat.html:356
+msgid ""
+"Izoh: Murojaatlar va boshqa turli masalalar bilan kelgan shaxslar uchun "
+"qabul jadvali\n"
+"            (dushanba-juma soat 09:00 dan 18:00 gacha) tashkil etilgan."
+msgstr ""
+
+#: backend/templates/news_list.html:7
+msgid "Latest News"
+msgstr ""
+
+#: backend/templates/news_single.html:19
+msgid "Back to News List"
+msgstr ""
+
+#: backend/views.py:28
+msgid "Murojaat muvaffaqiyatli yuborildi"
+msgstr ""
+
+#: backend/views.py:31
+msgid "Xatolik yuz berdi. Iltimos qayta urinib ko'ring"
+msgstr ""
+
+#: mysite/settings.py:139 mysite/settings.py:145
+msgid "Uzbek (Latin)"
+msgstr ""
+
+#: mysite/settings.py:140 mysite/settings.py:146
+msgid "Uzbek (Cyrillic)"
+msgstr ""
+
+#: mysite/settings.py:141 mysite/settings.py:147
 msgid "Russian"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/forms.py:6
+msgid "Search files"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:5
+msgid "Select an image to embed"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:27
+msgid "Browse for the image you want, then click 'Embed Image' to continue..."
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:29
+msgid ""
+"No images found. Upload images using the 'Image Button' dialog's 'Upload' "
+"tab."
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:50
+msgid "Images in: "
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:62
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:80
+msgid "Embed Image"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:146
+msgid "Play Slideshow"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:147
+msgid "Pause Slideshow"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:148
+msgid "&lsaquo; Previous Photo"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:149
+msgid "Next Photo &rsaquo;"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:150
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/ckeditor_uploader/templates/ckeditor/browse.html:151
+msgid "&lsaquo; Prev"
 msgstr ""
 
 #: venv/lib/python3.13/site-packages/django/contrib/messages/apps.py:16
@@ -493,10 +967,6 @@ msgstr ""
 msgid "File"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/files.py:420
-msgid "Image"
-msgstr ""
-
 #: venv/lib/python3.13/site-packages/django/db/models/fields/json.py:24
 msgid "A JSON object"
 msgstr ""
@@ -789,34 +1259,6 @@ msgstr ""
 
 #: venv/lib/python3.13/site-packages/django/utils/dateformat.py:155
 msgid "noon"
-msgstr ""
-
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:7
-msgid "Monday"
-msgstr ""
-
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:8
-msgid "Tuesday"
-msgstr ""
-
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:9
-msgid "Wednesday"
-msgstr ""
-
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:10
-msgid "Thursday"
-msgstr ""
-
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:11
-msgid "Friday"
-msgstr ""
-
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:12
-msgid "Saturday"
-msgstr ""
-
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:13
-msgid "Sunday"
 msgstr ""
 
 #: venv/lib/python3.13/site-packages/django/utils/dates.py:16

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static i18n %}
+
+{% block content %}
+<div class="news-container">
+    <h1 class="news-title">{{ news.title }}</h1>
+    
+    <div class="news-meta">
+        <span class="news-date">{{ news.created_at|date:"d F Y" }}</span>
+        <span class="news-hashtag">#{{ news.hashtag }}</span>
+    </div>
+
+    <img src="{{ news.image.url }}" alt="{{ news.title }}" class="news-image">
+
+    <div class="news-content">
+        {{ news.description|safe }}
+    </div>
+
+    <a href="{% url 'news_list' %}" class="back-link">{% trans 'Back to News List' %}</a>
+</div>
+{% endblock %}
+
+<style>
+.news-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+}
+
+.news-title {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.news-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    color: #7f8c8d;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.news-content {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+</style>

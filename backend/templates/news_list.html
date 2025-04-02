@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+{% load static i18n %}
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="news-list-container">
+    <h1 class="page-title">{% trans 'Latest News' %}</h1>
+    
+    <div class="news-items">
+        {% for news in news_items %}
+        <article class="news-item">
+            <a href="{% url 'news_detail' pk=news.pk %}" class="news-link">
+                <div class="news-image-wrapper">
+                    <img src="{{ news.image.url }}" alt="{{ news.title }}" class="news-thumbnail">
+                </div>
+                <div class="news-content">
+                    <h2 class="news-item-title">{{ news.title }}</h2>
+                    <div class="news-meta">
+                        <span class="news-date">{{ news.created_at|date:"d F Y" }}</span>
+                        <span class="news-hashtag">#{{ news.hashtag }}</span>
+                    </div>
+                    <p class="news-excerpt">{{ news.description|striptags|truncatewords:30 }}</p>
+                </div>
+            </a>
+        </article>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+<style>
+.news-list-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 20px;
+}
+
+.page-title {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.news-items {
+    display: grid;
+    gap: 2rem;
+}
+
+.news-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-2px);
+}
+
+.news-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    padding: 1.5rem;
+}
+
+.news-image-wrapper {
+    flex: 0 0 300px;
+    margin-right: 1.5rem;
+}
+
+.news-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-item-title {
+    color: #3498db;
+    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
+}
+
+.news-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+}
+
+.news-excerpt {
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+</style>
