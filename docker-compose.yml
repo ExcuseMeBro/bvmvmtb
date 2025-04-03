@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: arash4567/bvmv:latest
     pull_policy: always
     restart: unless-stopped
     ports:
