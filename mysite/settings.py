@@ -196,11 +196,16 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://yourfrontend.com",
+    "https://buxedu.uz"
 ]
 
 # CORS settings
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = False
+
+# CSRF settings
+CSRF_TRUSTED_ORIGINS = [
+    "https://buxedu.uz"
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
