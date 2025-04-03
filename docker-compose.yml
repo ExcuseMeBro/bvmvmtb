@@ -20,7 +20,6 @@ services:
       - DB_PASSWORD=${DB_PASSWORD}
       - DB_HOST=db
       - DB_PORT=${DB_PORT}
-      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
       - CORS_ALLOW_ALL_ORIGINS=${CORS_ALLOW_ALL_ORIGINS}
       - ALLOWED_HOSTS=${ALLOWED_HOSTS}
     depends_on:
@@ -48,7 +47,7 @@ services:
       - POSTGRES_PASSWORD=${DB_PASSWORD}
     ports:
       - "5432:5432"
-      
+
 volumes:
   postgres_data:
   static_volume:
