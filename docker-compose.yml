@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8001:8000"
+    volumes:
+      - .:/app
+      - static_volume:/app/staticfiles
+      - media_volume:/app/media
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - DEBUG=${DEBUG}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=db
+      - DB_PORT=${DB_PORT}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - CORS_ALLOW_ALL_ORIGINS=${CORS_ALLOW_ALL_ORIGINS}
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS}
+    depends_on:
+      - db
+    command: >
+      sh -c "python manage.py makemigrations && 
+             python manage.py migrate &&
+             python manage.py collectstatic --noinput &&
+             gunicorn mysite.wsgi:application --bind 0.0.0.0:8000"
+    # For development, you can use the following command instead:
+    # command: >
+    #   sh -c "python manage.py makemigrations && 
+    #          python manage.py migrate &&
+    #          python manage.py collectstatic --noinput &&
+    #          python manage.py runserver 0.0.0.0:8000"
+
+  db:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    ports:
+      - "5432:5432"
+      
+volumes:
+  postgres_data:
+  static_volume:
+  media_volume:

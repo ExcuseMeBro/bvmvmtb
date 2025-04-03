@@ -45,5 +45,5 @@ ENV/
 *.sqlite3
 *.db
 
-staticfiles/
-media/
+/media/
+/staticfiles/

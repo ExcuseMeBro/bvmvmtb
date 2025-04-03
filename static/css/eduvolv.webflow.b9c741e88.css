@@ -16608,3 +16608,10 @@ blockquote {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
+
+.hero-bg {
+  background: url('../images/herobg.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center;
+}

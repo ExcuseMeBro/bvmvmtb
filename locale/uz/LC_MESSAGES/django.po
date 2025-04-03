@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-02 22:11+0000\n"
+"POT-Creation-Date: 2025-04-03 05:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -481,15 +481,11 @@ msgstr ""
 msgid "Xatolik yuz berdi. Iltimos qayta urinib ko'ring"
 msgstr ""
 
-#: mysite/settings.py:139 mysite/settings.py:145
-msgid "Uzbek (Latin)"
-msgstr ""
-
-#: mysite/settings.py:140 mysite/settings.py:146
+#: mysite/settings.py:139 mysite/settings.py:144
 msgid "Uzbek (Cyrillic)"
 msgstr ""
 
-#: mysite/settings.py:141 mysite/settings.py:147
+#: mysite/settings.py:140 mysite/settings.py:145
 msgid "Russian"
 msgstr ""
 
