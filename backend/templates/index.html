@@ -571,7 +571,7 @@
         </div>
         <div class="video-button">
           <a data-wf--red-button--variant="red-button" data-w-id="357fb228-33ae-b3b5-1f97-60ac41dee7a5"
-            href="https://t.me/bvxtb_bot" class="button-one-style w-inline-block">
+            href="#demoformv" class="button-one-style w-inline-block">
             <div class="button-text-wrap position-relative">
               <div class="button-text-one" style="
                       transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
@@ -691,4 +691,84 @@
   </div>
 </section>
 {% include 'faq.html' %}
+<section data-w-id="38662006-c3f9-47d1-3326-eeaf306d9106" class="contact-one-form-section" id="demoformv">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="w-layout-hflex contact-one-form-content-wrap border-radius-fifteen overflow-hidden">
+      <div class="contact-one-form-section-image"><img
+          src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/6765022b187a3611fa1f7dbb_contact-one-01.webp"
+          loading="lazy" width="660" height="771" alt="image"
+          srcset="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/6765022b187a3611fa1f7dbb_contact-one-01-p-500.webp 500w, https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/6765022b187a3611fa1f7dbb_contact-one-01-p-800.webp 800w, https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/6765022b187a3611fa1f7dbb_contact-one-01-p-1080.webp 1080w, https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/6765022b187a3611fa1f7dbb_contact-one-01.webp 1320w"
+          sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1439px) 98vw, 1290px"
+          class="full-height image-full-width"></div>
+      <div class="ccontact-one-form-wrap">
+        <div class="margin-bottom-twenty overflow-hidden">
+          <div class="slide-title heading-style-h3 heading-color" style="text-transform: none;">
+            {% blocktranslate %}
+            Ta'lim sifatini oshirishga qaratilgan murojaat va takliflarni yuboring
+            {% endblocktranslate %}
+          </div>
+        </div>
+        <div class="contact-one-form-block no-margin w-form">
+          <form id="demoform" name="contact-form" data-name="Contact Form" method="post" class="contact-one-form-form">
+            {% csrf_token %}
+            <div class="w-layout-hflex contact-one-input-wrap">
+              <div class="contact-one-input-box">
+                <label for="fullname" class="admission-one-label">{% blocktranslate %}F.I.O{% endblocktranslate %}</label>
+                <input class="admission-one-form-input-item w-input" maxlength="256" name="fullname"
+                  data-name="Full Name" placeholder="Ism Familiya" type="text" id="fullname" required="">
+              </div>
+              <div class="contact-one-input-box">
+                <label for="region" class="admission-one-label">{% blocktranslate %}Viloyat{% endblocktranslate %}</label>
+                <select class="admission-one-form-input-item w-input" name="region" id="region" required="" onchange="updateCities(this.value)">
+                  <option value="">{% blocktranslate %}Viloyatni tanlang{% endblocktranslate %}</option>
+                  {% for region in regions %}
+                  <option value="{{ region.id }}">{{ region.name }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="contact-one-input-box">
+                <label for="city" class="admission-one-label">{% blocktranslate %}Shahar{% endblocktranslate %}</label>
+                <select class="admission-one-form-input-item w-input" name="city" id="city" required="" disabled>
+                  <option value="">{% blocktranslate %}Shaharni tanlang{% endblocktranslate %}</option>
+                </select>
+              </div>
+            </div>
+            <div class="w-layout-hflex contact-one-input-wrap">
+              <div class="contact-one-input-box">
+                <label for="phone" class="admission-one-label">{% blocktranslate %}Telefon{% endblocktranslate %}</label>
+                <input class="admission-one-form-input-item w-input" maxlength="256" name="phone" data-name="Phone"
+                  placeholder="+998 XX XXX XX XX" type="tel" id="phone" required="">
+              </div>
+              <div class="contact-one-input-box">
+                <label for="category" class="admission-one-label">{% blocktranslate %}Kategoriya{% endblocktranslate %}</label>
+                <select class="admission-one-form-input-item w-input" name="category" id="category" required="">
+                  <option value="">{% blocktranslate %}Kategoriyani tanlang{% endblocktranslate %}</option>
+                  <option value="preschool">{% blocktranslate %}Maktabgacha ta'lim{% endblocktranslate %}</option>
+                  <option value="school">{% blocktranslate %}Maktab ta'limi{% endblocktranslate %}</option>
+                </select>
+              </div>
+            </div>
+            <div class="contact-input-box-full-width">
+              <label for="message" class="admission-one-label">{% blocktranslate %}Xabar{% endblocktranslate %}</label>
+              <textarea placeholder="{% blocktranslate %}Xabaringizni yozing...{% endblocktranslate %}"
+                maxlength="5000" id="message" name="message" data-name="Message"
+                class="admission-form-textarea w-input" required=""></textarea>
+            </div>
+            <div class="w-layout-hflex admission-form-button-wrap">
+              <input type="submit" data-wait="{% blocktranslate %}Iltimos kuting...{% endblocktranslate %}"
+                class="button-style-one border-radius-five w-button" value="{% blocktranslate %}Yuborish{% endblocktranslate %}">
+            </div>
+          </form>
+          <div class="success-message w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
+            <div class="color-white">Thank you! Your submission has been received!</div>
+          </div>
+          <div class="error-message w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div style="width: 100%; height: 20px;"></div>
 {% endblock %}
