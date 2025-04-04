@@ -1,3 +1,4 @@
+{% load static %}
 {% load i18n %}
 <section class="navbar-three">
     <div class="top-header-one">
@@ -5,40 +6,26 @@
             <div class="w-layout-hflex top-header-content-wrap">
                 <div class="w-layout-hflex">
                     <div class="top-hedder-contact-menu-wrap">
-                        <a href="#" class="top-header-one-timing-wrap top-heaader-menu-item-one w-inline-block"
+                        <a href="tel:712020909" class="top-header-one-timing-wrap top-heaader-menu-item-one w-inline-block"
                             style="padding-top: 8px !important;">
                             <div class="clock-icon">
                                 <img width="12" height="12" alt="call-icon"
                                     src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67580c4b5a32f0efcba782d2_icon(5).svg"
                                     loading="lazy" />
                             </div>
-                            <div class="top-header-timing-text">(888)1234-5678</div>
-                        </a><a href="#" class="top-header-one-timing-wrap top-heaader-menu-item-one w-inline-block"
+                            <div class="top-header-timing-text">(71) 202 09 09</div>
+                        </a><a href="https://t.me/bvxtb_bot" class="top-header-one-timing-wrap top-heaader-menu-item-one w-inline-block"
                             style="padding-top: 8px !important;">
                             <div class="clock-icon">
                                 <img width="16" height="12" alt="mail-icon"
                                     src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67580c4b5a32f0efcba782d3_icon(6).svg"
                                     loading="lazy" />
                             </div>
-                            <div class="top-header-timing-text">info@example.com</div>
+                            <div class="top-header-timing-text">bvxtb_bot</div>
                         </a>
                     </div>
                 </div>
                 <div class="w-layout-hflex nav-two-right-content">
-                    <div class="w-layout-hflex navbar-social-link">
-                        <div class="color-white text-capitalize top-header-timing-text">
-                            {% blocktranslate %}follow us:{% endblocktranslate %}
-                        </div>
-                        <a href="#" class="top-social-icon w-inline-block"><img loading="lazy"
-                                src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67580c4b5a32f0efcba782ca_linkdin%20icon.svg"
-                                alt="linkdin-icon" /></a><a href="#" class="top-social-icon w-inline-block"><img
-                                loading="lazy"
-                                src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67580c4b5a32f0efcba782c9_twitter%20icon.svg"
-                                alt="twitter-icon" /></a><a href="#" class="top-social-icon w-inline-block"><img
-                                loading="lazy"
-                                src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67580c4b5a32f0efcba782cd_youtube%20icon.svg"
-                                alt="youtube-icon" /></a>
-                    </div>
                     <div class="top-header-one-timing-wrap">
                         <a data-wf--red-button--variant="red-button"
                             data-w-id="357fb228-33ae-b3b5-1f97-60ac41dee7a5" href="/admin"
@@ -78,9 +65,9 @@
             <div class="container w-container">
                 <div class="navbar-three-wrap">
                     <div class="header-logo">
-                        <a href="/" class="logo-one w-nav-brand" aria-label="home"><img loading="lazy"
-                                src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67580c4b5a32f0efcba782c8_logo(1).svg"
-                                alt="logo" /></a>
+                        <a href="/" class="logo-one w-nav-brand" style="background-color: rgba(255, 255, 255, 0.3); border-radius: 100%; padding: 4px 8px !important;" aria-label="home"><img loading="lazy"
+                                src="{% static 'images/favicon.png' %}"
+                                alt="logo" width="40px" /></a>
                     </div>
                     <nav role="navigation" id="w-node-d500bf85-1270-3ab7-b76a-3c0d2bbcd4fd-2bbcd4d7"
                         class="nav-menu-one w-nav-menu">
