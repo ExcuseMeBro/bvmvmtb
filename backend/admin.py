@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics, UsefulLink, City, Offer
+from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics, UsefulLink, City, Offer, OfferStats
 
 @admin.register(EmailForm)
 class EmailFormAdmin(admin.ModelAdmin):
@@ -71,3 +71,10 @@ class OfferAdmin(admin.ModelAdmin):
     list_filter = ('category', 'region', 'city', 'created_at')
     search_fields = ('fullname', 'phone', 'message')
     ordering = ('-created_at',)
+
+@admin.register(OfferStats)
+class OfferStatsAdmin(admin.ModelAdmin):
+    list_display = ('name', 'quantity', 'created_at', 'updated_at')
+    list_filter = ('created_at', 'updated_at')
+    search_fields = ('name',)
+    ordering = ('name', '-created_at')

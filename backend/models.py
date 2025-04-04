@@ -185,3 +185,17 @@ class Offer(models.Model):
     
     def __str__(self):
         return f'{self.fullname} - {self.get_category_display()}'
+
+class OfferStats(models.Model):
+    name = models.CharField(_('Name'), max_length=100)
+    quantity = models.IntegerField(_('Quantity'), default=0)
+    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
+
+    class Meta:
+        ordering = ['name']
+        verbose_name = _('Takliflar statistikasi')
+        verbose_name_plural = _('Takliflar statistikasi')
+
+    def __str__(self):
+        return self.name

@@ -770,5 +770,30 @@
     </div>
   </div>
 </section>
-<div style="width: 100%; height: 20px;"></div>
+<div>
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="contact-one-card-header">
+      <div class="contact-one-card-title-wrap text-align-center">
+        <div class="heading-two-top-margin overflow-hidden">
+          <h2 data-w-id="9eb78730-c5a4-f024-e3d0-b2e99a9c21f2" class="slide-title no-margin"
+            style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">  
+            {% blocktranslate %}
+            Murojaatlar statistikasi
+            {% endblocktranslate %}
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="w-layout-grid contact-us-card-wrp">
+      {% for offerStat in offerStats %}
+      <div class="w-layout-hflex contact-us-card">
+        <div class="contact-one-card-content">
+          <div class="heading-style-h6">{{ offerStat.quantity }}</div>
+          <div class="margin-top-five">{{ offerStat.name }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
 {% endblock %}

@@ -25,12 +25,14 @@ def home(request):
     links = UsefulLink.objects.all()
     news_items = News.objects.all().order_by('-created_at')[:8]
     regions = Region.objects.all()
+    offerStats = OfferStats.objects.all()
     context = {
         'faqs': faqs,
         'statistics': statistics,
         'links': links,
         'news_items': news_items,
         'regions': regions,
+       'offerStats': offerStats,
     }
     return render(request, 'index.html', context)
 
