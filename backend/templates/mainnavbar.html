@@ -75,7 +75,9 @@
                         <div class="dropdown-toggle-two w-dropdown-toggle" id="w-dropdown-toggle-1"
                             aria-controls="w-dropdown-list-1" aria-haspopup="menu" aria-expanded="false" role="button"
                             tabindex="0">
-                            <div class="nav-menu">About</div>
+                            <div class="nav-menu">
+                                {% blocktranslate %}Boshqarma{% endblocktranslate %}
+                            </div>
                             <div class="dropdown-hover-border" style="
                   transform: translate3d(0px, 0px, 0px) scale3d(0, 1, 1)
                     rotateX(0deg) rotateY(0deg) rotateZ(0deg)
@@ -95,10 +97,33 @@
                         </div>
                         <nav class="dropdown-list-two w-dropdown-list" id="w-dropdown-list-1"
                             aria-labelledby="w-dropdown-toggle-1" style="height: 0px">
-                            <a href="/about-one" class="dropdown-link w-dropdown-link" tabindex="0">About One</a><a
-                                href="/about-two" class="dropdown-link w-dropdown-link" tabindex="0">About Two</a><a
-                                href="/about-three" class="dropdown-link w-dropdown-link" tabindex="0">About
-                                three</a>
+                            <a href="/about" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Boshqarma haqida {% endblocktranslate %}
+                            </a>
+                            <a href="/leadership" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Rahbariyat {% endblocktranslate %}
+                            </a>
+                            <a href="/employees" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Xodimlar {% endblocktranslate %}
+                            </a>                            
+                            <a href="/departments" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Hududiy bo’limlar {% endblocktranslate %}
+                            </a>
+                            <a href="https://uzedu.uz/staff/4 " class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Respublika tashkilotlari {% endblocktranslate %}
+                            </a>
+                            <a href="https://uzedu.uz/uz/page/7" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Vazirlik tuzilmasi {% endblocktranslate %}
+                            </a>
+                            <a href="https://uzedu.uz/page/requisites" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Rekvizitlar {% endblocktranslate %}
+                            </a>
+                            <a href="/pupose" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Missiya, maqsad va vazifalar {% endblocktranslate %}
+                            </a>
+                            <a href="#demoformv" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Bog'lanish {% endblocktranslate %}
+                            </a>
                         </nav>
                     </div>
                     <div data-w-id="dac65eaa-0013-1e5d-3353-dae093843801" class="mega-menu-main-one">
@@ -106,7 +131,9 @@
                             <div class="dropdown-toggle-two w-dropdown-toggle" id="w-dropdown-toggle-2"
                                 aria-controls="w-dropdown-list-2" aria-haspopup="menu" aria-expanded="false"
                                 role="button" tabindex="0">
-                                <div class="nav-menu">Pages</div>
+                                <div class="nav-menu">
+                                    {% blocktranslate %} Boshqa sahifalar {% endblocktranslate %}
+                                </div>
                                 <div class="dropdown-hover-border" style="
                     transform: translate3d(0px, 0px, 0px) scale3d(0, 1, 1)
                       rotateX(0deg) rotateY(0deg) rotateZ(0deg)
@@ -130,66 +157,117 @@
                         <div class="new-mega-menu-block" style="width: 100%; height: 0px; display: none">
                             <div class="mega-menu-wrapper-one">
                                 <div class="pages-menu-section-one">
-                                    <a href="/about-one" class="dropdown-link top-pading-zero w-inline-block">
-                                        <div class="sub-menu-heading">About One</div>
-                                    </a><a href="/about-two" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">About Two</div>
-                                    </a><a href="/about-three" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">About Three</div>
-                                    </a><a href="/academics-one" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Academics one</div>
-                                    </a><a href="/academics-two" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Academics two</div>
-                                    </a><a href="/academics-three" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Academics Three</div>
-                                    </a><a href="/admission" class="dropdown-link bottom-pading-zero w-inline-block">
-                                        <div class="sub-menu-heading">Admission</div>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Boshqarma yangiliklari {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Press-relizlar {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} OAV biz haqimizda {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Ma`ruzalar {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Galereya {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Video galereya {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Axborot xizmati {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Matbuot anjumanlari {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Konferensiyalar {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Yordam {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Tanlovlar {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Boshqarma faoliyatining ochiqligi
+                                            {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Infografika {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Bayonotlar {% endblocktranslate %}
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="menu-section-two">
-                                    <a href="/campus-life" class="dropdown-link top-pading-zero w-inline-block">
-                                        <div class="sub-menu-heading">Campus life</div>
-                                    </a><a href="/teachers" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Teachers</div>
-                                    </a><a href="/tuition-fees" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">tuition Fees</div>
-                                    </a><a href="/blog-one" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Blog One</div>
-                                    </a><a href="/blog-two" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Blog Two</div>
-                                    </a><a href="/blog-three" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Blog Three</div>
-                                    </a><a
-                                        href="https://eduvolv.webflow.io/blog/the-rise-of-gamification-in-modern-classrooms"
-                                        class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Blog Details</div>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Ochiq budjet {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Ochiq ma`lumotlar {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Ochiq ma`lumotlar to’plami {% endblocktranslate %}
+                                        </div>
                                     </a>
                                 </div>
                                 <div class="menu-section-three">
-                                    <a href="/contact-us-one" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Contact One</div>
-                                    </a><a href="/contact-us-two" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Contact two</div>
-                                    </a><a href="/contact-us-three" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">Contact three</div>
-                                    </a><a href="https://eduvolv.webflow.io/401" class="dropdown-link w-inline-block">
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
                                         <div class="sub-menu-heading">
-                                            Password Protected
+                                            {% blocktranslate %} Korrupsiyaga oid targ’ibot materiallari {% endblocktranslate %}
                                         </div>
-                                    </a><a href="https://eduvolv.webflow.io/404" class="dropdown-link w-inline-block">
-                                        <div class="sub-menu-heading">404</div>
                                     </a>
-                                </div>
-                                <div class="mega-menu-divider"></div>
-                                <div class="mega-menu-image-wrapper">
-                                    <img width="250" height="Auto" alt="Nav Image"
-                                        src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/676a7cf854cbcdac244163bb_academic-three-faq.webp"
-                                        loading="lazy" srcset="
-                      https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/676a7cf854cbcdac244163bb_academic-three-faq-p-500.webp   500w,
-                      https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/676a7cf854cbcdac244163bb_academic-three-faq-p-800.webp   800w,
-                      https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/676a7cf854cbcdac244163bb_academic-three-faq-p-1080.webp 1080w,
-                      https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/676a7cf854cbcdac244163bb_academic-three-faq.webp        1180w
-                    " sizes="100vw" class="autofit-two nav-image" />
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Xodimlar hatti-harakatiga oid korrupsiyani oldini olish bo’yicha murojaat {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Korrupsiyaga qarshi kurashish bo’yicha idoraviy hujjatlar
+                                            {% endblocktranslate %}
+                                        </div>
+                                    </a>
+                                    <a href="#" class="dropdown-link top-pading-zero w-inline-block">
+                                        <div class="sub-menu-heading">
+                                            {% blocktranslate %} Amalga oshirilayotgan ishlar {% endblocktranslate %}
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +321,9 @@
                         <div class="dropdown-toggle-two w-dropdown-toggle" id="w-dropdown-toggle-3"
                             aria-controls="w-dropdown-list-3" aria-haspopup="menu" aria-expanded="false" role="button"
                             tabindex="0">
-                            <div class="nav-menu">Shop</div>
+                            <div class="nav-menu">
+                                {% blocktranslate %} Ta`lim {% endblocktranslate %}
+                            </div>
                             <div class="dropdown-hover-border"></div>
                             <div class="dropdown-icon-wrapper">
                                 <img width="12" height="8" alt="icon"
@@ -253,9 +333,30 @@
                         </div>
                         <nav class="dropdown-list-two w-dropdown-list" id="w-dropdown-list-3"
                             aria-labelledby="w-dropdown-toggle-3">
-                            <a href="/shop" class="dropdown-link w-dropdown-link" tabindex="0">Shop</a><a
-                                href="https://eduvolv.webflow.io/product/hoodie" class="dropdown-link w-dropdown-link"
-                                tabindex="0">Shop Details</a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Statistika {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Tahliliy ma`lumotlar {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Ta`limga doir terminlar {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Elektron kutubxona {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Umumtaʼlim maktablarining hovli, kirish qismi va koridorlarini bezatish boʻyicha namunaviy tavsiyalardan fotolavhalar {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} “Barkamol avlod” bolalar markazi {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Imkoniyati cheklanganlarga {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} EFL teacher Recruitment {% endblocktranslate %}
+                            </a>
                         </nav>
                     </div>
                     <div data-delay="0" data-hover="true" data-w-id="bb00e7c9-b175-ad49-3af3-5589af53175d"
@@ -263,7 +364,9 @@
                         <div class="dropdown-toggle-two w-dropdown-toggle" id="w-dropdown-toggle-4"
                             aria-controls="w-dropdown-list-4" aria-haspopup="menu" aria-expanded="false" role="button"
                             tabindex="0">
-                            <div class="nav-menu">Contact</div>
+                            <div class="nav-menu">
+                                {% blocktranslate %} Faoliyat {% endblocktranslate %}
+                            </div>
                             <div class="dropdown-hover-border"></div>
                             <div class="dropdown-icon-wrapper">
                                 <img width="12" height="8" alt="icon"
@@ -273,17 +376,41 @@
                         </div>
                         <nav class="dropdown-list-two w-dropdown-list" id="w-dropdown-list-4"
                             aria-labelledby="w-dropdown-toggle-4">
-                            <a href="/contact-us-one" class="dropdown-link w-dropdown-link" tabindex="0">Contact
-                                one</a><a href="/contact-us-two" class="dropdown-link w-dropdown-link"
-                                tabindex="0">Contact two</a><a href="/contact-us-three"
-                                class="dropdown-link w-dropdown-link" tabindex="0">Contact three</a>
+                            <a href="https://constitution.gov.uz/oz" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Konstitutsiya sahifasi {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Elektron davlat xizmatlari reestri {% endblocktranslate %}
+                            </a>
+                            <a href="https://gov.uz/oz/soliq/pages/elektron-hukumat" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Elektron hukumat tizimi {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Harakatlar strategiyasi va Davlat dasturlari {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Gender tengligi {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Tenderlar {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Ish reja {% endblocktranslate %}
+                            </a>
+                            <a href="https://uzedu.uz/uz/page/ochiq-majlislar-otkazish-rejalari" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Ochiq majlislar o’tkazish rejalari {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Umumta`lim tashkilotlari faoliyatini tekshirish {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Investitsiya salohiyati {% endblocktranslate %}
+                            </a>
+                            <a href="#" class="dropdown-link w-dropdown-link" tabindex="0">
+                                {% blocktranslate %} Jismoniy va yuridik shaxslarning murojaatlari bilan ishlash {% endblocktranslate %}
+                            </a>
                         </nav>
                     </div>
-                    <!-- <a href="{% url 'news_list' %}" class="nav-link">{% trans 'News' %}</a> -->
-                    <!-- <div data-w-id="ee98db2c-f5ff-e773-d974-b527d806af7c" class="dropdown-two nav-three last-item">
-                        <a href="/admission" class="nav-menu nav-three-menu">Admission</a>
-                        <div class="dropdown-hover-border"></div>
-                    </div> -->
                     <form data-w-id="ee98db2c-f5ff-e773-d974-b527d806af7c" action="{% url 'set_language' %}"
                         method="post" class="language-form">{% csrf_token %}
                         <input name="next" type="hidden" value="{{ redirect_to }}">
