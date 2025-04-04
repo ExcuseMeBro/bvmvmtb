@@ -1,3 +1,4 @@
+{% load static %}
 {% load i18n %}
 <section class="faq-one">
     <div class="w-layout-blockcontainer container w-container">
@@ -5,11 +6,7 @@
         <div class="faq-content-wrap">
           <div class="subheading">faq</div>
           <div class="heading-two-margin overflow-hidden">
-            <h2 data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9c3c" class="slide-title no-margin" style="
-                    transform: translate3d(0px, 120%, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 5deg);
-                    transform-style: preserve-3d;
-                  ">
+            <h2 data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9c3c" class="slide-title no-margin">
               {% blocktranslate %} Ko'p beriladigan savollar {% endblocktranslate %}
             </h2>
           </div>
@@ -48,33 +45,10 @@
         </div>
         <div class="faq-image-wrap position-relative border-radius-twenty">
           <img width="1015" height="677" alt="image"
-            src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f3c_faq-one-image.webp"
-            loading="lazy" srcset="
-                  https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f3c_faq-one-image-p-500.webp   500w,
-                  https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f3c_faq-one-image-p-800.webp   800w,
-                  https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f3c_faq-one-image-p-1080.webp 1080w,
-                  https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f3c_faq-one-image.webp        1180w
-                "
+            src="{% static 'images/675925a4f2806d85fb576f3c_faq-one-image.webp'%}"
+            loading="lazy"
             sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1439px) 98vw, 1290px"
             class="border-radius-twenty image-full-height image-full-width" />
-          <div data-w-id="f6bfb257-52e3-cb34-2be6-633ccbd23fab" style="display: flex" class="image-show-style">
-            <div class="bg-column-mask">
-              <div style="width: 100%" class="bg-color-column"></div>
-              <div style="width: 100%" class="primary-color-column"></div>
-            </div>
-            <div class="bg-column-mask">
-              <div style="width: 100%" class="bg-color-column"></div>
-              <div style="width: 100%" class="primary-color-column"></div>
-            </div>
-            <div class="bg-column-mask">
-              <div style="width: 100%" class="bg-color-column"></div>
-              <div style="width: 100%" class="primary-color-column"></div>
-            </div>
-            <div class="bg-column-mask">
-              <div style="width: 100%" class="bg-color-column"></div>
-              <div style="width: 100%" class="primary-color-column"></div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

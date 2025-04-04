@@ -1,48 +1,65 @@
 {% load static %}
+{% load i18n %}
 <section class="footer-one">
     <div class="footer-one-content">
         <div class="w-layout-blockcontainer container w-container">
             <div class="w-layout-hflex footer-wrap">
                 <div class="footer-one-logo-wrap">
-                    <a href="/" class="footer-logo w-inline-block"><img loading="lazy"
-                            src="{% static 'images/logo.png' %}"
-                            alt="logo" /></a>
+                    <a href="/" class="footer-logo w-inline-block"
+                        style="background-color: rgba(255, 255, 255, 0.3); border-radius: 8px;"><img loading="lazy"
+                            src="{% static 'images/logo.png' %}" alt="logo" /></a>
                     <p class="footer-paragraph light-white">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                        Suspendisse porttitor.
+                        {% blocktranslate %}
+                        Buxoro viloyati maktabgacha va maktab ta`limi boshqarmasi
+                        {% endblocktranslate %}
                     </p>
                     <div class="w-layout-hflex footer-one-social-icon-wrap">
-                        <a href="http://x.com" class="footer-one-icon w-inline-block"><img
-                                src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67580c4b5a32f0efcba782c9_twitter%20icon.svg"
-                                loading="lazy" width="12" height="12" alt="twitter-icon" /></a><a
-                            href="http://linkedIn.com" class="footer-one-icon w-inline-block"><img width="12"
-                                height="12" alt="linkdin-icon"
-                                src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67580c4b5a32f0efcba782ca_linkdin%20icon.svg"
-                                loading="lazy" /></a><a href="http://youtube.com"
-                            class="footer-one-icon w-inline-block"><img width="15" height="10" alt="youtube-icon"
-                                src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67580c4b5a32f0efcba782cd_youtube%20icon.svg"
-                                loading="lazy" /></a>
+                        <a href="https://t.me/bvmmtb" class="footer-one-icon w-inline-block"><img
+                                src="{% static 'svg/logos/telegram.svg' %}" loading="lazy" width="12" height="12"
+                                alt="icon" /></a>
+                        <a href="https://www.facebook.com/buxorovxtb" class="footer-one-icon w-inline-block"><img
+                                src="{% static 'svg/logos/facebook.svg' %}" loading="lazy" width="12" height="12"
+                                alt="icon" /></a>
+                        <a href="https://maps.app.goo.gl/fpxzYtnTCCtXj9eZ9" class="footer-one-icon w-inline-block"><img
+                                src="{% static 'svg/logos/location.svg' %}" loading="lazy" width="12" height="12"
+                                alt="icon" /></a>
                     </div>
                 </div>
                 <div class="footer-one-menu-box">
                     <div class="heading-style-h6 color-white footer-menu-title">
-                        Quick Links
+                        {% blocktranslate %}
+                        Bo'limlar
+                        {% endblocktranslate %}
                     </div>
                     <div class="w-layout-vflex footer-menu-wrap">
-                        <a href="/home-two" aria-current="page" class="footer-menu-item w-inline-block w--current">
-                            <div>Home</div>
-                        </a><a href="/about-two" class="footer-menu-item light-white w-inline-block">
-                            <div>About</div>
-                        </a><a href="/academics-one" class="footer-menu-item light-white w-inline-block">
-                            <div>Academics</div>
-                        </a><a href="/blog-three" class="footer-menu-item light-white w-inline-block">
-                            <div>Blog</div>
+                        <a href="/" aria-current="page" class="footer-menu-item w-inline-block w--current">
+                            <div>
+                                {% blocktranslate %}
+                                Bosh sahifa
+                                {% endblocktranslate %}
+                            </div>
+                        </a>
+                        <a href="#faq" aria-current="page" class="footer-menu-item w-inline-block w--current">
+                            <div>
+                                {% blocktranslate %}
+                                Ko'p beriladigan savollar
+                                {% endblocktranslate %}
+                            </div>
+                        </a>
+                        <a href="/murojaat" aria-current="page" class="footer-menu-item w-inline-block w--current">
+                            <div>
+                                {% blocktranslate %}
+                                Murojaat
+                                {% endblocktranslate %}
+                            </div>
                         </a>
                     </div>
                 </div>
                 <div class="footer-one-contact-box">
                     <div class="heading-style-h6 color-white footer-menu-title">
-                        Get In Touch
+                        {% blocktranslate %}
+                        Biz bilan bog'lanish
+                        {% endblocktranslate %}
                     </div>
                     <div class="w-layout-hflex footer-one-icon-wrap footer-one-icon-wrap-one">
                         <div class="footer-one-icon-two">
@@ -51,8 +68,12 @@
                                 alt="phone-icon" />
                         </div>
                         <div class="footer-icon-box-content">
-                            <div class="light-white">Call Us</div>
-                            <a href="tel:88812345678" class="footer-menu-item no-padding">(888)1234-5678</a>
+                            <div class="light-white">
+                                {% blocktranslate %}
+                                Telefon
+                                {% endblocktranslate %}
+                            </div>
+                            <a href="tel:712020909" class="footer-menu-item no-padding">(71) 202 09 09</a>
                         </div>
                     </div>
                     <div class="w-layout-hflex footer-one-icon-wrap">
@@ -63,17 +84,22 @@
 " />
                         </div>
                         <div class="footer-icon-box-content">
-                            <div class="color-white">Email Us</div>
-                            <a href="mailto:info@example.com"
-                                class="footer-menu-item no-padding">info@example.com</a>
+                            <div class="color-white">
+                                {% blocktranslate %}
+                                Murojaatlar uchun
+                                {% endblocktranslate %}
+                            </div>
+                            <a href="https://t.me/bvxtb_bot" class="footer-menu-item no-padding">bvxtb_bot</a>
                         </div>
                     </div>
                 </div>
                 <div class="footer-one-newsletter-box">
                     <div class="heading-style-h6 color-white footer-menu-title footer-menu-title-four">
-                        Have Any query About Admission?
+                        {% blocktranslate %}
+                        Shaxsiy qabulga kirish
+                        {% endblocktranslate %}
                     </div>
-                    <a data-w-id="795d6de1-ee4c-d4d3-ae69-e0fb806ed0b7" href="/contact-us-one"
+                    <a data-w-id="795d6de1-ee4c-d4d3-ae69-e0fb806ed0b7" href="/murojaat"
                         class="button-one-style blue w-inline-block">
                         <div class="w-layout-hflex btton-style-five-main">
                             <div class="button-five-icon-one">
@@ -88,7 +114,9 @@
                       skew(0deg, 0deg);
                     transform-style: preserve-3d;
                   ">
-                                    Inquire Now
+                                    {% blocktranslate %}
+                                    Bog'lanish
+                                    {% endblocktranslate %}
                                 </div>
                                 <div class="button-text-one two" style="
                     transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
@@ -96,7 +124,9 @@
                       skew(0deg, 0deg);
                     transform-style: preserve-3d;
                   ">
-                                    Inquire Now
+                                    {% blocktranslate %}
+                                    Bog'lanish
+                                    {% endblocktranslate %}
                                 </div>
                             </div>
                         </div>
@@ -116,21 +146,10 @@
             <div class="w-layout-hflex copyright-wrap">
                 <div class="copyright-content">
                     <p class="copyright-text no-margin">
-                        © <span id="year"></span> Eduvolv. All rights reserved.
+                        © {% blocktranslate %}
+                        Buxoro viloyati maktabgacha va maktab ta'limi boshqarmasi
+                        {% endblocktranslate %}
                     </p>
-                </div>
-                <div class="w-layout-hflex copyright-menu">
-                    <a href="/style-guide" class="footer-menu-item light-white no-padding w-inline-block">
-                        <div>Style Guide</div>
-                    </a>
-                    <div class="footer-link-line"></div>
-                    <a href="/changelog" class="footer-menu-item light-white no-padding w-inline-block">
-                        <div>Change Log</div>
-                    </a>
-                    <div class="footer-link-line"></div>
-                    <a href="/license" class="footer-menu-item light-white no-padding w-inline-block">
-                        <div>License</div>
-                    </a>
                 </div>
             </div>
         </div>
