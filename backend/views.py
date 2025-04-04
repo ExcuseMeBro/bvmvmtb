@@ -7,10 +7,12 @@ def home(request):
     faqs = FAQ.objects.all()
     statistics = Statistics.objects.all()
     links = UsefulLink.objects.all()
+    news_items = News.objects.all().order_by('-created_at')[:8]
     context = {
         'faqs': faqs,
         'statistics': statistics,
         'links': links,
+        'news_items': news_items
         }
     return render(request, 'index.html', context)
 

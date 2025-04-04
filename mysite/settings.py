@@ -183,7 +183,7 @@ DAISY_SETTINGS = {
         },
         'backend': {
             'icon': 'fa-solid fa-user-group',
-            'name': 'Users MNG',
+            'name': 'MANAGEMENTS',
             'hide': False,
             'app': 'clients',
         },

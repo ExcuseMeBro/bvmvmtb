@@ -617,9 +617,7 @@
       <div style="display: flex !important; flex-wrap: wrap !important; gap: 16px; justify-content: center;">
         {% for link in links %}
         <a href="{{ link.link }}" style="display: flex; justify-content: center; align-items: center; gap:16px;">
-          <img loading="lazy" width="80" height="50"
-          src="/media/{{ link.image }}"
-          alt="image" />
+          <img loading="lazy" width="80" height="50" src="/media/{{ link.image }}" alt="image" />
           <p style="width: 200px;">{{ link.name }}</p>
         </a>
         {% endfor %}
@@ -631,51 +629,49 @@
   <div class="facility-two-header">
     <div class="w-layout-blockcontainer container w-container">
       <div class="facility-two-heading-wrap">
-        <div class="subheading color-white">academic facility</div>
-        <div class="facility-heading overflow-hidden">
-          <h2 class="slide-title no-margin color-white">
-            Supporting Students with Unique Learning Styles
+        <div class="subheading color-white">
+          {% blocktranslate %}
+          So'nggi yangiliklar
+          {% endblocktranslate %}
+        </div>
+        <div class="facility-heading">
+          <h2 class="slide-title no-margin color-white" style="text-transform: none;">
+            {% blocktranslate %}
+            Sohaga doir eng dolzarb yangiliklar
+            {% endblocktranslate %}
           </h2>
         </div>
       </div>
     </div>
   </div>
-  <div data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9bd0" class="w-layout-hflex facility-box-wrap one overflow-hidden">
-    <div style="
-            transform: translate3d(-10.458%, 0px, 0px) scale3d(1, 1, 1)
-              rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            transform-style: preserve-3d;
-            will-change: transform;
-          " class="w-layout-hflex image-card-two-train-flex">
+  <div data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9bd0" class="w-layout-hflex" style="padding: 20px;">
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+      {% for news in news_items %}
       <div class="image-card-two-div">
         <div data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9bd1" class="image-card-two border-radius-ten overflow-hidden">
           <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
+            <img width="410" height="280" alt="image" src="{{ news.image.url }}" alt="{{ news.title }}" loading="lazy"
+              sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
+              class="image-box-two-image-main image-full-width" />
           </div>
           <div class="image-card-bottom-content">
             <div class="image-card-two-title">
-              <div class="heading-style-h5">Academic Education</div>
+              <div class="heading-style-h5">{{ news.title }}</div>
             </div>
             <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
+              {{ news.created_at|date:"d F Y" }}
+              <br>
+              {{ news.hashtag }}
             </p>
           </div>
           <div class="image-card-two-button">
             <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
+              href="{% url 'news_detail' pk=news.pk %}" class="button-style-three w-inline-block">
+              <div class="button-style-three-text">
+                {% blocktranslate %}
+                batafsil
+                {% endblocktranslate %}
+              </div>
               <div class="button-three-icon" style="
                       transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
                         rotateX(0deg) rotateY(0deg) rotateZ(0deg)
@@ -690,493 +686,7 @@
           </div>
         </div>
       </div>
-      <div class="image-card-two-div">
-        <div data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9be2" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Applied Sciences</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="image-card-two-div">
-        <div data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9bf3" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Arts &amp; Culture Events</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="image-card-two-div">
-        <div data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9c04" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Cultural Studies</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="
-            transform: translate3d(-10.458%, 0px, 0px) scale3d(1, 1, 1)
-              rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            transform-style: preserve-3d;
-            will-change: transform;
-          " class="w-layout-hflex image-card-two-train-flex">
-      <div class="image-card-two-div">
-        <div data-w-id="e456dc1d-839e-f09a-82cf-49f9c3e0d04b" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Academic Education</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="image-card-two-div">
-        <div data-w-id="e456dc1d-839e-f09a-82cf-49f9c3e0d058" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Applied Sciences</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="image-card-two-div">
-        <div data-w-id="e456dc1d-839e-f09a-82cf-49f9c3e0d065" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Arts &amp; Culture Events</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="image-card-two-div">
-        <div data-w-id="e456dc1d-839e-f09a-82cf-49f9c3e0d072" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Cultural Studies</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="
-            transform: translate3d(-10.458%, 0px, 0px) scale3d(1, 1, 1)
-              rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-            transform-style: preserve-3d;
-            will-change: transform;
-          " class="w-layout-hflex image-card-two-train-flex">
-      <div class="image-card-two-div">
-        <div data-w-id="f765f904-894e-69d0-b6bb-8d2276da82f3" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1e_tall-office-building-new-york-city%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Academic Education</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="image-card-two-div">
-        <div data-w-id="f765f904-894e-69d0-b6bb-8d2276da8300" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f24_close-up-woman-repairing-computer-chips%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Applied Sciences</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="image-card-two-div">
-        <div data-w-id="f765f904-894e-69d0-b6bb-8d2276da830d" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f29_male-mime-artist-standing-stage-with-umbrella-wearing-black-hat%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Arts &amp; Culture Events</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="image-card-two-div">
-        <div data-w-id="f765f904-894e-69d0-b6bb-8d2276da831a" class="image-card-two border-radius-ten overflow-hidden">
-          <div class="image-box-two-image overflow-hidden">
-            <img width="410" height="280" alt="image"
-              src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%201.webp"
-              loading="lazy" srcset="
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%25201-p-500.webp 500w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%25201-p-800.webp 800w,
-                    https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f2e_young-activists-taking-action%201.webp         820w
-                  " sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, (max-width: 1919px) 25vw, 26vw"
-              class="image-box-two-image-main image-full-width" style="
-                    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
-                      rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-                    transform-style: preserve-3d;
-                  " />
-          </div>
-          <div class="image-card-bottom-content">
-            <div class="image-card-two-title">
-              <div class="heading-style-h5">Cultural Studies</div>
-            </div>
-            <p class="no-margin">
-              Lorem ipsum dolor consectetur amet adipiscng elit. Sed id
-              metus ornare nibh diam mattis.
-            </p>
-          </div>
-          <div class="image-card-two-button">
-            <a data-wf--button-style-three--variant="base" data-w-id="d2d4541a-4960-87c1-23f8-daf3e71b38e1"
-              href="/about-one" class="button-style-three w-inline-block">
-              <div class="button-style-three-text">explore More</div>
-              <div class="button-three-icon" style="
-                      transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1)
-                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                        skew(0deg, 0deg);
-                      transform-style: preserve-3d;
-                    ">
-                <img loading="lazy"
-                  src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f21_text.svg"
-                  alt="arrow-icon" />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>

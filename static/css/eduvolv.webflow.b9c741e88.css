@@ -6034,7 +6034,7 @@ blockquote {
 
 .image-card-two-div {
   flex: none;
-  width: 25.5vw;
+  width: 450px;
 }
 
 .hero-three-image {
@@ -12921,7 +12921,7 @@ blockquote {
   }
 
   .image-card-two-div {
-    width: 50vw;
+    width: 900px;
   }
 
   .timelineone-line {
@@ -15222,7 +15222,7 @@ blockquote {
   }
 
   .image-card-two-div {
-    width: 100vw;
+    width: 100%;
   }
 
   .slider-two-card-div {
