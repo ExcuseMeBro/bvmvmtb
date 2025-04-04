@@ -315,39 +315,29 @@
   <div class="w-layout-blockcontainer container w-container">
     <div class="w-layout-hflex our-skill-wrap our-sklll-wrap-one">
       <div class="our-skill-content-wrap">
-        <div class="subheading">our Skills</div>
+        <div class="subheading">
+          {% blocktranslate %}
+          Statistika
+          {% endblocktranslate %}
+        </div>
         <div class="heading-two-margin overflow-hidden">
-          <h2 data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9acc" class="slide-title no-margin" style="
-                  transform: translate3d(0px, 120%, 0px) scale3d(1, 1, 1)
-                    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 5deg);
-                  transform-style: preserve-3d;
-                ">
-            The Power of Strengths-Based Leadership
+          <h2 data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9acc" class="slide-title no-margin">
+            {% blocktranslate %}
+            O‘zbekiston Respublikasi maktabgacha va maktab ta'limi vazirligi
+            {% endblocktranslate %}
           </h2>
         </div>
         <div class="our-skill-paragraph">
           <p class="no-margin">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            feugiat ligula felis, vel tempor ante semper et. Duis vehicula
+            {% blocktranslate %}
+            Ta’lim va tarbiyaning asosi, poydevori bu – maktab. Maktabni maktab qiladigan kuch esa o‘qituvchilardir
+            {% endblocktranslate %}
+            <br />
+            <br />
+            {% blocktranslate %}
+            Shavkat Mirziyoyev
+            {% endblocktranslate %}
           </p>
-        </div>
-        <div class="prograss-bar-box-one">
-          <div class="prorgassbar-heading-wrap">
-            <div class="heading-style-h6">Personalized Journey</div>
-            <div class="heading-style-h6">95%</div>
-          </div>
-          <div class="prograss-bar">
-            <div style="width: 0%" class="prograssbar-line-one"></div>
-          </div>
-        </div>
-        <div class="prograss-bar-box-one">
-          <div class="prorgassbar-heading-wrap">
-            <div class="heading-style-h6">Active Engagement</div>
-            <div class="heading-style-h6">89%</div>
-          </div>
-          <div class="prograss-bar">
-            <div style="width: 0%" class="prograssbar-line-two"></div>
-          </div>
         </div>
       </div>
       <div class="counter-two">
@@ -355,287 +345,49 @@
           <div class="w-layout-vflex counter-two-box counter-two-box-one">
             <div class="count-wrap">
               <div class="counter-one-marquee counter-two-marquee">
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
+                <div class="">
+                  <div class="counter-one-number counter-two-number">{{ statistics.0.quantity }}</div>
                 </div>
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                </div>
-              </div>
-              <div class="counter-one-marquee counter-two-marquee">
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                </div>
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">5</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                </div>
-              </div>
-              <div class="counter-one-marquee counter-two-marquee">
-                <div class="counter-one-number counter-two-number">+</div>
               </div>
             </div>
             <div class="counter-one-text-div">
-              <div class="counter-to-text">Years of Establishment</div>
+              <div class="counter-to-text">{{ statistics.0.name }}</div>
             </div>
           </div>
           <div class="w-layout-vflex counter-two-box counter-two-box-two counter-two-box-two-home-two">
             <div class="count-wrap">
               <div class="counter-one-marquee counter-two-marquee">
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
+                <div class="">
+                  <div class="counter-one-number counter-two-number">{{ statistics.1.quantity }}</div>
                 </div>
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                </div>
-              </div>
-              <div class="counter-one-marquee counter-two-marquee">
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                  <div class="counter-one-number counter-two-number">5</div>
-                  <div class="counter-one-number counter-two-number">6</div>
-                  <div class="counter-one-number counter-two-number">7</div>
-                  <div class="counter-one-number counter-two-number">8</div>
-                  <div class="counter-one-number counter-two-number">9</div>
-                </div>
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                  <div class="counter-one-number counter-two-number">5</div>
-                  <div class="counter-one-number counter-two-number">6</div>
-                  <div class="counter-one-number counter-two-number">7</div>
-                  <div class="counter-one-number counter-two-number">8</div>
-                  <div class="counter-one-number counter-two-number">9</div>
-                </div>
-              </div>
-              <div class="counter-one-marquee counter-two-marquee">
-                <div class="counter-one-number counter-two-number">k</div>
-              </div>
-              <div class="counter-one-marquee counter-two-marquee">
-                <div class="counter-one-number counter-two-number">+</div>
               </div>
             </div>
             <div class="counter-one-text-div">
-              <div class="counter-to-text">Present Students</div>
+              <div class="counter-to-text">{{ statistics.1.name }}</div>
             </div>
           </div>
           <div class="w-layout-vflex counter-two-box counter-two-box-four">
             <div class="count-wrap">
-              <div class="counter-one-marquee counter-two-marquee">
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                </div>
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">4</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                </div>
-              </div>
-              <div class="counter-one-marquee counter-two-marquee">
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                </div>
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">5</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                </div>
-              </div>
-              <div class="counter-one-marquee counter-two-marquee">
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                  <div class="counter-one-number counter-two-number">5</div>
-                  <div class="counter-one-number counter-two-number">6</div>
-                  <div class="counter-one-number counter-two-number">7</div>
-                  <div class="counter-one-number counter-two-number">8</div>
-                  <div class="counter-one-number counter-two-number">9</div>
-                </div>
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                  <div class="counter-one-number counter-two-number">5</div>
-                  <div class="counter-one-number counter-two-number">6</div>
-                  <div class="counter-one-number counter-two-number">7</div>
-                  <div class="counter-one-number counter-two-number">8</div>
-                  <div class="counter-one-number counter-two-number">9</div>
+              <div class="">
+                <div class="">
+                  <div class="counter-one-number">{{ statistics.2.quantity }}</div>
                 </div>
               </div>
             </div>
             <div class="counter-one-text-div">
-              <div class="counter-to-text">Our Teachers</div>
+              <div class="counter-to-text">{{ statistics.2.name }}</div>
             </div>
           </div>
           <div class="w-layout-vflex counter-two-box counter-two-box-four-home-two">
             <div class="count-wrap">
               <div class="counter-one-marquee counter-two-marquee">
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
+                <div class="">
+                  <div class="counter-one-number counter-two-number">{{ statistics.3.quantity }}</div>
                 </div>
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                </div>
-              </div>
-              <div class="counter-one-marquee counter-two-marquee">
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                  <div class="counter-one-number counter-two-number">5</div>
-                  <div class="counter-one-number counter-two-number">6</div>
-                  <div class="counter-one-number counter-two-number">7</div>
-                  <div class="counter-one-number counter-two-number">8</div>
-                  <div class="counter-one-number counter-two-number">9</div>
-                </div>
-                <div style="
-                        transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
-                          rotateX(0deg) rotateY(0deg) rotateZ(0deg)
-                          skew(0deg, 0deg);
-                        transform-style: preserve-3d;
-                      " class="counter-one-train">
-                  <div class="counter-one-number counter-two-number">0</div>
-                  <div class="counter-one-number counter-two-number">1</div>
-                  <div class="counter-one-number counter-two-number">2</div>
-                  <div class="counter-one-number counter-two-number">3</div>
-                  <div class="counter-one-number counter-two-number">4</div>
-                  <div class="counter-one-number counter-two-number">5</div>
-                  <div class="counter-one-number counter-two-number">6</div>
-                  <div class="counter-one-number counter-two-number">7</div>
-                  <div class="counter-one-number counter-two-number">8</div>
-                  <div class="counter-one-number counter-two-number">9</div>
-                </div>
-              </div>
-              <div class="counter-one-marquee counter-two-marquee">
-                <div class="counter-one-number counter-two-number">+</div>
               </div>
             </div>
             <div class="counter-one-text-div">
-              <div class="counter-to-text">Advance Courses</div>
+              <div class="counter-to-text">{{ statistics.3.name }}</div>
             </div>
           </div>
         </div>

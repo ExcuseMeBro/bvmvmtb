@@ -118,3 +118,17 @@ class News(models.Model):
     
     def __str__(self):
         return self.title
+
+class Statistics(models.Model):
+    name = models.CharField(_('Name'), max_length=100)
+    quantity = models.IntegerField(_('Quantity'), default=0)
+    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
+    
+    class Meta:
+        ordering = ['name']
+        verbose_name = _('Statistics')
+        verbose_name_plural = _('Statistics')
+    
+    def __str__(self):
+        return self.name

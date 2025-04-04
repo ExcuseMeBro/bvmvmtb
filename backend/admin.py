@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import FAQ, Employee, Region, EmailForm, NewsType, News
+from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics
 
 @admin.register(EmailForm)
 class EmailFormAdmin(admin.ModelAdmin):
@@ -43,3 +43,10 @@ class NewsAdmin(admin.ModelAdmin):
     list_filter = ('news_type', 'created_at', 'updated_at')
     search_fields = ('title', 'description', 'hashtag')
     ordering = ('-created_at',)
+
+@admin.register(Statistics)
+class StatisticsAdmin(admin.ModelAdmin):
+    list_display = ('name', 'quantity', 'created_at', 'updated_at')
+    list_filter = ('created_at', 'updated_at')
+    search_fields = ('name',)
+    ordering = ('name', '-created_at')

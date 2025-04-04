@@ -5,7 +5,11 @@ from .models import *
 
 def home(request):
     faqs = FAQ.objects.all()
-    context = {'faqs': faqs}
+    statistics = Statistics.objects.all()
+    context = {
+        'faqs': faqs,
+        'statistics': statistics,
+        }
     return render(request, 'index.html', context)
 
 
