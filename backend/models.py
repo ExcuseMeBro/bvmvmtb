@@ -4,6 +4,21 @@ from django.utils.translation import gettext as _
 from django.utils.text import slugify
 from ckeditor_uploader.fields import RichTextUploadingField
 
+class UsefulLink(models.Model):
+    name = models.CharField(_('Name'), max_length=255)
+    link = models.URLField(_('Link URL'))
+    image = models.ImageField(_('Image'), upload_to='useful_links/')
+    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = _('Foydali havola')
+        verbose_name_plural = _('Foydali havolalar')
+
+    def __str__(self):
+        return self.name
+
 class Region(models.Model):
     name = models.CharField(_('Name'), max_length=100)
     code = models.CharField(_('Region Code'), max_length=10, unique=True, help_text=_('Unique identifier for the region'))

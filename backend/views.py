@@ -6,9 +6,11 @@ from .models import *
 def home(request):
     faqs = FAQ.objects.all()
     statistics = Statistics.objects.all()
+    links = UsefulLink.objects.all()
     context = {
         'faqs': faqs,
         'statistics': statistics,
+        'links': links,
         }
     return render(request, 'index.html', context)
 

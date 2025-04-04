@@ -607,23 +607,22 @@
   </div>
 </section>
 <section class="client-two">
+  <h3 class="heading-style-h5" style="text-align: center; padding: 30px;">
+    {% blocktranslate %}
+    Foydali havolalar
+    {% endblocktranslate %}
+  </h3>
   <div class="w-layout-blockcontainer container w-container">
     <div class="w-layout-hflex client-content-wrap">
-      <div class="client-two-heading">
-        <div class="heading-style-h6">Trusted partners:</div>
-      </div>
-      <div class="w-layout-hflex client-two-marquee">
-        <div class="client-two-marquuee-train fixed">
-          <img loading="lazy"
-            src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f19_logo%201(1).svg"
-            alt="image" /><img loading="lazy"
-            src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1b_logo%202(1).svg"
-            alt="image" /><img loading="lazy"
-            src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f1a_logo%203(1).svg"
-            alt="image" /><img loading="lazy"
-            src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f18_logo%204.svg"
-            alt="image" class="image" />
-        </div>
+      <div style="display: flex !important; flex-wrap: wrap !important; gap: 16px; justify-content: center;">
+        {% for link in links %}
+        <a href="{{ link.link }}" style="display: flex; justify-content: center; align-items: center; gap:16px;">
+          <img loading="lazy" width="80" height="50"
+          src="/media/{{ link.image }}"
+          alt="image" />
+          <p style="width: 200px;">{{ link.name }}</p>
+        </a>
+        {% endfor %}
       </div>
     </div>
   </div>
