@@ -1,65 +1,39 @@
-<!DOCTYPE html>
-{% load static i18n %}
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
 
 {% block content %}
-<div class="news-container">
-    <h1 class="news-title">{{ news.title }}</h1>
-    
+<section data-w-id="1b8a36f8-cc33-f35d-6e70-422da3371bbc" class="blog-one-hero tution-fees-hero"
+    style="background-image: url('{{ news.image.url }}'); background-repeat: no-repeat; background-size: cover;">
+    <div class="w-layout-blockcontainer container w-container">
+        <div class="blog-one-hero-content tution-fee">
+            <div class="subheading color-white">
+                {{ news.news_type }}
+            </div>
+            <div class="headinng-one-margin overflow-hidden">
+                <h1 class="slide-title no-margin color-white" style="
+            transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
+              rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+            transform-style: preserve-3d;
+          ">
+                    {{ news.title }}
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+<div style="width:65%; margin: auto; padding: 2rem 0;">
     <div class="news-meta">
         <span class="news-date">{{ news.created_at|date:"d F Y" }}</span>
-        <span class="news-hashtag">#{{ news.hashtag }}</span>
+        <span class="news-hashtag">{{ news.hashtag }}</span>
     </div>
-
-    <img src="{{ news.image.url }}" alt="{{ news.title }}" class="news-image">
-
+    <br />
+    <img src="{{ news.image.url }}" alt="{{ news.title }}" class="news-image" style="width: 100%;">
+    <br />
+    <br />
+    <br />
     <div class="news-content">
         {{ news.description|safe }}
     </div>
-
-    <a href="{% url 'news_list' %}" class="back-link">{% trans 'Back to News List' %}</a>
 </div>
 {% endblock %}
-
-<style>
-.news-container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 20px;
-}
-
-.news-title {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-}
-
-.news-meta {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-    color: #7f8c8d;
-}
-
-.news-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-}
-
-.news-content {
-    line-height: 1.6;
-    font-size: 1.1rem;
-    color: #34495e;
-}
-
-.back-link {
-    display: inline-block;
-    margin-top: 2rem;
-    color: #3498db;
-    text-decoration: none;
-}
-
-.back-link:hover {
-    text-decoration: underline;
-}
-</style>
