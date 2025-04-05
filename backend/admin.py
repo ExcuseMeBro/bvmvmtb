@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.translation import gettext as _
-from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics, UsefulLink, City, Offer, OfferStats, Files, FilesCategory, Persons, PersonType, Gallery
+from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics, UsefulLink, City, Offer, OfferStats, Files, FilesCategory, Persons, PersonType, Gallery, Leader, DistrictLeader
 
 @admin.register(EmailForm)
 class EmailFormAdmin(admin.ModelAdmin):
@@ -118,6 +118,20 @@ class PersonTypeAdmin(admin.ModelAdmin):
     search_fields = ('name',)
     list_filter = ('created_at', 'updated_at')
     ordering = ('name',)
+
+@admin.register(Leader)
+class LeaderAdmin(admin.ModelAdmin):
+    list_display = ('fullname', 'region', 'address', 'working_hours_start', 'working_hours_end', 'phone', 'email', 'created_at')
+    list_filter = ('region', 'created_at')
+    search_fields = ('fullname', 'phone', 'email', 'address')
+    ordering = ('fullname', '-created_at')
+
+@admin.register(DistrictLeader)
+class DistrictLeaderAdmin(admin.ModelAdmin):
+    list_display = ('fullname', 'city', 'phone', 'location_latitude', 'location_longitude', 'created_at')
+    list_filter = ('city', 'created_at')
+    search_fields = ('fullname', 'phone', 'city__name')
+    ordering = ('fullname', '-created_at')
 
 @admin.register(Gallery)
 class GalleryAdmin(admin.ModelAdmin):

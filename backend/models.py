@@ -197,11 +197,25 @@ class Vote(models.Model):
     count = models.IntegerField(_('Ovozlar soni'), default=0)
     created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
     updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
+
+class Leader(models.Model):
+    fullname = models.CharField(FIELD_NAMES['fullname'], max_length=100)
+    working_hours_start = models.TimeField(help_text=HELP_TEXTS['working_hours_start'], default='09:00:00')
+    working_hours_end = models.TimeField(help_text=HELP_TEXTS['working_hours_end'], default='17:00:00')
+    phone = models.CharField(FIELD_NAMES['phone'], max_length=20)
+    email = models.EmailField(FIELD_NAMES['email'])
+    address = models.TextField(FIELD_NAMES['address'])
+    region = models.ForeignKey(Region, on_delete=models.CASCADE, verbose_name=FIELD_NAMES['region'])
+    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
     
     class Meta:
-        ordering = ['-count']
-        verbose_name = _('Ovoz')
-        verbose_name_plural = _('Ovozlar')
+        ordering = ['fullname']
+        verbose_name = MODEL_NAMES['Leader']
+        verbose_name_plural = MODEL_NAMES['Leader_plural']
+    
+    def __str__(self):
+        return self.fullname
     
     def __str__(self):
         return f"{self.get_option_display()} - {self.count}"
@@ -324,3 +338,20 @@ class Gallery(models.Model):
             raise ValidationError(ERROR_MESSAGES['gallery_photo_required'])
         if self.content_type == 'video' and not self.video_url:
             raise ValidationError(ERROR_MESSAGES['gallery_video_required'])
+
+class DistrictLeader(models.Model):
+    fullname = models.CharField(FIELD_NAMES['fullname'], max_length=100)
+    phone = models.CharField(FIELD_NAMES['phone'], max_length=20)
+    location_latitude = models.DecimalField(_('Latitude'), max_digits=9, decimal_places=6)
+    location_longitude = models.DecimalField(_('Longitude'), max_digits=9, decimal_places=6)
+    city = models.ForeignKey(City, on_delete=models.CASCADE, verbose_name=FIELD_NAMES['city'])
+    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
+    
+    class Meta:
+        ordering = ['fullname']
+        verbose_name = _('District Leader')
+        verbose_name_plural = _('District Leaders')
+    
+    def __str__(self):
+        return f"{self.fullname} - {self.city.name}"

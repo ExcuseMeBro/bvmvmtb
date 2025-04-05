@@ -2,6 +2,8 @@ from django.utils.translation import gettext_lazy as _
 
 # Model Names
 MODEL_NAMES = {
+    'Leader': _('Viloyat rahbari'),
+    'Leader_plural': _('Viloyat rahbarlari'),
     'UsefulLink': _('Foydali havola'),
     'UsefulLink_plural': _('Foydali havolalar'),
     'FilesCategory': _('Fayllar kategoriyasi'),
@@ -36,6 +38,8 @@ MODEL_NAMES = {
     'Persons_plural': _('Shaxslar'),
     'Gallery': _('Galereya'),
     'Gallery_plural': _('Galereya'),
+    'DistrictLeader': _('Tuman rahbari'),
+    'DistrictLeader_plural': _('Tuman rahbarlari'),
 }
 
 # Field Names
@@ -137,6 +141,10 @@ FIELD_NAMES = {
     'content_type': _('Kontent turi'),
     'gallery_image': _('Galereya rasmi'),
     'video_url': _('Video URL'),
+    'address': _('Manzil'),
+    'location_latitude': _('Joylashuvning ko\'rdinatlari (latitude)'),
+    'location_longitude': _('Joylashuvning ko\'rdinatlari (longitude)'),
+    'city': _('Tuman'),
 }
 
 # Choices
@@ -173,4 +181,4 @@ HELP_TEXTS = {
 ERROR_MESSAGES = {
     'gallery_photo_required': _('Rasm yuklanishi shart'),
     'gallery_video_required': _('Video URL kiritilishi shart'),
-} 
+}
