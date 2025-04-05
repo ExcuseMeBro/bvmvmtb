@@ -162,10 +162,10 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 DAISY_SETTINGS = {
-    'SITE_TITLE': 'MYSITE',
-    'SITE_HEADER': 'MYSITE',
+    'SITE_TITLE': 'BUXEDU ADMIN PANEL',
+    'SITE_HEADER': 'BUXEDU ADMIN PANEL',
     'INDEX_TITLE': 'Hi, welcome to your dashboard',
-    'SITE_LOGO': '/static/admin/img/daisyui-logomark.svg',
+    'SITE_LOGO': '/static/images/favicon.png',
     'EXTRA_STYLES': [],
     'EXTRA_SCRIPTS': [],
     'LOAD_FULL_STYLES': False,

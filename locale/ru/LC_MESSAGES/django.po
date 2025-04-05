@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-03 06:08+0000\n"
+"POT-Creation-Date: 2025-04-05 00:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,177 +20,860 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: backend/models.py:8 backend/models.py:93
+#: backend/admin.py:141
+msgid "Kontent turiga qarab tegishli maydonni to'ldiring"
+msgstr ""
+
+#: backend/migrations/0009_statistics.py:14 backend/migrations/0012_city.py:14
 msgid "Name"
 msgstr ""
 
-#: backend/models.py:9
-msgid "Region Code"
+#: backend/migrations/0009_statistics.py:15
+msgid "Quantity"
 msgstr ""
 
-#: backend/models.py:9
-msgid "Unique identifier for the region"
-msgstr ""
-
-#: backend/models.py:10
-msgid "Active"
-msgstr ""
-
-#: backend/models.py:16 backend/models.py:44
-msgid "Region"
-msgstr ""
-
-#: backend/models.py:17
-msgid "Regions"
-msgstr ""
-
-#: backend/models.py:38
-msgid "Subject"
-msgstr ""
-
-#: backend/models.py:39
-msgid "First Name"
-msgstr ""
-
-#: backend/models.py:40
-msgid "Last Name"
-msgstr ""
-
-#: backend/models.py:41
-msgid "Father's Name"
-msgstr ""
-
-#: backend/models.py:42
-msgid "Email"
-msgstr ""
-
-#: backend/models.py:43
-msgid "Phone"
-msgstr ""
-
-#: backend/models.py:51
-msgid "Attachment"
-msgstr ""
-
-#: backend/models.py:53
-msgid "Message"
-msgstr ""
-
-#: backend/models.py:54 backend/models.py:94 backend/models.py:111
+#: backend/migrations/0009_statistics.py:16 backend/migrations/0012_city.py:16
+#: backend/models.py:12 backend/models.py:25 backend/models.py:41
+#: backend/models.py:56 backend/models.py:71 backend/models.py:86
+#: backend/models.py:114 backend/models.py:133 backend/models.py:146
+#: backend/models.py:159 backend/models.py:184 backend/models.py:198
+#: backend/models.py:218 backend/models.py:232 backend/models.py:245
+#: backend/models.py:272 backend/models.py:307
 msgid "Created At"
 msgstr ""
 
-#: backend/models.py:66
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:7
-msgid "Monday"
-msgstr ""
-
-#: backend/models.py:67
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:8
-msgid "Tuesday"
-msgstr ""
-
-#: backend/models.py:68
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:9
-msgid "Wednesday"
-msgstr ""
-
-#: backend/models.py:69
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:10
-msgid "Thursday"
-msgstr ""
-
-#: backend/models.py:70
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:11
-msgid "Friday"
-msgstr ""
-
-#: backend/models.py:71
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:12
-msgid "Saturday"
-msgstr ""
-
-#: backend/models.py:72
-#: venv/lib/python3.13/site-packages/django/utils/dates.py:13
-msgid "Sunday"
-msgstr ""
-
-#: backend/models.py:95 backend/models.py:112
+#: backend/migrations/0009_statistics.py:17 backend/migrations/0012_city.py:17
+#: backend/models.py:13 backend/models.py:26 backend/models.py:42
+#: backend/models.py:57 backend/models.py:72 backend/models.py:87
+#: backend/models.py:134 backend/models.py:147 backend/models.py:160
+#: backend/models.py:185 backend/models.py:199 backend/models.py:219
+#: backend/models.py:233 backend/models.py:246 backend/models.py:273
+#: backend/models.py:308
 msgid "Updated At"
 msgstr ""
 
-#: backend/models.py:99 backend/models.py:108
-msgid "News Type"
+#: backend/migrations/0009_statistics.py:20
+#: backend/migrations/0009_statistics.py:21
+msgid "Statistics"
 msgstr ""
 
-#: backend/models.py:100
-msgid "News Types"
+#: backend/migrations/0012_city.py:15
+msgid "Active"
 msgstr ""
 
-#: backend/models.py:106
-msgid "Title"
+#: backend/migrations/0012_city.py:18
+msgid "Region"
 msgstr ""
 
-#: backend/models.py:107
-#: venv/lib/python3.13/site-packages/django/db/models/fields/files.py:420
-msgid "Image"
+#: backend/migrations/0012_city.py:21
+msgid "City"
 msgstr ""
 
-#: backend/models.py:109
-msgid "Description"
+#: backend/migrations/0012_city.py:22
+msgid "Cities"
 msgstr ""
 
-#: backend/models.py:110
-msgid "Hashtag"
+#: backend/templates/404.html:16 backend/templates/base.html:16
+msgid ""
+"\n"
+"        O‘zbekiston Respublikasi maktabgacha va maktab ta'limi vazirligi\n"
+"        "
 msgstr ""
 
-#: backend/models.py:116 backend/models.py:117
-#: backend/templates/mainnavbar.html:292
-msgid "News"
+#: backend/templates/404.html:262
+msgid "Safiha topilmdi"
 msgstr ""
 
-#: backend/templates/404.html:260
-msgid "Page Not Found"
+#: backend/templates/404.html:266
+msgid ""
+"\n"
+"                    Siz izlayotgan sahifa mavjud emas.\n"
+"                    "
 msgstr ""
 
-#: backend/templates/faq.html:13
+#: backend/templates/404.html:275 backend/templates/404.html:279
+msgid "Bosh sahifaga qaytish"
+msgstr ""
+
+#: backend/templates/base.html:268 backend/templates/index.html:732
+msgid "Shaharni tanlang"
+msgstr ""
+
+#: backend/templates/faq.html:10
 msgid " Ko'p beriladigan savollar "
 msgstr ""
 
-#: backend/templates/faq.html:17
+#: backend/templates/faq.html:14
 msgid " O'zingizni qiziqtirgan savollarga tezda javob olishingiz mumkin "
 msgstr ""
 
-#: backend/templates/mainnavbar.html:36
+#: backend/templates/footer.html:12
+msgid ""
+"\n"
+"                        Buxoro viloyati maktabgacha va maktab ta`limi "
+"boshqarmasi\n"
+"                        "
+msgstr ""
+
+#: backend/templates/footer.html:30
+msgid ""
+"\n"
+"                        Bo'limlar\n"
+"                        "
+msgstr ""
+
+#: backend/templates/footer.html:37
+msgid ""
+"\n"
+"                                Bosh sahifa\n"
+"                                "
+msgstr ""
+
+#: backend/templates/footer.html:44
+msgid ""
+"\n"
+"                                Ko'p beriladigan savollar\n"
+"                                "
+msgstr ""
+
+#: backend/templates/footer.html:51
+msgid ""
+"\n"
+"                                Murojaat\n"
+"                                "
+msgstr ""
+
+#: backend/templates/footer.html:60
+msgid ""
+"\n"
+"                        Biz bilan bog'lanish\n"
+"                        "
+msgstr ""
+
+#: backend/templates/footer.html:72
+msgid ""
+"\n"
+"                                Telefon\n"
+"                                "
+msgstr ""
+
+#: backend/templates/footer.html:88
+msgid ""
+"\n"
+"                                Murojaatlar uchun\n"
+"                                "
+msgstr ""
+
+#: backend/templates/footer.html:98
+msgid ""
+"\n"
+"                        Shaxsiy qabulga kirish\n"
+"                        "
+msgstr ""
+
+#: backend/templates/footer.html:117 backend/templates/footer.html:127
+msgid ""
+"\n"
+"                                    Bog'lanish\n"
+"                                    "
+msgstr ""
+
+#: backend/templates/footer.html:149
+msgid ""
+"\n"
+"                        Buxoro viloyati maktabgacha va maktab ta'limi "
+"boshqarmasi\n"
+"                        "
+msgstr ""
+
+#: backend/templates/index.html:18
+msgid ""
+"\n"
+"          Buxoro viloyati maktabgacha va maktab ta`limi boshqarmasi\n"
+"          "
+msgstr ""
+
+#: backend/templates/index.html:31 backend/templates/index.html:40
+msgid ""
+"\n"
+"            Ko'proq bilish\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:95
+msgid ""
+"\n"
+"        Resurslar\n"
+"        "
+msgstr ""
+
+#: backend/templates/index.html:101
+msgid ""
+"\n"
+"          Foydali manbalarda foydalanish\n"
+"          "
+msgstr ""
+
+#: backend/templates/index.html:114
+msgid ""
+"\n"
+"            O'quvchilarga\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:121
+msgid ""
+"\n"
+"            Darsliklar\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:126
+msgid ""
+"\n"
+"            Smartland\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:131
+msgid ""
+"\n"
+"            Videodarsliklar\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:136
+msgid ""
+"\n"
+"            To'garaklar\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:151 backend/templates/index.html:160
+#: backend/templates/index.html:216 backend/templates/index.html:225
+#: backend/templates/index.html:282 backend/templates/index.html:291
+#: backend/templates/index.html:347 backend/templates/index.html:356
+msgid ""
+"\n"
+"              batafsil\n"
+"              "
+msgstr ""
+
+#: backend/templates/index.html:179
+msgid ""
+"\n"
+"            Ota-onalarga\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:186
+msgid ""
+"\n"
+"            Umumiy o‘rta ta’lim muassasalarining ichki tartib va odob-axloq "
+"qoidalari\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:191
+msgid ""
+"\n"
+"            Uyda yakka tartibda taʼlim olish\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:196
+msgid ""
+"\n"
+"            Voyaga yetmagan bolalarni farzandlikka olish\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:201
+msgid ""
+"\n"
+"            Ixtisoslashgan maktablar\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:244
+msgid ""
+"\n"
+"            Maktablarga\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:251
+msgid ""
+"\n"
+"            Xalqaro tan olingan va milliy baholash tizimida berilgan "
+"sertifikatlar (ularning kombinasiyasi) ro'yxati\n"
+"            hamda har oylik ustama olish uchun ularning eng kam darajasi\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:257
+msgid ""
+"\n"
+"            onlinedu.uz\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:262
+msgid ""
+"\n"
+"            \"Ta'lim to'g'risida\"gi Qonun\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:267
+msgid ""
+"\n"
+"            Davlat ta'lim standartlari\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:310
+msgid ""
+"\n"
+"            O'qituvchilarga\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:317
+msgid ""
+"\n"
+"            Vakant lavozimlar\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:322
+msgid ""
+"\n"
+"            Malaka oshirish\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:327
+msgid ""
+"\n"
+"            Attestatsiya\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:332
+msgid ""
+"\n"
+"            O'qituvchi yuritadigan hujjatlar\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:405
+msgid ""
+"\n"
+"          Maktab.uz\n"
+"          "
+msgstr ""
+
+#: backend/templates/index.html:412
+msgid ""
+"\n"
+"            Agar siz maktabga bora olmasangiz, maktab sizning uyingizga "
+"kelishi mumkin.\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:418
+msgid ""
+"\n"
+"          Maktab.uz - bu xalqaro standartlarga javob beradigan va maktab "
+"o'quvchilari uchun yuqori sifatli uzluksiz\n"
+"          masofaviy ta'limni ta'minlaydigan ilg'or raqamli ta'lim "
+"texnologiyasi. Platforma o'qituvchilarga ham, ota\n"
+"          -onalarga ham o'quvchilarning rivojlanish darajasini kuzatish va "
+"mavzular mazmuni bilan tanishish uchun keng\n"
+"          imkoniyatlar beradi.\n"
+"          "
+msgstr ""
+
+#: backend/templates/index.html:436 backend/templates/index.html:446
+msgid ""
+"\n"
+"                  Batafsil\n"
+"                  "
+msgstr ""
+
+#: backend/templates/index.html:474
+msgid ""
+"\n"
+"          Statistika\n"
+"          "
+msgstr ""
+
+#: backend/templates/index.html:480
+msgid ""
+"\n"
+"            O‘zbekiston Respublikasi maktabgacha va maktab ta'limi "
+"vazirligi\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:487
+msgid ""
+"\n"
+"            Ta’lim va tarbiyaning asosi, poydevori bu – maktab. Maktabni "
+"maktab qiladigan kuch esa o‘qituvchilardir\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:492
+msgid ""
+"\n"
+"            Shavkat Mirziyoyev\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:559
+msgid ""
+"\n"
+"            Mijozlar bilan ishlash\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:565
+msgid ""
+"\n"
+"              Buxoro viloyati maktabgacha va maktab ta`limi boshqarmasi "
+"boshlig‘iga murojaat va takliflaringizni\n"
+"              yuboring!\n"
+"              "
+msgstr ""
+
+#: backend/templates/index.html:582 backend/templates/index.html:592
+msgid ""
+"\n"
+"                Murojaat qilish\n"
+"                "
+msgstr ""
+
+#: backend/templates/index.html:611
+msgid ""
+"\n"
+"    Foydali havolalar\n"
+"    "
+msgstr ""
+
+#: backend/templates/index.html:633
+msgid ""
+"\n"
+"          So'nggi yangiliklar\n"
+"          "
+msgstr ""
+
+#: backend/templates/index.html:639
+msgid ""
+"\n"
+"            Sohaga doir eng dolzarb yangiliklar\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:671
+msgid ""
+"\n"
+"                batafsil\n"
+"                "
+msgstr ""
+
+#: backend/templates/index.html:706
+msgid ""
+"\n"
+"            Ta'lim sifatini oshirishga qaratilgan murojaat va takliflarni "
+"yuboring\n"
+"            "
+msgstr ""
+
+#: backend/templates/index.html:716
+msgid "F.I.O"
+msgstr ""
+
+#: backend/templates/index.html:721 backend/translations.py:11
+#: backend/translations.py:64 backend/translations.py:109
+msgid "Viloyat"
+msgstr ""
+
+#: backend/templates/index.html:723
+msgid "Viloyatni tanlang"
+msgstr ""
+
+#: backend/templates/index.html:730
+msgid "Shahar"
+msgstr ""
+
+#: backend/templates/index.html:738 backend/templates/murojaat.html:258
+#: backend/translations.py:77 backend/translations.py:111
+#: backend/translations.py:127
+msgid "Telefon"
+msgstr ""
+
+#: backend/templates/index.html:743 backend/translations.py:55
+#: backend/translations.py:112
+msgid "Kategoriya"
+msgstr ""
+
+#: backend/templates/index.html:745
+msgid "Kategoriyani tanlang"
+msgstr ""
+
+#: backend/templates/index.html:746 backend/translations.py:154
+msgid "Maktabgacha ta'lim"
+msgstr ""
+
+#: backend/templates/index.html:747 backend/translations.py:155
+msgid "Maktab ta'limi"
+msgstr ""
+
+#: backend/templates/index.html:752 backend/translations.py:79
+#: backend/translations.py:113
+msgid "Xabar"
+msgstr ""
+
+#: backend/templates/index.html:753
+msgid "Xabaringizni yozing..."
+msgstr ""
+
+#: backend/templates/index.html:758
+msgid "Iltimos kuting..."
+msgstr ""
+
+#: backend/templates/index.html:759
+msgid "Yuborish"
+msgstr ""
+
+#: backend/templates/index.html:780
+msgid ""
+"\n"
+"            Murojaatlar statistikasi\n"
+"            "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:37
 msgid " Asosiy "
 msgstr " Главный "
 
-#: backend/templates/mainnavbar.html:58 backend/templates/mobilenavbar.html:115
+#: backend/templates/mainnavbar.html:59 backend/templates/mobilenavbar.html:102
 msgid " O'qituvchi ish o'rinlari "
 msgstr ""
 
-#: backend/templates/mainnavbar.html:61 backend/templates/mobilenavbar.html:118
+#: backend/templates/mainnavbar.html:62 backend/templates/mobilenavbar.html:105
 msgid " Hujjatlar "
 msgstr ""
 
-#: backend/templates/mainnavbar.html:64 backend/templates/mobilenavbar.html:121
+#: backend/templates/mainnavbar.html:65 backend/templates/mobilenavbar.html:108
 msgid " Loyihalar "
 msgstr ""
 
-#: backend/templates/mainnavbar.html:66 backend/templates/mobilenavbar.html:123
+#: backend/templates/mainnavbar.html:67 backend/templates/mobilenavbar.html:110
 msgid " Ko‘p beriladigan savollar "
 msgstr ""
 
-#: backend/templates/mainnavbar.html:68 backend/templates/mobilenavbar.html:125
+#: backend/templates/mainnavbar.html:69 backend/templates/mobilenavbar.html:112
 msgid " Fuqarolar murojaati "
 msgstr ""
 
-#: backend/templates/mainnavbar.html:208 backend/templates/mobilenavbar.html:30
-msgid "follow us:"
+#: backend/templates/mainnavbar.html:79
+msgid "Boshqarma"
 msgstr ""
 
-#: backend/templates/mobilenavbar.html:93 backend/templates/murojaat.html:10
+#: backend/templates/mainnavbar.html:101
+#: backend/templates/mobilenavbar.html:144
+msgid " Boshqarma haqida "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:104
+#: backend/templates/mobilenavbar.html:147
+msgid " Rahbariyat "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:107
+#: backend/templates/mobilenavbar.html:150
+msgid " Xodimlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:110
+#: backend/templates/mobilenavbar.html:153
+msgid " Hududiy bo’limlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:113
+#: backend/templates/mobilenavbar.html:156
+msgid " Respublika tashkilotlari "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:116
+#: backend/templates/mobilenavbar.html:159
+msgid " Vazirlik tuzilmasi "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:119
+#: backend/templates/mobilenavbar.html:162
+msgid " Rekvizitlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:122
+#: backend/templates/mobilenavbar.html:165
+msgid " Missiya, maqsad va vazifalar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:125
+#: backend/templates/mobilenavbar.html:168
+msgid " Bog'lanish "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:135
+#: backend/templates/mobilenavbar.html:179
+msgid " Boshqa sahifalar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:162
+#: backend/templates/mobilenavbar.html:206
+msgid " Boshqarma yangiliklari "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:167
+#: backend/templates/mobilenavbar.html:211
+msgid " Press-relizlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:172
+#: backend/templates/mobilenavbar.html:216
+msgid " OAV biz haqimizda "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:177
+#: backend/templates/mobilenavbar.html:221
+msgid " Ma`ruzalar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:182
+#: backend/templates/mobilenavbar.html:226
+msgid " Galereya "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:187
+#: backend/templates/mobilenavbar.html:231
+msgid " Video galereya "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:192
+#: backend/templates/mobilenavbar.html:236
+msgid " Axborot xizmati "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:197
+#: backend/templates/mobilenavbar.html:241
+msgid " Matbuot anjumanlari "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:202
+#: backend/templates/mobilenavbar.html:246
+msgid " Konferensiyalar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:207
+#: backend/templates/mobilenavbar.html:251
+msgid " Yordam "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:212
+#: backend/templates/mobilenavbar.html:256
+msgid " Tanlovlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:217
+msgid ""
+" Boshqarma faoliyatining ochiqligi\n"
+"                                            "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:223
+#: backend/templates/mobilenavbar.html:267
+msgid " Infografika "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:228
+#: backend/templates/mobilenavbar.html:272
+msgid " Bayonotlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:235
+#: backend/templates/mobilenavbar.html:279
+msgid " Ochiq budjet "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:240
+#: backend/templates/mobilenavbar.html:284
+msgid " Ochiq ma`lumotlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:245
+#: backend/templates/mobilenavbar.html:289
+msgid " Ochiq ma`lumotlar to’plami "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:252
+#: backend/templates/mobilenavbar.html:296
+msgid " Korrupsiyaga oid targ’ibot materiallari "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:257
+#: backend/templates/mobilenavbar.html:301
+msgid ""
+" Xodimlar hatti-harakatiga oid korrupsiyani oldini olish bo’yicha murojaat "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:262
+msgid ""
+" Korrupsiyaga qarshi kurashish bo’yicha idoraviy hujjatlar\n"
+"                                            "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:268
+#: backend/templates/mobilenavbar.html:312
+msgid " Amalga oshirilayotgan ishlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:299 backend/templates/mainnavbar.html:306
+#: backend/templates/mobilenavbar.html:39
+#: backend/templates/mobilenavbar.html:46
+#: backend/templates/mobilenavbar.html:426
+#: backend/templates/mobilenavbar.html:433
+msgid " Kirish "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:325
+#: backend/templates/mobilenavbar.html:325
+msgid " Ta`lim "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:337
+#: backend/templates/mobilenavbar.html:337
+msgid " Statistika "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:340
+#: backend/templates/mobilenavbar.html:340
+msgid " Tahliliy ma`lumotlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:343
+#: backend/templates/mobilenavbar.html:343
+msgid " Ta`limga doir terminlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:346
+#: backend/templates/mobilenavbar.html:346
+msgid " Elektron kutubxona "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:349
+#: backend/templates/mobilenavbar.html:349
+msgid ""
+" Umumtaʼlim maktablarining hovli, kirish qismi va koridorlarini bezatish "
+"boʻyicha namunaviy tavsiyalardan fotolavhalar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:352
+#: backend/templates/mobilenavbar.html:352
+msgid " “Barkamol avlod” bolalar markazi "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:355
+#: backend/templates/mobilenavbar.html:355
+msgid " Imkoniyati cheklanganlarga "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:358
+#: backend/templates/mobilenavbar.html:358
+msgid " EFL teacher Recruitment "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:368
+#: backend/templates/mobilenavbar.html:368
+msgid " Faoliyat "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:380
+#: backend/templates/mobilenavbar.html:380
+msgid " Konstitutsiya sahifasi "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:383
+#: backend/templates/mobilenavbar.html:383
+msgid " Elektron davlat xizmatlari reestri "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:386
+#: backend/templates/mobilenavbar.html:386
+msgid " Elektron hukumat tizimi "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:389
+#: backend/templates/mobilenavbar.html:389
+msgid " Harakatlar strategiyasi va Davlat dasturlari "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:392
+#: backend/templates/mobilenavbar.html:392
+msgid " Gender tengligi "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:395
+#: backend/templates/mobilenavbar.html:395
+msgid " Tenderlar "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:398
+#: backend/templates/mobilenavbar.html:398
+msgid " Ish reja "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:401
+#: backend/templates/mobilenavbar.html:401
+msgid " Ochiq majlislar o’tkazish rejalari "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:404
+#: backend/templates/mobilenavbar.html:404
+msgid " Umumta`lim tashkilotlari faoliyatini tekshirish "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:407
+#: backend/templates/mobilenavbar.html:407
+msgid " Investitsiya salohiyati "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:410
+#: backend/templates/mobilenavbar.html:410
+msgid " Jismoniy va yuridik shaxslarning murojaatlari bilan ishlash "
+msgstr ""
+
+#: backend/templates/mobilenavbar.html:80 backend/templates/murojaat.html:10
 msgid "Asosiy"
+msgstr ""
+
+#: backend/templates/mobilenavbar.html:122
+msgid " Boshqarma "
+msgstr ""
+
+#: backend/templates/mobilenavbar.html:261
+msgid ""
+" Boshqarma faoliyatining ochiqligi\n"
+"                                                "
+msgstr ""
+
+#: backend/templates/mobilenavbar.html:306
+msgid ""
+" Korrupsiyaga qarshi kurashish bo’yicha idoraviy hujjatlar\n"
+"                                                "
 msgstr ""
 
 #: backend/templates/murojaat.html:18
@@ -369,24 +1052,20 @@ msgstr ""
 msgid "Murojaat mavzusi"
 msgstr ""
 
-#: backend/templates/murojaat.html:232
+#: backend/templates/murojaat.html:232 backend/translations.py:73
 msgid "Ism"
 msgstr ""
 
-#: backend/templates/murojaat.html:240
+#: backend/templates/murojaat.html:240 backend/translations.py:74
 msgid "Familiya"
 msgstr ""
 
-#: backend/templates/murojaat.html:246
+#: backend/templates/murojaat.html:246 backend/translations.py:75
 msgid "Otasining ismi"
 msgstr ""
 
 #: backend/templates/murojaat.html:253
 msgid "E-mail"
-msgstr ""
-
-#: backend/templates/murojaat.html:258
-msgid "Telefon"
 msgstr ""
 
 #: backend/templates/murojaat.html:265
@@ -475,19 +1154,370 @@ msgstr ""
 msgid "Back to News List"
 msgstr ""
 
-#: backend/views.py:28
-msgid "Murojaat muvaffaqiyatli yuborildi"
+#: backend/translations.py:5
+msgid "Foydali havola"
 msgstr ""
 
-#: backend/views.py:31
+#: backend/translations.py:6
+msgid "Foydali havolalar"
+msgstr ""
+
+#: backend/translations.py:7
+msgid "Fayllar kategoriyasi"
+msgstr ""
+
+#: backend/translations.py:8
+msgid "Fayllar kategoriyalari"
+msgstr ""
+
+#: backend/translations.py:9
+msgid "Fayl"
+msgstr ""
+
+#: backend/translations.py:10
+msgid "Fayllar"
+msgstr ""
+
+#: backend/translations.py:12
+msgid "Viloyatlar"
+msgstr ""
+
+#: backend/translations.py:13 backend/translations.py:110
+msgid "Tuman"
+msgstr ""
+
+#: backend/translations.py:14
+msgid "Tumanlar"
+msgstr ""
+
+#: backend/translations.py:15 backend/translations.py:16
+msgid "Ko'p so'raladigan savollar"
+msgstr ""
+
+#: backend/translations.py:17 backend/translations.py:18
+msgid "Murojaatlar"
+msgstr ""
+
+#: backend/translations.py:19
+msgid "Xodim"
+msgstr ""
+
+#: backend/translations.py:20
+msgid "Xodimlar"
+msgstr ""
+
+#: backend/translations.py:21
+msgid "Yangiliklar turi"
+msgstr ""
+
+#: backend/translations.py:22
+msgid "Yangiliklar turlari"
+msgstr ""
+
+#: backend/translations.py:23 backend/translations.py:93
+#: backend/translations.py:99
+msgid "Yangiliklar kategoriyasi"
+msgstr ""
+
+#: backend/translations.py:24
+msgid "Yangiliklar kategoriyalari"
+msgstr ""
+
+#: backend/translations.py:25
+msgid "Yangilik"
+msgstr ""
+
+#: backend/translations.py:26
+msgid "Yangiliklar"
+msgstr ""
+
+#: backend/translations.py:27 backend/translations.py:28
+msgid "Statistika"
+msgstr ""
+
+#: backend/translations.py:29
+msgid "Taklif"
+msgstr ""
+
+#: backend/translations.py:30
+msgid "Takliflar"
+msgstr ""
+
+#: backend/translations.py:31 backend/translations.py:32
+msgid "Takliflar statistikasi"
+msgstr ""
+
+#: backend/translations.py:33 backend/translations.py:132
+msgid "Shaxs turi"
+msgstr ""
+
+#: backend/translations.py:34
+msgid "Shaxs turlari"
+msgstr ""
+
+#: backend/translations.py:35
+msgid "Shaxs"
+msgstr ""
+
+#: backend/translations.py:36
+msgid "Shaxslar"
+msgstr ""
+
+#: backend/translations.py:37 backend/translations.py:38
+msgid "Galereya"
+msgstr ""
+
+#: backend/translations.py:44
+msgid "Nomi"
+msgstr ""
+
+#: backend/translations.py:45
+msgid "Havola"
+msgstr ""
+
+#: backend/translations.py:46 backend/translations.py:87
+#: backend/translations.py:158
+msgid "Rasm"
+msgstr ""
+
+#: backend/translations.py:49
+msgid "Kategoriya nomi"
+msgstr ""
+
+#: backend/translations.py:52
+msgid "Sarlavha"
+msgstr ""
+
+#: backend/translations.py:53
+msgid "Tavsif"
+msgstr ""
+
+#: backend/translations.py:54
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2642
+msgid "URL"
+msgstr ""
+
+#: backend/translations.py:58
+msgid "Viloyat nomi"
+msgstr ""
+
+#: backend/translations.py:59
+msgid "Kod"
+msgstr ""
+
+#: backend/translations.py:60
+msgid "Faol"
+msgstr ""
+
+#: backend/translations.py:63
+msgid "Tuman nomi"
+msgstr ""
+
+#: backend/translations.py:67
+msgid "Savol"
+msgstr ""
+
+#: backend/translations.py:68
+msgid "Javob"
+msgstr ""
+
+#: backend/translations.py:69
+msgid "Tartib"
+msgstr ""
+
+#: backend/translations.py:72
+msgid "Mavzu"
+msgstr ""
+
+#: backend/translations.py:76 backend/translations.py:128
+msgid "Email"
+msgstr ""
+
+#: backend/translations.py:78
+msgid "Ilova"
+msgstr ""
+
+#: backend/translations.py:82 backend/translations.py:108
+msgid "To'liq ism"
+msgstr ""
+
+#: backend/translations.py:83 backend/translations.py:123
+msgid "Lavozim"
+msgstr ""
+
+#: backend/translations.py:84
+msgid "Ish kuni"
+msgstr ""
+
+#: backend/translations.py:85
+msgid "Ish vaqtining boshlanishi"
+msgstr ""
+
+#: backend/translations.py:86
+msgid "Ish vaqtining tugashi"
+msgstr ""
+
+#: backend/translations.py:90 backend/translations.py:98
+msgid "Yangilik turi"
+msgstr ""
+
+#: backend/translations.py:96
+msgid "Yangilik sarlavhasi"
+msgstr ""
+
+#: backend/translations.py:97
+msgid "Yangilik rasmi"
+msgstr ""
+
+#: backend/translations.py:100
+msgid "Yangilik tavsifi"
+msgstr ""
+
+#: backend/translations.py:101
+msgid "Xeshteg"
+msgstr ""
+
+#: backend/translations.py:104
+msgid "Statistika nomi"
+msgstr ""
+
+#: backend/translations.py:105
+msgid "Soni"
+msgstr ""
+
+#: backend/translations.py:116
+msgid "Takliflar statistikasi nomi"
+msgstr ""
+
+#: backend/translations.py:117
+msgid "Takliflar soni"
+msgstr ""
+
+#: backend/translations.py:120
+msgid "Shaxs turi nomi"
+msgstr ""
+
+#: backend/translations.py:124
+msgid "Biografiya"
+msgstr ""
+
+#: backend/translations.py:125
+msgid "Qabul vaqtining boshlanishi"
+msgstr ""
+
+#: backend/translations.py:126
+msgid "Qabul vaqtining tugashi"
+msgstr ""
+
+#: backend/translations.py:129
+msgid "Telegram sahifasi"
+msgstr ""
+
+#: backend/translations.py:130
+msgid "Mehnat faoliyati"
+msgstr ""
+
+#: backend/translations.py:131
+msgid "Vazifalar"
+msgstr ""
+
+#: backend/translations.py:135
+msgid "Galereya sarlavhasi"
+msgstr ""
+
+#: backend/translations.py:136
+msgid "Galereya tavsifi"
+msgstr ""
+
+#: backend/translations.py:137
+msgid "Kontent turi"
+msgstr ""
+
+#: backend/translations.py:138
+msgid "Galereya rasmi"
+msgstr ""
+
+#: backend/translations.py:139
+msgid "Video URL"
+msgstr ""
+
+#: backend/translations.py:145
+msgid "Dushanba"
+msgstr ""
+
+#: backend/translations.py:146
+msgid "Seshanba"
+msgstr ""
+
+#: backend/translations.py:147
+msgid "Chorshanba"
+msgstr ""
+
+#: backend/translations.py:148
+msgid "Payshanba"
+msgstr ""
+
+#: backend/translations.py:149
+msgid "Juma"
+msgstr ""
+
+#: backend/translations.py:150
+msgid "Shanba"
+msgstr ""
+
+#: backend/translations.py:151
+msgid "Yakshanba"
+msgstr ""
+
+#: backend/translations.py:159
+msgid "Video"
+msgstr ""
+
+#: backend/translations.py:165
+msgid "Ish vaqtining boshlanishi (24 soatlik format)"
+msgstr ""
+
+#: backend/translations.py:166
+msgid "Ish vaqtining tugashi (24 soatlik format)"
+msgstr ""
+
+#: backend/translations.py:167
+msgid "Viloyat uchun noyob identifikator"
+msgstr ""
+
+#: backend/translations.py:168
+msgid "Faqat rasmlar uchun"
+msgstr ""
+
+#: backend/translations.py:169
+msgid "Faqat videolar uchun"
+msgstr ""
+
+#: backend/translations.py:174
+msgid "Rasm yuklanishi shart"
+msgstr ""
+
+#: backend/translations.py:175
+msgid "Video URL kiritilishi shart"
+msgstr ""
+
+#: backend/views.py:18
+msgid "Taklifingiz muvaffaqiyatli yuborildi"
+msgstr ""
+
+#: backend/views.py:21 backend/views.py:59
 msgid "Xatolik yuz berdi. Iltimos qayta urinib ko'ring"
 msgstr ""
 
-#: mysite/settings.py:128 mysite/settings.py:133
-msgid "Uzbek (Cyrillic)"
+#: backend/views.py:56
+msgid "Murojaat muvaffaqiyatli yuborildi"
 msgstr ""
 
 #: mysite/settings.py:129 mysite/settings.py:134
+msgid "Uzbek (Cyrillic)"
+msgstr ""
+
+#: mysite/settings.py:130 mysite/settings.py:135
 msgid "Russian"
 msgstr ""
 
@@ -584,84 +1614,84 @@ msgstr ""
 msgid "Enter a valid domain name."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:155
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:768
+#: venv/lib/python3.13/site-packages/django/core/validators.py:153
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:775
 msgid "Enter a valid URL."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:216
+#: venv/lib/python3.13/site-packages/django/core/validators.py:200
 msgid "Enter a valid integer."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:227
+#: venv/lib/python3.13/site-packages/django/core/validators.py:211
 msgid "Enter a valid email address."
 msgstr ""
 
 #. Translators: "letters" means latin letters: a-z and A-Z.
-#: venv/lib/python3.13/site-packages/django/core/validators.py:310
+#: venv/lib/python3.13/site-packages/django/core/validators.py:289
 msgid ""
 "Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:318
+#: venv/lib/python3.13/site-packages/django/core/validators.py:297
 msgid ""
 "Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
 "hyphens."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:330
-#: venv/lib/python3.13/site-packages/django/core/validators.py:339
-#: venv/lib/python3.13/site-packages/django/core/validators.py:353
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2215
+#: venv/lib/python3.13/site-packages/django/core/validators.py:309
+#: venv/lib/python3.13/site-packages/django/core/validators.py:318
+#: venv/lib/python3.13/site-packages/django/core/validators.py:332
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2220
 #, python-format
 msgid "Enter a valid %(protocol)s address."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:332
+#: venv/lib/python3.13/site-packages/django/core/validators.py:311
 msgid "IPv4"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:341
+#: venv/lib/python3.13/site-packages/django/core/validators.py:320
 #: venv/lib/python3.13/site-packages/django/utils/ipv6.py:43
 msgid "IPv6"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:355
+#: venv/lib/python3.13/site-packages/django/core/validators.py:334
 msgid "IPv4 or IPv6"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:396
+#: venv/lib/python3.13/site-packages/django/core/validators.py:375
 msgid "Enter only digits separated by commas."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:402
+#: venv/lib/python3.13/site-packages/django/core/validators.py:381
 #, python-format
 msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:437
+#: venv/lib/python3.13/site-packages/django/core/validators.py:416
 #, python-format
 msgid "Ensure this value is less than or equal to %(limit_value)s."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:446
+#: venv/lib/python3.13/site-packages/django/core/validators.py:425
 #, python-format
 msgid "Ensure this value is greater than or equal to %(limit_value)s."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:455
+#: venv/lib/python3.13/site-packages/django/core/validators.py:434
 #, python-format
 msgid "Ensure this value is a multiple of step size %(limit_value)s."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:462
+#: venv/lib/python3.13/site-packages/django/core/validators.py:441
 #, python-format
 msgid ""
 "Ensure this value is a multiple of step size %(limit_value)s, starting from "
 "%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:494
+#: venv/lib/python3.13/site-packages/django/core/validators.py:473
 #, python-format
 msgid ""
 "Ensure this value has at least %(limit_value)d character (it has "
@@ -672,7 +1702,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:512
+#: venv/lib/python3.13/site-packages/django/core/validators.py:491
 #, python-format
 msgid ""
 "Ensure this value has at most %(limit_value)d character (it has "
@@ -683,27 +1713,27 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:535
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:359
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:398
+#: venv/lib/python3.13/site-packages/django/core/validators.py:514
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:366
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:405
 msgid "Enter a number."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:537
+#: venv/lib/python3.13/site-packages/django/core/validators.py:516
 #, python-format
 msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
 msgstr[0] ""
 msgstr[1] ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:542
+#: venv/lib/python3.13/site-packages/django/core/validators.py:521
 #, python-format
 msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
 msgstr[0] ""
 msgstr[1] ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:547
+#: venv/lib/python3.13/site-packages/django/core/validators.py:526
 #, python-format
 msgid ""
 "Ensure that there are no more than %(max)s digit before the decimal point."
@@ -712,23 +1742,23 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:618
+#: venv/lib/python3.13/site-packages/django/core/validators.py:597
 #, python-format
 msgid ""
 "File extension “%(extension)s” is not allowed. Allowed extensions are: "
 "%(allowed_extensions)s."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/core/validators.py:680
+#: venv/lib/python3.13/site-packages/django/core/validators.py:659
 msgid "Null characters are not allowed."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/base.py:1572
+#: venv/lib/python3.13/site-packages/django/db/models/base.py:1600
 #: venv/lib/python3.13/site-packages/django/forms/models.py:908
 msgid "and"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/base.py:1574
+#: venv/lib/python3.13/site-packages/django/db/models/base.py:1602
 #, python-format
 msgid "%(model_name)s with this %(field_labels)s already exists."
 msgstr ""
@@ -769,200 +1799,200 @@ msgstr ""
 msgid "Field of type: %(field_type)s"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1156
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1162
 #, python-format
 msgid "“%(value)s” value must be either True or False."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1157
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1163
 #, python-format
 msgid "“%(value)s” value must be either True, False, or None."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1159
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1165
 msgid "Boolean (Either True or False)"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1209
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1215
 #, python-format
 msgid "String (up to %(max_length)s)"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1211
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1217
 msgid "String (unlimited)"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1320
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1326
 msgid "Comma-separated integers"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1421
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1427
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
 "format."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1425
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1560
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1431
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1566
 #, python-format
 msgid ""
 "“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
 "date."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1429
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1435
 msgid "Date (without time)"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1556
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1562
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
 "HH:MM[:ss[.uuuuuu]][TZ] format."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1564
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1570
 #, python-format
 msgid ""
 "“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
 "[TZ]) but it is an invalid date/time."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1569
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1575
 msgid "Date (with time)"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1696
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1702
 #, python-format
 msgid "“%(value)s” value must be a decimal number."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1698
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1704
 msgid "Decimal number"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1859
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1864
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid format. It must be in [DD] "
 "[[HH:]MM:]ss[.uuuuuu] format."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1863
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1868
 msgid "Duration"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1915
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1920
 msgid "Email address"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1940
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1945
 msgid "File path"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2018
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2023
 #, python-format
 msgid "“%(value)s” value must be a float."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2020
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2025
 msgid "Floating point number"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2060
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2065
 #, python-format
 msgid "“%(value)s” value must be an integer."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2062
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2067
 msgid "Integer"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2158
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2163
 msgid "Big (8 byte) integer"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2175
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2180
 msgid "Small integer"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2183
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2188
 msgid "IPv4 address"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2214
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2219
 msgid "IP address"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2305
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2306
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2310
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2311
 #, python-format
 msgid "“%(value)s” value must be either None, True or False."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2308
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2313
 msgid "Boolean (Either True, False or None)"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2359
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2364
 msgid "Positive big integer"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2374
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2379
 msgid "Positive integer"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2389
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2394
 msgid "Positive small integer"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2405
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2410
 #, python-format
 msgid "Slug (up to %(max_length)s)"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2441
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2446
 msgid "Text"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2521
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2526
 #, python-format
 msgid ""
 "“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
 "format."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2525
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2530
 #, python-format
 msgid ""
 "“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
 "invalid time."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2529
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2534
 msgid "Time"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2637
-msgid "URL"
-msgstr ""
-
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2661
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2666
 msgid "Raw binary data"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2726
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2731
 #, python-format
 msgid "“%(value)s” is not a valid UUID."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2728
+#: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2733
 msgid "Universally unique identifier"
 msgstr ""
 
 #: venv/lib/python3.13/site-packages/django/db/models/fields/files.py:244
 msgid "File"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
 msgstr ""
 
 #: venv/lib/python3.13/site-packages/django/db/models/fields/json.py:24
@@ -973,30 +2003,30 @@ msgstr ""
 msgid "Value must be valid JSON."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:932
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:978
 #, python-format
-msgid "%(model)s instance with %(field)s %(value)r does not exist."
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:934
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:981
 msgid "Foreign Key (type determined by related field)"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1228
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1275
 msgid "One-to-one relationship"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1285
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1332
 #, python-format
 msgid "%(from)s-%(to)s relationship"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1287
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1334
 #, python-format
 msgid "%(from)s-%(to)s relationships"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1335
+#: venv/lib/python3.13/site-packages/django/db/models/fields/related.py:1382
 msgid "Many-to-many relationship"
 msgstr ""
 
@@ -1010,46 +2040,46 @@ msgstr ""
 msgid "This field is required."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:308
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:315
 msgid "Enter a whole number."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:479
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:1260
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:486
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1267
 msgid "Enter a valid date."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:502
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:1261
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:509
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1268
 msgid "Enter a valid time."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:529
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:536
 msgid "Enter a valid date/time."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:563
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:570
 msgid "Enter a valid duration."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:564
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:571
 #, python-brace-format
 msgid "The number of days must be between {min_days} and {max_days}."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:633
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:640
 msgid "No file was submitted. Check the encoding type on the form."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:634
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:641
 msgid "No file was submitted."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:635
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:642
 msgid "The submitted file is empty."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:637
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:644
 #, python-format
 msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
@@ -1057,47 +2087,47 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:642
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:649
 msgid "Please either submit a file or check the clear checkbox, not both."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:710
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:717
 msgid ""
 "Upload a valid image. The file you uploaded was either not an image or a "
 "corrupted image."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:882
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:968
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:889
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:975
 #: venv/lib/python3.13/site-packages/django/forms/models.py:1592
 #, python-format
 msgid "Select a valid choice. %(value)s is not one of the available choices."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:970
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:1089
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:977
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1096
 #: venv/lib/python3.13/site-packages/django/forms/models.py:1590
 msgid "Enter a list of values."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:1090
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1097
 msgid "Enter a complete value."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:1332
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1339
 msgid "Enter a valid UUID."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/fields.py:1362
+#: venv/lib/python3.13/site-packages/django/forms/fields.py:1369
 msgid "Enter a valid JSON."
 msgstr ""
 
 #. Translators: This is the default suffix added to form field labels
-#: venv/lib/python3.13/site-packages/django/forms/forms.py:94
+#: venv/lib/python3.13/site-packages/django/forms/forms.py:97
 msgid ":"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/forms.py:230
+#: venv/lib/python3.13/site-packages/django/forms/forms.py:239
 #, python-format
 msgid "(Hidden field %(name)s) %(error)s"
 msgstr ""
@@ -1166,34 +2196,34 @@ msgstr ""
 msgid "“%(pk)s” is not a valid value."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/utils.py:227
+#: venv/lib/python3.13/site-packages/django/forms/utils.py:229
 #, python-format
 msgid ""
 "%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
 "may be ambiguous or it may not exist."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/widgets.py:461
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:527
 msgid "Clear"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/widgets.py:462
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:528
 msgid "Currently"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/widgets.py:463
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:529
 msgid "Change"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/widgets.py:800
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:866
 msgid "Unknown"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/widgets.py:801
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:867
 msgid "Yes"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/forms/widgets.py:802
+#: venv/lib/python3.13/site-packages/django/forms/widgets.py:868
 msgid "No"
 msgstr ""
 
@@ -1257,6 +2287,34 @@ msgstr ""
 
 #: venv/lib/python3.13/site-packages/django/utils/dateformat.py:155
 msgid "noon"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: venv/lib/python3.13/site-packages/django/utils/dates.py:13
+msgid "Sunday"
 msgstr ""
 
 #: venv/lib/python3.13/site-packages/django/utils/dates.py:16
@@ -1507,18 +2565,18 @@ msgstr ""
 msgid "This is not a valid IPv6 address."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/utils/text.py:75
+#: venv/lib/python3.13/site-packages/django/utils/text.py:67
 #, python-format
 msgctxt "String to return when truncating text"
 msgid "%(truncated_text)s…"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/utils/text.py:286
+#: venv/lib/python3.13/site-packages/django/utils/text.py:278
 msgid "or"
 msgstr ""
 
 #. Translators: This string is used as a separator between list elements
-#: venv/lib/python3.13/site-packages/django/utils/text.py:305
+#: venv/lib/python3.13/site-packages/django/utils/text.py:297
 #: venv/lib/python3.13/site-packages/django/utils/timesince.py:135
 msgid ", "
 msgstr ""
@@ -1636,20 +2694,20 @@ msgstr ""
 msgid "No week specified"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:349
-#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:380
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:353
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:384
 #, python-format
 msgid "No %(verbose_name_plural)s available"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:652
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:680
 #, python-format
 msgid ""
 "Future %(verbose_name_plural)s not available because "
 "%(class_name)s.allow_future is False."
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:692
+#: venv/lib/python3.13/site-packages/django/views/generic/dates.py:720
 #, python-format
 msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
 msgstr ""
@@ -1668,7 +2726,7 @@ msgstr ""
 msgid "Invalid page (%(page_number)s): %(message)s"
 msgstr ""
 
-#: venv/lib/python3.13/site-packages/django/views/generic/list.py:169
+#: venv/lib/python3.13/site-packages/django/views/generic/list.py:173
 #, python-format
 msgid "Empty list and “%(class_name)s.allow_empty” is False."
 msgstr ""
