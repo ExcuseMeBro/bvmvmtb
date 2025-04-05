@@ -1,7 +1,7 @@
 from modeltranslation.translator import register, TranslationOptions
 from .models import (
     FAQ, UsefulLink, FilesCategory, Files, Region, City, 
-    EmailForm, Employee, NewsType, NewsCategory, News, 
+    EmailForm, Employee, NewsType, News, 
     Statistics, Offer, OfferStats, PersonType, Persons, Gallery
 )
 
@@ -39,10 +39,6 @@ class EmployeeTranslationOptions(TranslationOptions):
 
 @register(NewsType)
 class NewsTypeTranslationOptions(TranslationOptions):
-    fields = ('name',)
-
-@register(NewsCategory)
-class NewsCategoryTranslationOptions(TranslationOptions):
     fields = ('name',)
 
 @register(News)

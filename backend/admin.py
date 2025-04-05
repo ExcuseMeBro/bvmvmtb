@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.translation import gettext as _
-from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics, UsefulLink, City, Offer, OfferStats, Files, FilesCategory, Persons, PersonType, NewsCategory, Gallery
+from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics, UsefulLink, City, Offer, OfferStats, Files, FilesCategory, Persons, PersonType, Gallery
 
 @admin.register(EmailForm)
 class EmailFormAdmin(admin.ModelAdmin):
@@ -45,17 +45,10 @@ class NewsTypeAdmin(admin.ModelAdmin):
     list_filter = ('created_at', 'updated_at')
     ordering = ('name',)
 
-@admin.register(NewsCategory)
-class NewsCategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'created_at', 'updated_at')
-    search_fields = ('name',)
-    list_filter = ('created_at', 'updated_at')
-    ordering = ('name',)
-
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):
-    list_display = ('title', 'news_type', 'category', 'hashtag', 'created_at', 'updated_at')
-    list_filter = ('news_type', 'category', 'created_at', 'updated_at')
+    list_display = ('title', 'news_type', 'hashtag', 'created_at', 'updated_at')
+    list_filter = ('news_type', 'created_at', 'updated_at')
     search_fields = ('title', 'description', 'hashtag')
     ordering = ('-created_at',)
 

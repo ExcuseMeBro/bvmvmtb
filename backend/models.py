@@ -154,31 +154,10 @@ class NewsType(models.Model):
     def __str__(self):
         return self.name
 
-class NewsCategory(models.Model):
-    name = models.CharField(FIELD_NAMES['news_category_name'], max_length=100)
-    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
-    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
-
-    class Meta:
-        ordering = ['name']
-        verbose_name = MODEL_NAMES['NewsCategory']
-        verbose_name_plural = MODEL_NAMES['NewsCategory_plural']
-
-    def __str__(self):
-        return self.name
-
 class News(models.Model):
     title = models.CharField(FIELD_NAMES['news_title'], max_length=200)
     image = models.ImageField(FIELD_NAMES['news_image'], upload_to='news/')
     news_type = models.ForeignKey(NewsType, on_delete=models.CASCADE, verbose_name=FIELD_NAMES['news_type'])
-    category = models.ForeignKey(
-        NewsCategory,
-        on_delete=models.CASCADE,
-        verbose_name=FIELD_NAMES['news_category'],
-        related_name='news',
-        null=True,
-        blank=True
-    )
     description = RichTextUploadingField(FIELD_NAMES['news_description'])
     hashtag = models.CharField(FIELD_NAMES['hashtag'], max_length=100)
     created_at = models.DateTimeField(_('Created At'), auto_now_add=True)

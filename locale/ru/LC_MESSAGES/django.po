@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-05 00:06+0000\n"
+"POT-Creation-Date: 2025-04-05 01:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: backend/admin.py:141
+#: backend/admin.py:134
 msgid "Kontent turiga qarab tegishli maydonni to'ldiring"
 msgstr ""
 
@@ -36,19 +36,18 @@ msgstr ""
 #: backend/models.py:12 backend/models.py:25 backend/models.py:41
 #: backend/models.py:56 backend/models.py:71 backend/models.py:86
 #: backend/models.py:114 backend/models.py:133 backend/models.py:146
-#: backend/models.py:159 backend/models.py:184 backend/models.py:198
-#: backend/models.py:218 backend/models.py:232 backend/models.py:245
-#: backend/models.py:272 backend/models.py:307
+#: backend/models.py:163 backend/models.py:177 backend/models.py:197
+#: backend/models.py:211 backend/models.py:224 backend/models.py:251
+#: backend/models.py:286
 msgid "Created At"
 msgstr ""
 
 #: backend/migrations/0009_statistics.py:17 backend/migrations/0012_city.py:17
 #: backend/models.py:13 backend/models.py:26 backend/models.py:42
 #: backend/models.py:57 backend/models.py:72 backend/models.py:87
-#: backend/models.py:134 backend/models.py:147 backend/models.py:160
-#: backend/models.py:185 backend/models.py:199 backend/models.py:219
-#: backend/models.py:233 backend/models.py:246 backend/models.py:273
-#: backend/models.py:308
+#: backend/models.py:134 backend/models.py:147 backend/models.py:164
+#: backend/models.py:178 backend/models.py:198 backend/models.py:212
+#: backend/models.py:225 backend/models.py:252 backend/models.py:287
 msgid "Updated At"
 msgstr ""
 
