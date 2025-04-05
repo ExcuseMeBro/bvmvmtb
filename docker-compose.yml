@@ -2,9 +2,8 @@ version: '3.8'
 
 services:
   web:
-    image: arash4567/bvmv:latest
-    pull_policy: always
-    restart: unless-stopped
+    build: .
+    restart: always
     ports:
       - "8001:8000"
     volumes:
