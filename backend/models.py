@@ -185,6 +185,27 @@ class Statistics(models.Model):
     def __str__(self):
         return self.name
 
+class Vote(models.Model):
+    VOTE_CHOICES = [
+        ('excellent', "Zo'r"),
+        ('good', 'Yaxshi'),
+        ('satisfactory', 'Qoniqarli'),
+        ('unsatisfactory', 'Qoniqarsiz')
+    ]
+    
+    option = models.CharField(_('Ovoz berish varianti'), max_length=20, choices=VOTE_CHOICES)
+    count = models.IntegerField(_('Ovozlar soni'), default=0)
+    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
+    
+    class Meta:
+        ordering = ['-count']
+        verbose_name = _('Ovoz')
+        verbose_name_plural = _('Ovozlar')
+    
+    def __str__(self):
+        return f"{self.get_option_display()} - {self.count}"
+
 class Offer(models.Model):
     CATEGORY_CHOICES = CHOICES['CATEGORY_CHOICES']
     

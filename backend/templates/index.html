@@ -625,6 +625,59 @@
     </div>
   </div>
 </section>
+<section class="vote-section" style="padding: 40px 0; background-color: #f5f5f5;">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="w-layout-hflex achieved-one-header">
+      <div class="subheading">{% translate 'Ovoz berish' %}</div>
+      <div class="achived-one-header-heading text-align-center overflow-hidden">
+        <h2 class="slide-title no-margin">{% translate 'Foydalanuvchilar tomonidan ishonch telefonini baholash statistikasi' %}</h2>
+      </div>
+    </div>
+    <div class="vote-content" style="max-width: 600px; margin: 0 auto; padding: 20px;">
+      <form method="post" action="{% url 'vote' %}" class="vote-form" style="display: flex; flex-direction: column; gap: 15px;">
+        {% csrf_token %}
+        <div class="vote-options" style="display: flex; flex-direction: column; gap: 10px;">
+          <label style="display: flex; align-items: center; gap: 10px;">
+            <input type="radio" name="vote" value="excellent" required>
+            <span>{% translate "Zo'r" %}</span>
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px;">
+            <input type="radio" name="vote" value="good" required>
+            <span>{% translate 'Yaxshi' %}</span>
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px;">
+            <input type="radio" name="vote" value="satisfactory" required>
+            <span>{% translate 'Qoniqarli' %}</span>
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px;">
+            <input type="radio" name="vote" value="unsatisfactory" required>
+            <span>{% translate 'Qoniqarsiz' %}</span>
+          </label>
+        </div>
+        <button type="submit" class="button-one-style w-inline-block" style="width: fit-content;">
+          <div class="button-text-wrap position-relative">
+            <div class="button-text-one">{% translate 'Ovoz berish' %}</div>
+          </div>
+        </button>
+      </form>
+      
+      <div class="vote-results" style="margin-top: 30px;">
+        <h3 style="margin-bottom: 20px;">{% translate 'Natijalar' %}</h3>
+        {% for vote in votes %}
+        <div class="vote-bar" style="margin-bottom: 15px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+            <span>{{ vote.get_option_display }}</span>
+            <span>{{ vote.count }} {% translate 'ta ovoz' %}</span>
+          </div>
+          <div style="background-color: #e0e0e0; height: 20px; border-radius: 10px; overflow: hidden;">
+            <div style="background-color: {% if vote.option == 'excellent' %}#4CAF50{% elif vote.option == 'good' %}#2196F3{% elif vote.option == 'satisfactory' %}#FFC107{% else %}#F44336{% endif %}; height: 100%; width: {{ vote.percentage }}%;"></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
 <section class="facility-two">
   <div class="facility-two-header">
     <div class="w-layout-blockcontainer container w-container">

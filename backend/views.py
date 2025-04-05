@@ -1,9 +1,20 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.utils.translation import gettext as _
+from django.db.models import Sum
 from .models import *
 
 def home(request):
+    votes = Vote.objects.all()
+    total_votes = votes.aggregate(total=Sum('count'))['total'] or 0
+    
+    for vote in votes:
+        vote.percentage = (vote.count / total_votes * 100) if total_votes > 0 else 0
+    
+    context = {
+        'votes': votes,
+    }
+
     if request.method == 'POST':
         try:
             offer = Offer(
@@ -26,14 +37,14 @@ def home(request):
     news_items = News.objects.all().order_by('-created_at')[:8]
     regions = Region.objects.all()
     offerStats = OfferStats.objects.all()
-    context = {
+    context.update({
         'faqs': faqs,
         'statistics': statistics,
         'links': links,
         'news_items': news_items,
         'regions': regions,
-       'offerStats': offerStats,
-    }
+        'offerStats': offerStats,
+    })
     return render(request, 'index.html', context)
 
 
@@ -81,3 +92,15 @@ def news_list(request):
 def news_detail(request, pk):
     news = get_object_or_404(News, pk=pk)
     return render(request, 'news_single.html', {'news': news})
+
+def vote(request):
+    if request.method == 'POST':
+        try:
+            vote_option = request.POST.get('vote')
+            vote_obj, created = Vote.objects.get_or_create(option=vote_option)
+            vote_obj.count += 1
+            vote_obj.save()
+            messages.success(request, _('Ovozingiz muvaffaqiyatli qabul qilindi'))
+        except Exception as e:
+            messages.error(request, _('Xatolik yuz berdi. Iltimos qayta urinib ko\'ring'))
+    return redirect('home')
