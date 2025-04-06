@@ -90,6 +90,13 @@ def investment(request):
 def openness(request):
     return render(request, 'openness.html')
 
+def corruption(request):
+    regions = Region.objects.all()
+    context = {
+        'regions': regions,
+    }
+    return render(request, 'corruption.html', context)
+
 def employees(request):
     employee = Employee.objects.all()
 
@@ -131,9 +138,11 @@ def murojaat(request):
     
     employee = Employee.objects.all()
     regions = Region.objects.all()
+    total = EmailForm.objects.count()
     context = {
         'employees': employee,
         'regions': regions,
+        'total': total,
     }
     return render(request, 'murojaat.html', context)
 

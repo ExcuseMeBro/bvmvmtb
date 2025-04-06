@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section data-w-id="1b8a36f8-cc33-f35d-6e70-422da3371bbc" class="blog-one-hero tution-fees-hero"
+  style="background-image: linear-gradient(#000000db, #0000004a), linear-gradient(#000000d1, #0c0c0c00 30%), url('https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67695bc2103d24f42d5b520c_blog-three-bg.webp'); background-repeat: no-repeat; background-size: cover;">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="blog-one-hero-content tution-fee">
+      <div class="subheading color-white">
+        {% blocktranslate %}Boshqa sahifalar{% endblocktranslate %}
+      </div>
+      <div class="headinng-one-margin overflow-hidden">
+        <h1 class="slide-title no-margin color-white" style="
+          transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
+            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform-style: preserve-3d;
+        ">
+          {% blocktranslate %}
+          Karrupsiyaga qarshi kurashish
+          {% endblocktranslate %}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="w-layout-blockcontainer container w-container">
+  <div class="w-layout-blockcontainer container w-container" style="padding: 20px 0;">
+    <div class="contact-two-from-wrap border-radius-twenty">
+      {% if messages %}
+      {% for message in messages %}
+      <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}"
+        style="padding: 15px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; {% if message.tags == 'success' %}background-color: #dff0d8; border-color: #d6e9c6; color: #3c763d;{% else %}background-color: #f2dede; border-color: #ebccd1; color: #a94442;{% endif %}">
+        {{ message }}
+      </div>
+      {% endfor %}
+      {% endif %}
+      <div class="contact-one-form-block w-form">
+        <form id="email-form" name="email-form" action="{% url 'murojaat' %}" data-name="Email Form" method="post"
+          enctype="multipart/form-data" class="contact-one-form form-two" aria-label="Email Form">
+          {% csrf_token %}
+          <div class="w-layout-hflex contact-one-input-wrap">
+            <div class="contact-one-input-box contact-two-input-box"><label for="subject" class="admission-one-label">
+                {% blocktranslate %}Murojaat mavzusi{% endblocktranslate %}
+              </label><input class="admission-one-form-input-item contact-two-form-input w-input" maxlength="255"
+                name="subject" placeholder="" type="text" id="subject" required style="color: black;"></div>
+            <div class="contact-one-input-box contact-two-input-box"><label for="first_name"
+                class="admission-one-label">
+                {% blocktranslate %}Ism{% endblocktranslate %}
+              </label><input class="admission-one-form-input-item contact-two-form-input w-input" maxlength="100"
+                name="first_name" placeholder="" type="text" id="first_name" required style="color: black;"></div>
+          </div>
+          <div class="w-layout-hflex contact-one-input-wrap">
+            <div class="contact-one-input-box contact-two-input-box"><label for="last_name" class="admission-one-label">
+                {% blocktranslate %}Familiya{% endblocktranslate %}
+              </label><input class="admission-one-form-input-item contact-two-form-input w-input" maxlength="100"
+                name="last_name" placeholder="" type="text" id="last_name" required style="color: black;"></div>
+            <div class="contact-one-input-box contact-two-input-box"><label for="father_name"
+                class="admission-one-label">
+                {% blocktranslate %}Otasining ismi{% endblocktranslate %}
+              </label><input class="admission-one-form-input-item contact-two-form-input w-input" maxlength="100"
+                name="father_name" placeholder="" type="text" id="father_name" required style="color: black;"></div>
+          </div>
+          <div class="w-layout-hflex contact-one-input-wrap">
+            <div class="contact-one-input-box contact-two-input-box"><label for="email" class="admission-one-label">
+              {%blocktranslate %}E-mail{% endblocktranslate%}
+              </label><input class="admission-one-form-input-item contact-two-form-input w-input" maxlength="254"
+                name="email" placeholder="info@example.com" type="email" id="email" required style="color: black;">
+            </div>
+            <div class="contact-one-input-box contact-two-input-box"><label for="phone" class="admission-one-label">
+              {%blocktranslate %}Telefon{% endblocktranslate %}
+              </label><input class="admission-one-form-input-item contact-two-form-input w-input" maxlength="20"
+                name="phone" placeholder="+998 (99) 123-45-67" type="tel" id="phone" required style="color: black;">
+            </div>
+          </div>
+          <div class="w-layout-hflex contact-one-input-wrap">
+            <div class="admission-form-input-box"><label for="region" class="admission-one-label">
+                {% blocktranslate %}Hudud{% endblocktranslate %}
+              </label><select name="region" id="region" class="admission-form-select w-select" required
+                style="color: black;">
+                <option value="">{% blocktranslate %}Hududni tanlang{% endblocktranslate %}</option>
+                {% for region in regions %}
+                <option value="{{ region.id }}">{{ region.name }}</option>
+                {% endfor %}
+              </select></div>
+            <div class="contact-one-input-box contact-two-input-box"><label for="attachment"
+                class="admission-one-label">
+                {% blocktranslate %}
+                Fayl tanlang
+                {% endblocktranslate%}
+              </label>
+              <input type="file" name="attachment" id="attachment"
+                accept=".txt,.doc,.rtf,.xls,.ppt,.pdf,.jpg,.bmp,.png,.tiff,.gif"
+                style="display: inline-block; padding: 15px; background: #f0f0f0; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-family: Arial, sans-serif; color: #333;">
+            </div>
+          </div>
+          <div class="admission-form-input-box-full-width contact-form-bottom-gap"><label for="message"
+              class="admission-one-label">
+              {% blocktranslate %}
+              Taklif, bayonot yoki shikoyatning mohiyatini ayting
+              {% endblocktranslate%}
+            </label><textarea required placeholder="" maxlength="5000" id="message" name="message"
+              class="admission-form-textarea contact-two-form-input w-input" style="color: black;"></textarea></div>
+          <div class="w-layout-hflex admission-form-button-wrap">
+            <button type="submit" class="button-style-one border-radius-five w-button">
+              {% blocktranslate %}
+              Yuborish
+              {% endblocktranslate %}
+            </button>
+          </div>
+        </form>
+        <div class="w-form-done" tabindex="-1" role="region" aria-label="Email Form success">
+          <div>
+            {% blocktranslate %}
+            Rahmat! Sizning arizangiz qabul qilindi!
+            {% endblocktranslate %}
+          </div>
+        </div>
+        <div class="w-form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+          <div>
+            {% blocktranslate %}
+            Xatolik! Arizangizni qayta yuboring.
+            {% endblocktranslate %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
