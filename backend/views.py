@@ -72,6 +72,12 @@ def terms(request):
 def school(request):
     return render(request, 'school.html')
 
+def recruitment(request):
+    return render(request, 'recruitment.html')
+
+def egov(request):
+    return render(request, 'egov.html')
+
 def murojaat(request):
     if request.method == 'POST':
         try:
