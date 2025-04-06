@@ -63,6 +63,20 @@ def persons(request, cat_id):
         context = None
     return render(request, 'persons.html', {'person_type': context, 'persons': persons})
 
+def newstypes(request, cat_id):
+    news_type = NewsType.objects.filter(id=cat_id).first()
+    news = News.objects.filter(news_type=news_type)
+    if news_type:
+        context = {
+            'id': news_type.id,
+            'name': news_type.name,
+            'name_uz': news_type.name_uz,
+            'name_ru': news_type.name_ru
+        }
+    else:
+        context = None
+    return render(request, 'newstypes.html', {'news_type': context, 'news': news})
+
 def purpose(request):
     return render(request, 'purpose.html')
 

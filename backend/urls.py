@@ -20,6 +20,7 @@ urlpatterns = [
     path('opendatadb', views.opendatadb, name='opendatadb'),
     path('corruption', views.corruption, name='corruption'),
     path('persons/<int:cat_id>/', views.persons, name='persons'),
+    path('newstypes/<int:cat_id>/', views.newstypes, name='newstypes'),
     path('api/leaders/<int:region_id>/', views.get_leaders, name='get_leaders'),
     path('api/city_leader/<int:city_id>/', views.get_city_leader, name='get_city_leader'),
     path('news/', views.news_list, name='news_list'),
