@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section data-w-id="1b8a36f8-cc33-f35d-6e70-422da3371bbc" class="blog-one-hero tution-fees-hero"
+  style="background-image: linear-gradient(#000000db, #0000004a), linear-gradient(#000000d1, #0c0c0c00 30%), url('https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67695bc2103d24f42d5b520c_blog-three-bg.webp'); background-repeat: no-repeat; background-size: cover;">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="blog-one-hero-content tution-fee">
+      <div class="subheading color-white">
+        {% blocktranslate %}Faoliyat{% endblocktranslate %}
+      </div>
+      <div class="headinng-one-margin overflow-hidden">
+        <h1 class="slide-title no-margin color-white" style="
+          transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
+            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform-style: preserve-3d;
+        ">
+          {% blocktranslate %}
+          Ochiq majlislar o'tkazish rejalari
+          {% endblocktranslate %}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="w-layout-blockcontainer container w-container">
+  <br>
+  <p style="text-align: center;">
+    {% blocktranslate %}
+    AXBOROTDAN FOYDALANUVCHILARNING OCHIQ HAYʼAT MAJLISLARIDA HOZIR BOʻLISH TARTIBI TOʻGʻRISIDA NIZOM
+    {% endblocktranslate %}
+  </p>
+  <div class="download-container" style="text-align: center; margin: 40px 0;">
+    <a href="{% static 'files/openmeets.pdf' %}" class="download-btn" style="display: inline-flex;
+              align-items: center;
+              padding: 15px 30px;
+              background-color: #2B59C3;
+              color: white;
+              border-radius: 8px;
+              text-decoration: none;
+              transition: all 0.3s ease;
+              transform: translateY(0);
+              box-shadow: 0 4px 6px rgba(0,0,0,0.1);"
+      onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.2)'"
+      onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+        viewBox="0 0 24 24"><!-- Icon from Material Line Icons by Vjacheslav Trushkin - https://github.com/cyberalien/line-md/blob/master/license.txt -->
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <path fill="currentColor" fill-opacity="0" stroke-dasharray="20" stroke-dashoffset="20"
+            d="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5">
+            <animate attributeName="d" begin="0.5s" dur="1.5s" repeatCount="indefinite"
+              values="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5;M12 4h2v3h2.5l-4.5 4.5M12 4h-2v3h-2.5l4.5 4.5;M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5" />
+            <animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.15s" values="0;0.3" />
+            <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="20;0" />
+          </path>
+          <path stroke-dasharray="14" stroke-dashoffset="14" d="M6 19h12">
+            <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="14;0" />
+          </path>
+        </g>
+      </svg>
+      {% blocktranslate %}Yuklab olish{% endblocktranslate %}
+    </a>
+  </div>
+</div>
+{% endblock %}

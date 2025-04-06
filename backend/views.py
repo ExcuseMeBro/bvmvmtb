@@ -78,6 +78,12 @@ def recruitment(request):
 def egov(request):
     return render(request, 'egov.html')
 
+def open(request):
+    return render(request, 'open.html')
+
+def ijro(request):
+    return render(request, 'ijro.html')
+
 def murojaat(request):
     if request.method == 'POST':
         try:
