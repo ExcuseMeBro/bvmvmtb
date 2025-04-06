@@ -16,6 +16,7 @@ urlpatterns = [
     path('ijro', views.ijro, name='ijro'),
     path('investment', views.investment, name='investment'),
     path('employees', views.employees, name='employees'),
+    path('openness', views.openness, name='openness'),
     path('persons/<int:cat_id>/', views.persons, name='persons'),
     path('api/leaders/<int:region_id>/', views.get_leaders, name='get_leaders'),
     path('api/city_leader/<int:city_id>/', views.get_city_leader, name='get_city_leader'),

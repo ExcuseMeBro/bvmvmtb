@@ -87,6 +87,9 @@ def ijro(request):
 def investment(request):
     return render(request, 'investment.html')
 
+def openness(request):
+    return render(request, 'openness.html')
+
 def employees(request):
     employee = Employee.objects.all()
 
