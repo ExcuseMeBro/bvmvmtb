@@ -87,6 +87,15 @@ def ijro(request):
 def investment(request):
     return render(request, 'investment.html')
 
+def employees(request):
+    employee = Employee.objects.all()
+
+    context = {
+        'employees': employee,
+    }
+
+    return render(request, 'employees.html', context)
+
 def murojaat(request):
     if request.method == 'POST':
         try:

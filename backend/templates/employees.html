@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section data-w-id="1b8a36f8-cc33-f35d-6e70-422da3371bbc" class="blog-one-hero tution-fees-hero"
+  style="background-image: linear-gradient(#000000db, #0000004a), linear-gradient(#000000d1, #0c0c0c00 30%), url('https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67695bc2103d24f42d5b520c_blog-three-bg.webp'); background-repeat: no-repeat; background-size: cover;">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="blog-one-hero-content tution-fee">
+      <div class="subheading color-white">
+        {% blocktranslate %}Faoliyat{% endblocktranslate %}
+      </div>
+      <div class="headinng-one-margin overflow-hidden">
+        <h1 class="slide-title no-margin color-white" style="
+          transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
+            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform-style: preserve-3d;
+        ">
+          {% blocktranslate %}
+          Jismoniy va yuridik shaxslarning murojaati bilan ishlash
+          {% endblocktranslate %}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="w-layout-blockcontainer container w-container">
+  <br>
+  <div class="page_content">
+    <p style="text-align: center;"><span style="font-size:22px;">Oʻzbekiston Respublikasi Maktabgacha va maktab taʼlimi
+        vazirligi rahbariyatining jismoniy shaxslar va yuridik shaxslar vakillarini qabul qilish jadvali</span></p>
+
+    <table class="MsoTableGrid table table-bordered table-striped"
+      style="box-sizing:border-box; border-spacing:0px; border-collapse:collapse; background-color:#ffffff; width:1140px; box-shadow:rgba(0, 0, 0, 0.2) 0px 1px 3px; display:table; color:#808080; font-family:&quot;Open Sans&quot;, sans-serif; font-size:14px; font-style:normal; font-variant-ligatures:normal; font-variant-caps:normal; font-weight:500; letter-spacing:normal; orphans:2; text-align:start; text-transform:none; white-space:normal; widows:2; word-spacing:0px; -webkit-text-stroke-width:0px; text-decoration-thickness:initial; text-decoration-style:initial; text-decoration-color:initial; border:none; margin-right:9px; margin-bottom:40px; margin-left:9px">
+      <tbody style="box-sizing:border-box">
+        <tr>
+          <td
+            style="border-bottom:1px solid black; padding:0cm 7px; width:41px; background-color:#ffffff; border-top:1px solid black; border-right:1px solid black; border-left:1px solid black">
+            <p align="center" style="text-align:center"><span style="font-size:22px;"><span style="color:#000000;"><span
+                    style="box-sizing:border-box"><span style="box-sizing:border-box"><span
+                        style="line-height:normal"><strong style="box-sizing:border-box; font-weight:700"><span
+                            style="box-sizing:border-box"><span
+                              style="font-family:Cambria, serif">T/R</span></span></strong></span></span></span></span></span>
+            </p>
+          </td>
+          <td
+            style="border-bottom:1px solid black; padding:0cm 7px; width:234px; background-color:#ffffff; border-top:1px solid black; border-right:1px solid black; border-left:none">
+            <p align="center" style="text-align:center"><span style="font-size:22px;"><span style="color:#000000;"><span
+                    style="box-sizing:border-box"><span style="box-sizing:border-box"><span
+                        style="line-height:normal"><strong style="box-sizing:border-box; font-weight:700"><span
+                            style="box-sizing:border-box"><span
+                              style="font-family:Cambria, serif">F.I.SH</span></span></strong></span></span></span></span></span>
+            </p>
+          </td>
+          <td
+            style="border-bottom:1px solid black; padding:0cm 7px; width:160px; background-color:#ffffff; border-top:1px solid black; border-right:1px solid black; border-left:none">
+            <p align="center" style="text-align:center"><span style="font-size:22px;"><span style="color:#000000;"><span
+                    style="box-sizing:border-box"><span style="box-sizing:border-box"><span
+                        style="line-height:normal"><strong style="box-sizing:border-box; font-weight:700"><span
+                            style="box-sizing:border-box"><span
+                              style="font-family:Cambria, serif">Lavozimi</span></span></strong></span></span></span></span></span>
+            </p>
+          </td>
+          <td
+            style="border-bottom:1px solid black; padding:0cm 7px; width:204px; background-color:#ffffff; border-top:1px solid black; border-right:1px solid black; border-left:none">
+            <p align="center" style="text-align:center"><span style="font-size:22px;"><span style="color:#000000;"><span
+                    style="box-sizing:border-box"><span style="box-sizing:border-box"><span
+                        style="line-height:normal"><span style="box-sizing:border-box"><span
+                            style="font-family:Cambria, serif"><strong
+                              style="box-sizing:border-box; font-weight:700">Qabul kuni va</strong></span></span><br
+                          style="box-sizing:border-box">
+                        <span style="box-sizing:border-box"><span style="font-family:Cambria, serif"><strong
+                              style="box-sizing:border-box; font-weight:700">soati</strong></span></span></span></span></span></span></span>
+            </p>
+          </td>
+        </tr>
+        {% for employee in employees %}
+        <tr>
+          <td
+            style="border-bottom:1px solid black; padding:0cm 7px; width:41px; background-color:#ffffff; border-top:none; border-right:1px solid black; border-left:1px solid black"
+            valign="top">
+            <p align="center" style="text-align:center"><span style="font-size:22px;"><span style="color:#000000;"><span
+                    style="box-sizing:border-box"><span style="box-sizing:border-box"><span
+                        style="line-height:normal"><strong style="box-sizing:border-box; font-weight:700"><span
+                            style="box-sizing:border-box"><span style="font-family:Cambria, serif">
+                              {{ forloop.counter }}.
+                            </span></span></strong></span></span></span></span></span></p>
+          </td>
+          <td
+            style="border-bottom:1px solid black; padding:0cm 7px; width:234px; background-color:#ffffff; border-top:none; border-right:1px solid black; border-left:none"
+            valign="top">
+            <p align="center" style="text-align:center"><strong><span style="font-size:22px;"><span
+                    style="color:#000000;"><span style="box-sizing:border-box"><span style="box-sizing:border-box"><span
+                          style="line-height:normal"><span style="box-sizing:border-box"><span
+                              style="font-family:Cambria, serif">
+                              {{ employee.fullname }}
+                            </span></span></span></span></span></span></span></strong><br>
+          </td>
+          <td
+            style="border-bottom:1px solid black; padding:0cm 7px; width:160px; background-color:#ffffff; border-top:none; border-right:1px solid black; border-left:none"
+            valign="top">
+            <p align="center" style="text-align:center"><span style="font-size:22px;"><span style="color:#000000;"><span
+                    style="box-sizing:border-box"><span style="box-sizing:border-box"><span
+                        style="line-height:normal"><span style="box-sizing:border-box"><span
+                            style="font-family:Cambria, serif">
+                            {{ employee.position }}
+                          </span></span></span></span></span></span></span></p>
+          </td>
+          <td
+            style="border-bottom:1px solid black; padding:0cm 7px; width:204px; background-color:#ffffff; border-top:none; border-right:1px solid black; border-left:none"
+            valign="top">
+            <p align="center" style="text-align:center"><span style="font-size:22px;"><span style="color:#000000;"><span
+                    style="box-sizing:border-box"><span style="box-sizing:border-box"><span
+                        style="line-height:normal"><span style="box-sizing:border-box"><span
+                            style="font-family:Cambria, serif">
+                            {{ employee.get_working_day_display }}
+                          </span></span></span></span></span></span></span></p>
+
+            <p align="center" style="text-align:center"><span style="font-size:22px;"><span style="color:#000000;"><span
+                    style="box-sizing:border-box"><span style="box-sizing:border-box"><span
+                        style="line-height:normal"><span style="box-sizing:border-box"><span
+                            style="font-family:Cambria, serif">
+                            {{ employee.working_hours_start }}-{{ employee.working_hours_end }}
+                          </span></span></span></span></span></span></span></p>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <p><strong>Izoh:</strong>&nbsp;Murojaatlar bilan kelgan shaxslar manfaatida vazirlikda barcha masalalar boʻyicha
+      Murojaatlar boshqarmasining (dushanba-juma soat 9:00 dan 18:00 gacha ) kundalik qabuli tashkil etilgan.</p>
+
+    <p><strong>Maktabgacha va maktab taʼlimi vazirligining ishonch telefoni:</strong>&nbsp;+998 (71) 202-09-09</p>
+
+    <p data-pm-slice="1 1 []"><strong>Maktabgacha va maktab taʼlimi vazirligi hamda tizimdagi tashkilot va muassasalarda
+        jismoniy va yuridik shaxslarning murojaatlari bilan ishlash tartibi to‘g‘risida namunaviy nizom</strong></p>
+
+    <div class="download-container" style="text-align: center; margin: 40px 0;">
+      <a href="https://www.uzedu.uz/uploads/2022/04/123-ilova.pdf" class="download-btn" style="display: inline-flex;
+              align-items: center;
+              padding: 15px 30px;
+              background-color: #2B59C3;
+              color: white;
+              border-radius: 8px;
+              text-decoration: none;
+              transition: all 0.3s ease;
+              transform: translateY(0);
+              box-shadow: 0 4px 6px rgba(0,0,0,0.1);"
+        onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.2)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.1)'">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+          viewBox="0 0 24 24"><!-- Icon from Material Line Icons by Vjacheslav Trushkin - https://github.com/cyberalien/line-md/blob/master/license.txt -->
+          <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path fill="currentColor" fill-opacity="0" stroke-dasharray="20" stroke-dashoffset="20"
+              d="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5">
+              <animate attributeName="d" begin="0.5s" dur="1.5s" repeatCount="indefinite"
+                values="M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5;M12 4h2v3h2.5l-4.5 4.5M12 4h-2v3h-2.5l4.5 4.5;M12 4h2v6h2.5l-4.5 4.5M12 4h-2v6h-2.5l4.5 4.5" />
+              <animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.15s" values="0;0.3" />
+              <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="20;0" />
+            </path>
+            <path stroke-dasharray="14" stroke-dashoffset="14" d="M6 19h12">
+              <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.2s" values="14;0" />
+            </path>
+          </g>
+        </svg>
+        {% blocktranslate %}Yuklab olish{% endblocktranslate %}
+      </a>
+    </div>
+
+    <p><a href="https://lex.uz/docs/-3336169"><strong>“Jismoniy va yuridik shaxslarning murojaatlari toʻgʻrisida”gi
+          Oʻzbekiston Respublikasi Qonuni</strong></a></p>
+
+    <p>&nbsp;</p>
+    <p></p>
+  </div>
+</div>
+{% endblock %}
