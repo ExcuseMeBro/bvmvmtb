@@ -1,3 +1,4 @@
+from this import d
 from django.db import models
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
@@ -265,6 +266,7 @@ class PersonType(models.Model):
         return self.name
 
 class Persons(models.Model):
+    fullname = models.CharField(FIELD_NAMES['fullname'], max_length=100, default='')
     position = models.CharField(FIELD_NAMES['person_position'], max_length=200)
     biography = models.TextField(FIELD_NAMES['biography'])
     avatar = models.ImageField(FIELD_NAMES['avatar'], upload_to='persons/', blank=True, null=True)

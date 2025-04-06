@@ -29,7 +29,7 @@
         <div class="w-dyn-list">
           <div role="list" class="w-dyn-items">
             <div role="listitem" class="w-dyn-item"><a data-w-id="a7719ebb-3894-06ba-56b2-4268226329c6"
-                href="#" class="teachers-card w-inline-block">
+                href="{% url 'person_detail' pk=person.pk %}" class="teachers-card w-inline-block">
                 <div class="teacher-s-card-image overflow-hidden">
                   <img src="/media/{{ person.avatar }}" loading="lazy" width="300" height="290" alt=""
                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 23vw, 300px"
@@ -39,9 +39,7 @@
                 <div class="teachers-card-bottom teachers-experience-div text-align-center">
                   <div class="w-layout-hflex teachers-experience-wrap position-relative">
                     <div class="teachers-experience-content">
-                      <div>{{ person.get_working_day_display }}</div> |
-                      <div class="semi-bold">{{ person.working_hours_start }}</div>-
-                      <div class="semi-bold">{{ person.working_hours_end }}</div>
+                      <div style="opacity: 0;">123</div>
                     </div>
                     <div class="teachers-experience-wrap-background"></div>
                   </div>

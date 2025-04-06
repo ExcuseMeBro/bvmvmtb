@@ -102,7 +102,7 @@ class PersonsAdmin(admin.ModelAdmin):
     ordering = ('-created_at',)
     fieldsets = (
         ('Asosiy ma\'lumotlar', {
-            'fields': ('avatar', 'position', 'type', 'biography')
+            'fields': ('fullname', 'avatar', 'position', 'type', 'biography')
         }),
         ('Aloqa ma\'lumotlari', {
             'fields': ('phone', 'email', 'telegram', 'start_hour', 'end_hour')

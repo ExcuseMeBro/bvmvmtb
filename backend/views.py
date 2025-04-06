@@ -92,8 +92,13 @@ def murojaat(request):
     return render(request, 'murojaat.html', context)
 
 from django.shortcuts import render, get_object_or_404
-from django.http import HttpResponse, JsonResponse
-from .models import News, City
+from django.http import JsonResponse
+from .models import News, City, Persons
+
+def person_detail(request, pk):
+    person = get_object_or_404(Persons, pk=pk)
+    return render(request, 'person_detail.html', {'person': person})
+
 
 def get_cities(request, region_id):
     cities = City.objects.filter(region_id=region_id).values()
