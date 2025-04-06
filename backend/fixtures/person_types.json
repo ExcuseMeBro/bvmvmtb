@@ -1,0 +1,35 @@
+[
+    {
+        "model": "backend.persontype",
+        "pk": 1,
+        "fields": {
+            "name": "Leadership",
+            "name_uz": "Rahbariyat",
+            "name_ru": "Лидерство",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.persontype",
+        "pk": 2,
+        "fields": {
+            "name": "Employees",
+            "name_uz": "Xodimlar",
+            "name_ru": "Сотрудники",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.persontype",
+        "pk": 3,
+        "fields": {
+            "name": "Regional departments",
+            "name_uz": "Hududiy bo'limlar",
+            "name_ru": "Региональные отделения",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    }
+]

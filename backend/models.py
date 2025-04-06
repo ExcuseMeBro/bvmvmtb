@@ -267,6 +267,7 @@ class PersonType(models.Model):
 class Persons(models.Model):
     position = models.CharField(FIELD_NAMES['person_position'], max_length=200)
     biography = models.TextField(FIELD_NAMES['biography'])
+    avatar = models.ImageField(FIELD_NAMES['avatar'], upload_to='persons/', blank=True, null=True)
     start_hour = models.TimeField(FIELD_NAMES['start_hour'])
     end_hour = models.TimeField(FIELD_NAMES['end_hour'])
     phone = models.CharField(FIELD_NAMES['person_phone'], max_length=20)

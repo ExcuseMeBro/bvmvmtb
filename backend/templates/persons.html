@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section data-w-id="1b8a36f8-cc33-f35d-6e70-422da3371bbc" class="blog-one-hero tution-fees-hero" style="background-image: linear-gradient(#000000db, #0000004a), linear-gradient(#000000d1, #0c0c0c00 30%), url('https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67695bc2103d24f42d5b520c_blog-three-bg.webp'); background-repeat: no-repeat; background-size: cover;">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="blog-one-hero-content tution-fee">
+      <div class="subheading color-white">
+        {% blocktranslate %}Boshqarma{% endblocktranslate %}
+      </div>
+      <div class="headinng-one-margin overflow-hidden">
+        <h1 class="slide-title no-margin color-white" style="
+          transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
+            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform-style: preserve-3d;
+        ">
+          {{ person_type.name }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="tution-form">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="w-layout-hflex tution-form-flex-wrap">
+      <div class="w-layout-grid teachers-card-wrap">
+        {% for person in persons %}
+        <div class="w-dyn-list">
+          <div role="list" class="w-dyn-items">
+            <div role="listitem" class="w-dyn-item"><a data-w-id="a7719ebb-3894-06ba-56b2-4268226329c6"
+                href="#" class="teachers-card w-inline-block">
+                <div class="teacher-s-card-image overflow-hidden">
+                  <img src="/media/{{ person.avatar }}" loading="lazy" width="300" height="290" alt=""
+                    sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1439px) 23vw, 300px"
+                    class="image-box-two-image-main image-full-width"
+                    style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+                </div>
+                <div class="teachers-card-bottom teachers-experience-div text-align-center">
+                  <div class="w-layout-hflex teachers-experience-wrap position-relative">
+                    <div class="teachers-experience-content">
+                      <div>{{ person.get_working_day_display }}</div> |
+                      <div class="semi-bold">{{ person.working_hours_start }}</div>-
+                      <div class="semi-bold">{{ person.working_hours_end }}</div>
+                    </div>
+                    <div class="teachers-experience-wrap-background"></div>
+                  </div>
+                  <div class="margin-bottom-five">
+                    <div class="heading-style-h6">{{ person.fullname }}</div>
+                  </div>
+                  <div>{{ person.position }}</div>
+                </div>
+              </a></div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

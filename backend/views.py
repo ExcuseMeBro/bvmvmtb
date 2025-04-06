@@ -48,6 +48,20 @@ def home(request):
     return render(request, 'index.html', context)
 
 
+def persons(request, cat_id):
+    person_type = PersonType.objects.filter(id=cat_id).first()
+    persons = Persons.objects.filter(type=person_type)
+    if person_type:
+        context = {
+            'id': person_type.id,
+            'name': person_type.name,
+            'name_uz': person_type.name_uz,
+            'name_ru': person_type.name_ru
+        }
+    else:
+        context = None
+    return render(request, 'persons.html', {'person_type': context, 'persons': persons})
+
 def murojaat(request):
     if request.method == 'POST':
         try:

@@ -24,6 +24,7 @@ services:
     command: >
       sh -c "python manage.py makemigrations && 
              python manage.py migrate &&
+             python manage.py loaddata backend/fixtures/*.json &&
              python manage.py collectstatic --noinput &&
              gunicorn mysite.wsgi:application --bind 0.0.0.0:8000"
     # For development, you can use the following command instead:
