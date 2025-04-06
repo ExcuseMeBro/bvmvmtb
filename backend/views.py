@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.utils.translation import gettext as _
 from django.db.models import Sum
+from django.shortcuts import get_object_or_404
 from .models import *
 
 def home(request):
@@ -137,6 +138,10 @@ def news_list(request):
 def news_detail(request, pk):
     news = get_object_or_404(News, pk=pk)
     return render(request, 'news_single.html', {'news': news})
+
+def about(request):
+    about = get_object_or_404(About.objects.order_by('-created_at'))
+    return render(request, 'about.html', {'about': about})
 
 def vote(request):
     if request.method == 'POST':

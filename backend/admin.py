@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.translation import gettext as _
-from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics, UsefulLink, City, Offer, OfferStats, Files, FilesCategory, Persons, PersonType, Gallery, Leader, DistrictLeader
+from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics, UsefulLink, City, Offer, OfferStats, Files, FilesCategory, Persons, PersonType, Gallery, Leader, DistrictLeader, About
 
 @admin.register(EmailForm)
 class EmailFormAdmin(admin.ModelAdmin):
@@ -111,6 +111,13 @@ class PersonsAdmin(admin.ModelAdmin):
             'fields': ('work_experience', 'responsibilities')
         }),
     )
+
+@admin.register(About)
+class AboutAdmin(admin.ModelAdmin):
+    list_display = ('title', 'created_at', 'updated_at')
+    search_fields = ('title', 'content')
+    list_filter = ('created_at', 'updated_at')
+    ordering = ('-created_at',)
 
 @admin.register(PersonType)
 class PersonTypeAdmin(admin.ModelAdmin):

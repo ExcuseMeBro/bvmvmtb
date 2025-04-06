@@ -2,7 +2,7 @@ from modeltranslation.translator import register, TranslationOptions
 from .models import (
     FAQ, UsefulLink, FilesCategory, Files, Region, City, 
     EmailForm, Employee, NewsType, News, 
-    Statistics, Offer, OfferStats, PersonType, Persons, Gallery
+    Statistics, Offer, OfferStats, PersonType, Persons, Gallery, About
 )
 
 @register(UsefulLink)
@@ -68,3 +68,7 @@ class PersonsTranslationOptions(TranslationOptions):
 @register(Gallery)
 class GalleryTranslationOptions(TranslationOptions):
     fields = ('title', 'description')
+
+@register(About)
+class AboutTranslationOptions(TranslationOptions):
+    fields = ('title', 'content')

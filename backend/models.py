@@ -1,4 +1,3 @@
-from this import d
 from django.db import models
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
@@ -293,6 +292,20 @@ class Persons(models.Model):
 
     def __str__(self):
         return self.position
+
+class About(models.Model):
+    title = models.CharField(_('Title'), max_length=200)
+    content = RichTextUploadingField(_('Content'))
+    created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
+    updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
+    
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = _('About')
+        verbose_name_plural = _('About')
+    
+    def __str__(self):
+        return self.title
 
 class Gallery(models.Model):
     CONTENT_TYPE_CHOICES = CHOICES['CONTENT_TYPE_CHOICES']
