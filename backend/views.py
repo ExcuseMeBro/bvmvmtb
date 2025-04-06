@@ -94,6 +94,23 @@ def get_leaders(request, region_id):
     except Exception as e:
         return JsonResponse({'error': str(e)}, status=500)
 
+def get_city_leader(request, city_id):
+    try:
+        leader = DistrictLeader.objects.filter(city_id=city_id).first()
+        if leader:
+            leader_data = {
+                'id': leader.id,
+                'name': leader.fullname,
+                'phone': leader.phone,
+                'address': leader.address,
+                'latitude': leader.location_latitude,
+                'longitude': leader.location_longitude,
+            }
+            return JsonResponse(leader_data)
+        return JsonResponse({'error': 'Leader not found'}, status=404)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
 def news_list(request):
     news_items = News.objects.all().order_by('-created_at')
     return render(request, 'news_list.html', {'news_items': news_items})

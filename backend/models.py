@@ -339,6 +339,7 @@ class Gallery(models.Model):
 class DistrictLeader(models.Model):
     fullname = models.CharField(FIELD_NAMES['fullname'], max_length=100)
     phone = models.CharField(FIELD_NAMES['phone'], max_length=20)
+    address = models.TextField(FIELD_NAMES['address'], blank=True, null=True)
     location_latitude = models.DecimalField(_('Latitude'), max_digits=9, decimal_places=6)
     location_longitude = models.DecimalField(_('Longitude'), max_digits=9, decimal_places=6)
     city = models.ForeignKey(City, on_delete=models.CASCADE, verbose_name=FIELD_NAMES['city'])
@@ -348,7 +349,7 @@ class DistrictLeader(models.Model):
     class Meta:
         ordering = ['fullname']
         verbose_name = _('District Leader')
-        verbose_name_plural = _('District Leaders')
+        verbose_name_plural = _('Tuman mudirlari')
     
     def __str__(self):
         return f"{self.fullname} - {self.city.name}"
