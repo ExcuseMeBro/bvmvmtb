@@ -1,3 +1,4 @@
+from unicodedata import category
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.utils.translation import gettext as _
@@ -77,6 +78,20 @@ def newstypes(request, cat_id):
         context = None
     return render(request, 'newstypes.html', {'news_type': context, 'news': news})
 
+def filetypes(request, cat_id):
+    files_type = FilesCategory.objects.filter(id=cat_id).first()
+    files = Files.objects.filter(category=files_type)
+    if files_type:
+        context = {
+            'id': files_type.id,
+            'name': files_type.name,
+            'name_uz': files_type.name_uz,
+            'name_ru': files_type.name_ru
+        }
+    else:
+        context = None
+    return render(request, 'files.html', {'files_type': context, 'files': files})
+
 def purpose(request):
     return render(request, 'purpose.html')
 
@@ -110,6 +125,9 @@ def corruption(request):
         'regions': regions,
     }
     return render(request, 'corruption.html', context)
+
+def eservice(request):
+    return render(request, 'eservice.html')
 
 def employees(request):
     employee = Employee.objects.all()

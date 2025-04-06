@@ -34,8 +34,7 @@ class FilesCategory(models.Model):
         return self.name
 
 class Files(models.Model):
-    title = models.CharField(FIELD_NAMES['title'], max_length=200)
-    description = models.TextField(FIELD_NAMES['description'])
+    title = models.CharField(FIELD_NAMES['title'])
     url = models.URLField(FIELD_NAMES['url'])
     category = models.ForeignKey(FilesCategory, on_delete=models.CASCADE, verbose_name=FIELD_NAMES['category'])
     created_at = models.DateTimeField(_('Created At'), auto_now_add=True)

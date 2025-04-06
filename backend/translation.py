@@ -15,7 +15,7 @@ class FilesCategoryTranslationOptions(TranslationOptions):
 
 @register(Files)
 class FilesTranslationOptions(TranslationOptions):
-    fields = ('title', 'description')
+    fields = ('title',)
 
 @register(Region)
 class RegionTranslationOptions(TranslationOptions):

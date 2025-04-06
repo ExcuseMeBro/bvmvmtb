@@ -1,0 +1,112 @@
+[
+    {
+        "model": "backend.filescategory",
+        "pk": 1,
+        "fields": {
+            "name": "Statistics",
+            "name_uz": "Statistika",
+            "name_ru": "Статистика",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.filescategory",
+        "pk": 2,
+        "fields": {
+            "name": "Analytical data",
+            "name_uz": "Tahliliy ma`lumotlar",
+            "name_ru": "Аналитические данные",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.filescategory",
+        "pk": 3,
+        "fields": {
+            "name": "Proven capabilities",
+            "name_uz": "Imkoniyati cheklanganlarga",
+            "name_ru": "Проверенные возможности",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.filescategory",
+        "pk": 4,
+        "fields": {
+            "name": "Action Strategy and State Programs",
+            "name_uz": "Harakatlar strategiyasi va Davlat dasturlari",
+            "name_ru": "Стратегия действий и государственные программы",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.filescategory",
+        "pk": 5,
+        "fields": {
+            "name": "Work plan",
+            "name_uz": "Ish reja",
+            "name_ru": "План работы",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.filescategory",
+        "pk": 6,
+        "fields": {
+            "name": "Press releases",
+            "name_uz": "Press-relizlar",
+            "name_ru": "Пресс-релизы",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.filescategory",
+        "pk": 7,
+        "fields": {
+            "name": "Open budget",
+            "name_uz": "Ochiq budjet",
+            "name_ru": "Открытый бюджет",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.filescategory",
+        "pk": 8,
+        "fields": {
+            "name": "Open data",
+            "name_uz": "Ochiq ma`lumotlar",
+            "name_ru": "Открытые данные",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.filescategory",
+        "pk": 9,
+        "fields": {
+            "name": "Departmental documents on combating corruption",
+            "name_uz": "Korrupsiyaga qarshi kurashish bo’yicha idoraviy hujjatlar",
+            "name_ru": "Ведомственные документы по противодействию коррупции",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.filescategory",
+        "pk": 10,
+        "fields": {
+            "name": "Ongoing work",
+            "name_uz": "Amalga oshirilayotgan ishlar",
+            "name_ru": "Текущая работа",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    }
+]

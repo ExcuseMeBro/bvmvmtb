@@ -92,7 +92,7 @@ class FilesCategoryAdmin(admin.ModelAdmin):
 class FilesAdmin(admin.ModelAdmin):
     list_display = ('title', 'category', 'created_at', 'updated_at')
     list_filter = ('category', 'created_at', 'updated_at')
-    search_fields = ('title', 'description')
+    search_fields = ('title',)
     ordering = ('-created_at',)
 
 @admin.register(Persons)
