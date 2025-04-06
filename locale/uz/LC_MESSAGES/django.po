@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-05 01:21+0000\n"
+"POT-Creation-Date: 2025-04-06 17:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: backend/admin.py:134
+#: backend/admin.py:156
 msgid "Kontent turiga qarab tegishli maydonni to'ldiring"
 msgstr ""
 
@@ -31,21 +31,24 @@ msgid "Quantity"
 msgstr ""
 
 #: backend/migrations/0009_statistics.py:16 backend/migrations/0012_city.py:16
-#: backend/models.py:12 backend/models.py:25 backend/models.py:41
-#: backend/models.py:56 backend/models.py:71 backend/models.py:86
-#: backend/models.py:114 backend/models.py:133 backend/models.py:146
-#: backend/models.py:163 backend/models.py:177 backend/models.py:197
-#: backend/models.py:211 backend/models.py:224 backend/models.py:251
-#: backend/models.py:286
+#: backend/models.py:12 backend/models.py:25 backend/models.py:40
+#: backend/models.py:55 backend/models.py:70 backend/models.py:85
+#: backend/models.py:113 backend/models.py:132 backend/models.py:145
+#: backend/models.py:162 backend/models.py:176 backend/models.py:197
+#: backend/models.py:208 backend/models.py:228 backend/models.py:242
+#: backend/models.py:255 backend/models.py:284 backend/models.py:298
+#: backend/models.py:333 backend/models.py:361
 msgid "Created At"
 msgstr ""
 
 #: backend/migrations/0009_statistics.py:17 backend/migrations/0012_city.py:17
-#: backend/models.py:13 backend/models.py:26 backend/models.py:42
-#: backend/models.py:57 backend/models.py:72 backend/models.py:87
-#: backend/models.py:134 backend/models.py:147 backend/models.py:164
-#: backend/models.py:178 backend/models.py:198 backend/models.py:212
-#: backend/models.py:225 backend/models.py:252 backend/models.py:287
+#: backend/models.py:13 backend/models.py:26 backend/models.py:41
+#: backend/models.py:56 backend/models.py:71 backend/models.py:86
+#: backend/models.py:133 backend/models.py:146 backend/models.py:163
+#: backend/models.py:177 backend/models.py:198 backend/models.py:209
+#: backend/models.py:229 backend/models.py:243 backend/models.py:256
+#: backend/models.py:285 backend/models.py:299 backend/models.py:334
+#: backend/models.py:362
 msgid "Updated At"
 msgstr ""
 
@@ -70,7 +73,43 @@ msgstr ""
 msgid "Cities"
 msgstr ""
 
-#: backend/templates/404.html:16 backend/templates/base.html:16
+#: backend/models.py:195
+msgid "Ovoz berish varianti"
+msgstr ""
+
+#: backend/models.py:196
+msgid "Ovozlar soni"
+msgstr ""
+
+#: backend/models.py:296
+msgid "Title"
+msgstr ""
+
+#: backend/models.py:297
+msgid "Content"
+msgstr ""
+
+#: backend/models.py:303 backend/models.py:304
+msgid "About"
+msgstr ""
+
+#: backend/models.py:358
+msgid "Latitude"
+msgstr ""
+
+#: backend/models.py:359
+msgid "Longitude"
+msgstr ""
+
+#: backend/models.py:366
+msgid "District Leader"
+msgstr ""
+
+#: backend/models.py:367
+msgid "Tuman mudirlari"
+msgstr ""
+
+#: backend/templates/404.html:16 backend/templates/base.html:101
 msgid ""
 "\n"
 "        O‘zbekiston Respublikasi maktabgacha va maktab ta'limi vazirligi\n"
@@ -92,8 +131,135 @@ msgstr ""
 msgid "Bosh sahifaga qaytish"
 msgstr ""
 
-#: backend/templates/base.html:268 backend/templates/index.html:732
+#: backend/templates/about.html:10 backend/templates/mainnavbar.html:79
+#: backend/templates/person_detail.html:10 backend/templates/persons.html:10
+#: backend/templates/purpose.html:11
+msgid "Boshqarma"
+msgstr ""
+
+#: backend/templates/base.html:354 backend/templates/index.html:749
 msgid "Shaharni tanlang"
+msgstr ""
+
+#: backend/templates/corruption.html:11 backend/templates/opendata.html:11
+#: backend/templates/openness.html:11
+msgid "Boshqa sahifalar"
+msgstr ""
+
+#: backend/templates/corruption.html:19
+msgid ""
+"\n"
+"          Karrupsiyaga qarshi kurashish\n"
+"          "
+msgstr ""
+
+#: backend/templates/corruption.html:44 backend/templates/murojaat.html:226
+msgid "Murojaat mavzusi"
+msgstr ""
+
+#: backend/templates/corruption.html:49 backend/templates/murojaat.html:232
+#: backend/translations.py:77
+msgid "Ism"
+msgstr ""
+
+#: backend/templates/corruption.html:55 backend/templates/murojaat.html:240
+#: backend/translations.py:78
+msgid "Familiya"
+msgstr ""
+
+#: backend/templates/corruption.html:60 backend/templates/murojaat.html:246
+#: backend/translations.py:79
+msgid "Otasining ismi"
+msgstr ""
+
+#: backend/templates/corruption.html:66 backend/templates/murojaat.html:253
+msgid "E-mail"
+msgstr ""
+
+#: backend/templates/corruption.html:71 backend/templates/index.html:755
+#: backend/templates/murojaat.html:258 backend/translations.py:81
+#: backend/translations.py:115 backend/translations.py:131
+msgid "Telefon"
+msgstr ""
+
+#: backend/templates/corruption.html:78 backend/templates/murojaat.html:265
+msgid "Hudud"
+msgstr ""
+
+#: backend/templates/corruption.html:81 backend/templates/murojaat.html:267
+msgid "Hududni tanlang"
+msgstr ""
+
+#: backend/templates/corruption.html:88
+msgid ""
+"\n"
+"                Fayl tanlang\n"
+"                "
+msgstr ""
+
+#: backend/templates/corruption.html:99
+msgid ""
+"\n"
+"              Taklif, bayonot yoki shikoyatning mohiyatini ayting\n"
+"              "
+msgstr ""
+
+#: backend/templates/corruption.html:106
+msgid ""
+"\n"
+"              Yuborish\n"
+"              "
+msgstr ""
+
+#: backend/templates/corruption.html:114
+msgid ""
+"\n"
+"            Rahmat! Sizning arizangiz qabul qilindi!\n"
+"            "
+msgstr ""
+
+#: backend/templates/corruption.html:121
+msgid ""
+"\n"
+"            Xatolik! Arizangizni qayta yuboring.\n"
+"            "
+msgstr ""
+
+#: backend/templates/egov.html:11 backend/templates/employees.html:11
+#: backend/templates/eservice.html:11 backend/templates/ijro.html:11
+#: backend/templates/investment.html:11 backend/templates/open.html:11
+msgid "Faoliyat"
+msgstr ""
+
+#: backend/templates/egov.html:19
+msgid ""
+"\n"
+"          Elektron hukumat\n"
+"          "
+msgstr ""
+
+#: backend/templates/employees.html:19
+msgid ""
+"\n"
+"          Jismoniy va yuridik shaxslarning murojaati bilan ishlash\n"
+"          "
+msgstr ""
+
+#: backend/templates/employees.html:167 backend/templates/files.html:60
+#: backend/templates/ijro.html:49 backend/templates/ijro.html:72
+#: backend/templates/ijro.html:95 backend/templates/ijro.html:118
+#: backend/templates/open.html:62 backend/templates/openness.html:78
+#: backend/templates/openness.html:102 backend/templates/openness.html:126
+#: backend/templates/openness.html:151 backend/templates/openness.html:176
+#: backend/templates/openness.html:201
+msgid "Yuklab olish"
+msgstr ""
+
+#: backend/templates/eservice.html:19
+msgid ""
+"\n"
+"          Elektron davlat xizmatlari reestri\n"
+"          "
 msgstr ""
 
 #: backend/templates/faq.html:10
@@ -102,6 +268,10 @@ msgstr ""
 
 #: backend/templates/faq.html:14
 msgid " O'zingizni qiziqtirgan savollarga tezda javob olishingiz mumkin "
+msgstr ""
+
+#: backend/templates/files.html:11 backend/translations.py:12
+msgid "Fayllar"
 msgstr ""
 
 #: backend/templates/footer.html:12
@@ -183,6 +353,50 @@ msgid ""
 "                        "
 msgstr ""
 
+#: backend/templates/ijro.html:19
+msgid ""
+"\n"
+"          Umumta`lim tashkilotlari faoliyatini tekshirish\n"
+"          "
+msgstr ""
+
+#: backend/templates/ijro.html:30
+msgid ""
+"\n"
+"    O‘zbekiston Respublikasi Vazirlar Mahkamasining “Maktabgacha hamda "
+"umumta’lim tashkilotlari faoliyatini tekshirish ishlarini tartibga solish "
+"chora-tadbirlari to‘g‘risidagi” qarori\n"
+"    "
+msgstr ""
+
+#: backend/templates/ijro.html:53
+msgid ""
+"\n"
+"    Xalq ta’limi vazirligi tasarrufidagi tashkilot va ta’lim muassasalarida "
+"2020 va 2021 yillarda mahalliy hokimiyat idoralari hamda nazorat organlari "
+"tomonidan rejasiz o‘tkazilgan tekshiruvlar, ularni qayd etmaslik va "
+"tekshiruv natijalari yuzasidan ma’lumotnoma yoki dalolatnoma qoldirmaslik\n"
+"    "
+msgstr ""
+
+#: backend/templates/ijro.html:76
+msgid ""
+"\n"
+"    Xalq ta’limi vazirligi tasarrufidagi ta’lim muassasalarida 2020 va 2021 "
+"yillarda mahalliy hokimiyat idoralari hamda nazorat organlari tomonidan "
+"o‘tkazilgan tekshiruvlar to‘g‘risida\n"
+"    "
+msgstr ""
+
+#: backend/templates/ijro.html:99
+msgid ""
+"\n"
+"    Xalq ta’limi vazirligi tasarrufidagi ta’lim muassasalarida 2020 va 2021 "
+"yillarda mahalliy hokimiyat idoralari hamda nazorat organlari tomonidan "
+"o‘tkazilgan tekshiruvlar to‘g‘risida ma’lumot\n"
+"    "
+msgstr ""
+
 #: backend/templates/index.html:18
 msgid ""
 "\n"
@@ -197,73 +411,73 @@ msgid ""
 "            "
 msgstr ""
 
-#: backend/templates/index.html:95
+#: backend/templates/index.html:59
 msgid ""
 "\n"
 "        Resurslar\n"
 "        "
 msgstr ""
 
-#: backend/templates/index.html:101
+#: backend/templates/index.html:65
 msgid ""
 "\n"
 "          Foydali manbalarda foydalanish\n"
 "          "
 msgstr ""
 
-#: backend/templates/index.html:114
+#: backend/templates/index.html:78
 msgid ""
 "\n"
 "            O'quvchilarga\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:121
+#: backend/templates/index.html:85
 msgid ""
 "\n"
 "            Darsliklar\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:126
+#: backend/templates/index.html:90
 msgid ""
 "\n"
 "            Smartland\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:131
+#: backend/templates/index.html:95
 msgid ""
 "\n"
 "            Videodarsliklar\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:136
+#: backend/templates/index.html:100
 msgid ""
 "\n"
 "            To'garaklar\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:151 backend/templates/index.html:160
-#: backend/templates/index.html:216 backend/templates/index.html:225
-#: backend/templates/index.html:282 backend/templates/index.html:291
-#: backend/templates/index.html:347 backend/templates/index.html:356
+#: backend/templates/index.html:115 backend/templates/index.html:124
+#: backend/templates/index.html:180 backend/templates/index.html:189
+#: backend/templates/index.html:246 backend/templates/index.html:255
+#: backend/templates/index.html:311 backend/templates/index.html:320
 msgid ""
 "\n"
 "              batafsil\n"
 "              "
 msgstr ""
 
-#: backend/templates/index.html:179
+#: backend/templates/index.html:143
 msgid ""
 "\n"
 "            Ota-onalarga\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:186
+#: backend/templates/index.html:150
 msgid ""
 "\n"
 "            Umumiy o‘rta ta’lim muassasalarining ichki tartib va odob-axloq "
@@ -271,35 +485,35 @@ msgid ""
 "            "
 msgstr ""
 
-#: backend/templates/index.html:191
+#: backend/templates/index.html:155
 msgid ""
 "\n"
 "            Uyda yakka tartibda taʼlim olish\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:196
+#: backend/templates/index.html:160
 msgid ""
 "\n"
 "            Voyaga yetmagan bolalarni farzandlikka olish\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:201
+#: backend/templates/index.html:165
 msgid ""
 "\n"
 "            Ixtisoslashgan maktablar\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:244
+#: backend/templates/index.html:208
 msgid ""
 "\n"
 "            Maktablarga\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:251
+#: backend/templates/index.html:215
 msgid ""
 "\n"
 "            Xalqaro tan olingan va milliy baholash tizimida berilgan "
@@ -308,70 +522,70 @@ msgid ""
 "            "
 msgstr ""
 
-#: backend/templates/index.html:257
+#: backend/templates/index.html:221
 msgid ""
 "\n"
 "            onlinedu.uz\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:262
+#: backend/templates/index.html:226
 msgid ""
 "\n"
 "            \"Ta'lim to'g'risida\"gi Qonun\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:267
+#: backend/templates/index.html:231
 msgid ""
 "\n"
 "            Davlat ta'lim standartlari\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:310
+#: backend/templates/index.html:274
 msgid ""
 "\n"
 "            O'qituvchilarga\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:317
+#: backend/templates/index.html:281
 msgid ""
 "\n"
 "            Vakant lavozimlar\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:322
+#: backend/templates/index.html:286
 msgid ""
 "\n"
 "            Malaka oshirish\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:327
+#: backend/templates/index.html:291
 msgid ""
 "\n"
 "            Attestatsiya\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:332
+#: backend/templates/index.html:296
 msgid ""
 "\n"
 "            O'qituvchi yuritadigan hujjatlar\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:405
+#: backend/templates/index.html:369
 msgid ""
 "\n"
 "          Maktab.uz\n"
 "          "
 msgstr ""
 
-#: backend/templates/index.html:412
+#: backend/templates/index.html:376
 msgid ""
 "\n"
 "            Agar siz maktabga bora olmasangiz, maktab sizning uyingizga "
@@ -379,7 +593,7 @@ msgid ""
 "            "
 msgstr ""
 
-#: backend/templates/index.html:418
+#: backend/templates/index.html:382
 msgid ""
 "\n"
 "          Maktab.uz - bu xalqaro standartlarga javob beradigan va maktab "
@@ -392,21 +606,21 @@ msgid ""
 "          "
 msgstr ""
 
-#: backend/templates/index.html:436 backend/templates/index.html:446
+#: backend/templates/index.html:400 backend/templates/index.html:410
 msgid ""
 "\n"
 "                  Batafsil\n"
 "                  "
 msgstr ""
 
-#: backend/templates/index.html:474
+#: backend/templates/index.html:438
 msgid ""
 "\n"
 "          Statistika\n"
 "          "
 msgstr ""
 
-#: backend/templates/index.html:480
+#: backend/templates/index.html:444
 msgid ""
 "\n"
 "            O‘zbekiston Respublikasi maktabgacha va maktab ta'limi "
@@ -414,7 +628,7 @@ msgid ""
 "            "
 msgstr ""
 
-#: backend/templates/index.html:487
+#: backend/templates/index.html:451
 msgid ""
 "\n"
 "            Ta’lim va tarbiyaning asosi, poydevori bu – maktab. Maktabni "
@@ -422,21 +636,21 @@ msgid ""
 "            "
 msgstr ""
 
-#: backend/templates/index.html:492
+#: backend/templates/index.html:456
 msgid ""
 "\n"
 "            Shavkat Mirziyoyev\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:559
+#: backend/templates/index.html:523
 msgid ""
 "\n"
 "            Mijozlar bilan ishlash\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:565
+#: backend/templates/index.html:529
 msgid ""
 "\n"
 "              Buxoro viloyati maktabgacha va maktab ta`limi boshqarmasi "
@@ -445,42 +659,74 @@ msgid ""
 "              "
 msgstr ""
 
-#: backend/templates/index.html:582 backend/templates/index.html:592
+#: backend/templates/index.html:546 backend/templates/index.html:556
 msgid ""
 "\n"
 "                Murojaat qilish\n"
 "                "
 msgstr ""
 
-#: backend/templates/index.html:611
+#: backend/templates/index.html:575
 msgid ""
 "\n"
 "    Foydali havolalar\n"
 "    "
 msgstr ""
 
-#: backend/templates/index.html:633
+#: backend/templates/index.html:595 backend/templates/index.html:623
+msgid "Ovoz berish"
+msgstr ""
+
+#: backend/templates/index.html:597
+msgid "Foydalanuvchilar tomonidan ishonch telefonini baholash statistikasi"
+msgstr ""
+
+#: backend/templates/index.html:606
+msgid "Zo'r"
+msgstr ""
+
+#: backend/templates/index.html:610
+msgid "Yaxshi"
+msgstr ""
+
+#: backend/templates/index.html:614
+msgid "Qoniqarli"
+msgstr ""
+
+#: backend/templates/index.html:618
+msgid "Qoniqarsiz"
+msgstr ""
+
+#: backend/templates/index.html:629
+msgid "Natijalar"
+msgstr ""
+
+#: backend/templates/index.html:634
+msgid "ta ovoz"
+msgstr ""
+
+#: backend/templates/index.html:650
 msgid ""
 "\n"
 "          So'nggi yangiliklar\n"
 "          "
 msgstr ""
 
-#: backend/templates/index.html:639
+#: backend/templates/index.html:656
 msgid ""
 "\n"
 "            Sohaga doir eng dolzarb yangiliklar\n"
 "            "
 msgstr ""
 
-#: backend/templates/index.html:671
+#: backend/templates/index.html:688
 msgid ""
 "\n"
 "                batafsil\n"
 "                "
 msgstr ""
 
-#: backend/templates/index.html:706
+#: backend/templates/index.html:723
 msgid ""
 "\n"
 "            Ta'lim sifatini oshirishga qaratilgan murojaat va takliflarni "
@@ -488,68 +734,69 @@ msgid ""
 "            "
 msgstr ""
 
-#: backend/templates/index.html:716
+#: backend/templates/index.html:733
 msgid "F.I.O"
 msgstr ""
 
-#: backend/templates/index.html:721 backend/translations.py:11
-#: backend/translations.py:64 backend/translations.py:109
+#: backend/templates/index.html:738 backend/translations.py:13
+#: backend/translations.py:68 backend/translations.py:113
 msgid "Viloyat"
 msgstr ""
 
-#: backend/templates/index.html:723
+#: backend/templates/index.html:740
 msgid "Viloyatni tanlang"
 msgstr ""
 
-#: backend/templates/index.html:730
+#: backend/templates/index.html:747
 msgid "Shahar"
 msgstr ""
 
-#: backend/templates/index.html:738 backend/templates/murojaat.html:258
-#: backend/translations.py:77 backend/translations.py:111
-#: backend/translations.py:127
-msgid "Telefon"
-msgstr ""
-
-#: backend/templates/index.html:743 backend/translations.py:55
-#: backend/translations.py:112
+#: backend/templates/index.html:760 backend/translations.py:59
+#: backend/translations.py:116
 msgid "Kategoriya"
 msgstr ""
 
-#: backend/templates/index.html:745
+#: backend/templates/index.html:762
 msgid "Kategoriyani tanlang"
 msgstr ""
 
-#: backend/templates/index.html:746 backend/translations.py:154
+#: backend/templates/index.html:763 backend/translations.py:162
 msgid "Maktabgacha ta'lim"
 msgstr ""
 
-#: backend/templates/index.html:747 backend/translations.py:155
+#: backend/templates/index.html:764 backend/translations.py:163
 msgid "Maktab ta'limi"
 msgstr ""
 
-#: backend/templates/index.html:752 backend/translations.py:79
-#: backend/translations.py:113
+#: backend/templates/index.html:769 backend/translations.py:83
+#: backend/translations.py:117
 msgid "Xabar"
 msgstr ""
 
-#: backend/templates/index.html:753
+#: backend/templates/index.html:770
 msgid "Xabaringizni yozing..."
 msgstr ""
 
-#: backend/templates/index.html:758
+#: backend/templates/index.html:775
 msgid "Iltimos kuting..."
 msgstr ""
 
-#: backend/templates/index.html:759
+#: backend/templates/index.html:776
 msgid "Yuborish"
 msgstr ""
 
-#: backend/templates/index.html:780
+#: backend/templates/index.html:797
 msgid ""
 "\n"
 "            Murojaatlar statistikasi\n"
 "            "
+msgstr ""
+
+#: backend/templates/investment.html:19
+msgid ""
+"\n"
+"          Investitsiya salohiyati\n"
+"          "
 msgstr ""
 
 #: backend/templates/mainnavbar.html:37
@@ -574,10 +821,6 @@ msgstr ""
 
 #: backend/templates/mainnavbar.html:69 backend/templates/mobilenavbar.html:112
 msgid " Fuqarolar murojaati "
-msgstr ""
-
-#: backend/templates/mainnavbar.html:79
-msgid "Boshqarma"
 msgstr ""
 
 #: backend/templates/mainnavbar.html:101
@@ -741,8 +984,8 @@ msgstr ""
 #: backend/templates/mainnavbar.html:299 backend/templates/mainnavbar.html:306
 #: backend/templates/mobilenavbar.html:39
 #: backend/templates/mobilenavbar.html:46
-#: backend/templates/mobilenavbar.html:426
-#: backend/templates/mobilenavbar.html:433
+#: backend/templates/mobilenavbar.html:429
+#: backend/templates/mobilenavbar.html:436
 msgid " Kirish "
 msgstr ""
 
@@ -830,26 +1073,31 @@ msgstr ""
 
 #: backend/templates/mainnavbar.html:398
 #: backend/templates/mobilenavbar.html:398
-msgid " Ish reja "
+msgid " Hisobotlar "
 msgstr ""
 
 #: backend/templates/mainnavbar.html:401
 #: backend/templates/mobilenavbar.html:401
-msgid " Ochiq majlislar o’tkazish rejalari "
+msgid " Ish reja "
 msgstr ""
 
 #: backend/templates/mainnavbar.html:404
 #: backend/templates/mobilenavbar.html:404
-msgid " Umumta`lim tashkilotlari faoliyatini tekshirish "
+msgid " Ochiq majlislar o’tkazish rejalari "
 msgstr ""
 
 #: backend/templates/mainnavbar.html:407
 #: backend/templates/mobilenavbar.html:407
-msgid " Investitsiya salohiyati "
+msgid " Umumta`lim tashkilotlari faoliyatini tekshirish "
 msgstr ""
 
 #: backend/templates/mainnavbar.html:410
 #: backend/templates/mobilenavbar.html:410
+msgid " Investitsiya salohiyati "
+msgstr ""
+
+#: backend/templates/mainnavbar.html:413
+#: backend/templates/mobilenavbar.html:413
 msgid " Jismoniy va yuridik shaxslarning murojaatlari bilan ishlash "
 msgstr ""
 
@@ -1045,34 +1293,6 @@ msgid ""
 "                          "
 msgstr ""
 
-#: backend/templates/murojaat.html:226
-msgid "Murojaat mavzusi"
-msgstr ""
-
-#: backend/templates/murojaat.html:232 backend/translations.py:73
-msgid "Ism"
-msgstr ""
-
-#: backend/templates/murojaat.html:240 backend/translations.py:74
-msgid "Familiya"
-msgstr ""
-
-#: backend/templates/murojaat.html:246 backend/translations.py:75
-msgid "Otasining ismi"
-msgstr ""
-
-#: backend/templates/murojaat.html:253
-msgid "E-mail"
-msgstr ""
-
-#: backend/templates/murojaat.html:265
-msgid "Hudud"
-msgstr ""
-
-#: backend/templates/murojaat.html:267
-msgid "Hududni tanlang"
-msgstr ""
-
 #: backend/templates/murojaat.html:274
 msgid ""
 "\n"
@@ -1143,371 +1363,607 @@ msgid ""
 "            (dushanba-juma soat 09:00 dan 18:00 gacha) tashkil etilgan."
 msgstr ""
 
-#: backend/templates/news_list.html:7
-msgid "Latest News"
-msgstr ""
-
-#: backend/templates/news_single.html:19
-msgid "Back to News List"
-msgstr ""
-
-#: backend/translations.py:5
-msgid "Foydali havola"
-msgstr ""
-
-#: backend/translations.py:6
-msgid "Foydali havolalar"
-msgstr ""
-
-#: backend/translations.py:7
-msgid "Fayllar kategoriyasi"
-msgstr ""
-
-#: backend/translations.py:8
-msgid "Fayllar kategoriyalari"
-msgstr ""
-
-#: backend/translations.py:9
-msgid "Fayl"
-msgstr ""
-
-#: backend/translations.py:10
-msgid "Fayllar"
-msgstr ""
-
-#: backend/translations.py:12
-msgid "Viloyatlar"
-msgstr ""
-
-#: backend/translations.py:13 backend/translations.py:110
-msgid "Tuman"
-msgstr ""
-
-#: backend/translations.py:14
-msgid "Tumanlar"
-msgstr ""
-
-#: backend/translations.py:15 backend/translations.py:16
-msgid "Ko'p so'raladigan savollar"
-msgstr ""
-
-#: backend/translations.py:17 backend/translations.py:18
-msgid "Murojaatlar"
-msgstr ""
-
-#: backend/translations.py:19
-msgid "Xodim"
-msgstr ""
-
-#: backend/translations.py:20
-msgid "Xodimlar"
-msgstr ""
-
-#: backend/translations.py:21
-msgid "Yangiliklar turi"
-msgstr ""
-
-#: backend/translations.py:22
-msgid "Yangiliklar turlari"
-msgstr ""
-
-#: backend/translations.py:23 backend/translations.py:93
-#: backend/translations.py:99
-msgid "Yangiliklar kategoriyasi"
-msgstr ""
-
-#: backend/translations.py:24
-msgid "Yangiliklar kategoriyalari"
-msgstr ""
-
-#: backend/translations.py:25
-msgid "Yangilik"
-msgstr ""
-
-#: backend/translations.py:26
+#: backend/templates/newstypes.html:11 backend/translations.py:28
 msgid "Yangiliklar"
 msgstr ""
 
-#: backend/translations.py:27 backend/translations.py:28
+#: backend/templates/open.html:19
+msgid ""
+"\n"
+"          Ochiq majlislar o'tkazish rejalari\n"
+"          "
+msgstr ""
+
+#: backend/templates/open.html:30
+msgid ""
+"\n"
+"    AXBOROTDAN FOYDALANUVCHILARNING OCHIQ HAYʼAT MAJLISLARIDA HOZIR BOʻLISH "
+"TARTIBI TOʻGʻRISIDA NIZOM\n"
+"    "
+msgstr ""
+
+#: backend/templates/opendata.html:19
+msgid ""
+"\n"
+"          Ochiq ma'lumotlar to'plami\n"
+"          "
+msgstr ""
+
+#: backend/templates/openness.html:19
+msgid ""
+"\n"
+"          Boshqarma faoliyatining ochiqligi\n"
+"          "
+msgstr ""
+
+#: backend/templates/person_detail.html:39 backend/translations.py:128
+msgid "Biografiya"
+msgstr ""
+
+#: backend/templates/person_detail.html:44
+msgid "Qabul vaqtlari"
+msgstr ""
+
+#: backend/templates/person_detail.html:49
+msgid "Kontaktlar"
+msgstr ""
+
+#: backend/templates/person_detail.html:51
+msgid "Phone"
+msgstr ""
+
+#: backend/templates/person_detail.html:52 backend/translations.py:80
+#: backend/translations.py:132
+msgid "Email"
+msgstr ""
+
+#: backend/templates/person_detail.html:54
+msgid "Telegram"
+msgstr ""
+
+#: backend/templates/person_detail.html:54
+msgid "Telegram Profile"
+msgstr ""
+
+#: backend/templates/person_detail.html:60 backend/translations.py:134
+msgid "Mehnat faoliyati"
+msgstr ""
+
+#: backend/templates/person_detail.html:65
+msgid "Majburiyatlari"
+msgstr ""
+
+#: backend/templates/purpose.html:19
+msgid "Missiya, Maqsad va Vazifalar"
+msgstr ""
+
+#: backend/templates/purpose.html:30
+msgid "Bizning vazifamiz"
+msgstr ""
+
+#: backend/templates/purpose.html:34
+msgid ""
+"\n"
+"          Umumiy o'rta va maktabdan tashqari ta'lim sohasida davlat "
+"siyosatini ishlab chiqish va\n"
+"          amalga oshirish.\n"
+"          "
+msgstr ""
+
+#: backend/templates/purpose.html:47
+msgid "Funksiya va vazifalar"
+msgstr ""
+
+#: backend/templates/purpose.html:53
+msgid ""
+"\n"
+"              O'zbekiston Respublikasi Maktabgacha va maktab ta'limi "
+"vazirligining asosiy vazifalari va\n"
+"              faoliyat yo'nalishlari (VMQ №146):\n"
+"              "
+msgstr ""
+
+#: backend/templates/purpose.html:67
+msgid ""
+" umumiy o'rta va maktabdan tashqari ta'lim sohasida yagona davlat siyosatini "
+"ishlab\n"
+"              chiqish\n"
+"              va amalga oshirish, o'quvchilarning ma'naviy, axloqiy, "
+"intellektual va jismoniy rivojlanish darajasini\n"
+"              yanada oshirish; "
+msgstr ""
+
+#: backend/templates/purpose.html:79
+msgid ""
+"\n"
+"              umumiy o'rta ta'limning davlat ta'lim standartlari va "
+"maktabdan tashqari ta'limga qo'yiladigan davlat talablariga muvofiq umumiy "
+"ta'lim muassasalari faoliyatini uslubiy boshqarishni amalga oshirish;\n"
+"              "
+msgstr ""
+
+#: backend/templates/purpose.html:90
+msgid ""
+"\n"
+"              o'qituvchi kasbining maqomi va obro'sini oshirish, ta'lim "
+"muassasalari xodimlarini, shuningdek, maktabgacha va maktab ta'limi tizimi "
+"xodimlarini moddiy va ijtimoiy qo'llab -quvvatlash, ularning samarali "
+"ishlashi uchun munosib sharoitlar yaratish;\n"
+"              "
+msgstr ""
+
+#: backend/templates/purpose.html:101
+msgid ""
+"\n"
+"              umumiy o'rta va maktabdan tashqari ta'lim sohasida yagona "
+"davlat siyosatini ishlab chiqish va amalga oshirish, o'quvchilarning "
+"ma'naviy, axloqiy, intellektual va jismoniy rivojlanish darajasini yanada "
+"oshirish;\n"
+"              "
+msgstr ""
+
+#: backend/templates/purpose.html:112
+msgid ""
+"\n"
+"              ta'lim muassasalarida chet tillarini o'qitish samaradorligini "
+"ta'minlashga qaratilgan kompleks chora -tadbirlarni amalga oshirish;\n"
+"              "
+msgstr ""
+
+#: backend/templates/purpose.html:123
+msgid ""
+"\n"
+"              o'quv jarayoniga o'quvchilarning ta'limiy, psixologik va "
+"jismoniy stressini optimallashtirishni hisobga olgan holda, ta'limning "
+"innovatsion shakllarini, zamonaviy pedagogik va axborot texnologiyalarini, "
+"kasbiy yo'naltirish, o'qitish va o'qitishning samarali usullarini joriy "
+"etish;\n"
+"              "
+msgstr ""
+
+#: backend/templates/purpose.html:133
+msgid "MAQSADIMIZ:O'SISH VA RIVOJLANISH"
+msgstr ""
+
+#: backend/templates/purpose.html:136
+msgid ""
+"\n"
+"        Maktabgacha va maktab ta'limi vazirligi maktab o'quvchilarining "
+"rivojlanishiga alohida e'tibor\n"
+"        qaratgan holda pedagog xodimlarning ulkan hissasini qadrlaydigan "
+"ta'lim tizimini yaratishga intiladi.\n"
+"        "
+msgstr ""
+
+#: backend/templates/purpose.html:156
+msgid "Yangi O‘zbekiston – maktab ostonasidan boshlanadi"
+msgstr ""
+
+#: backend/templates/purpose.html:158
+msgid "Shavkat Mirziyoyev"
+msgstr ""
+
+#: backend/templates/purpose.html:168
+msgid "Bizning strategiyamiz"
+msgstr ""
+
+#: backend/templates/purpose.html:172
+msgid ""
+"\n"
+"          Umumta’lim tizimida iqtisodiyotning innovatsion rivojlanishi, "
+"ilg‘or xalqaro tajriba va\n"
+"          jamiyatning zamonaviy talablariga muvofiq sifatli ta’lim olish "
+"imkoniyatlarini yaratish;\n"
+"          "
+msgstr ""
+
+#: backend/templates/purpose.html:178
+msgid ""
+"\n"
+"          Inson kapitalini mehnat bozorida va umuman mamlakatda o‘quvchining "
+"raqobatbardoshlik darajasini\n"
+"          belgilovchi asosiy omil sifatida rivojlantirish.\n"
+"          "
+msgstr ""
+
+#: backend/templates/recruitment.html:11 backend/templates/school.html:11
+#: backend/templates/terms.html:10
+msgid "Ta'lim"
+msgstr ""
+
+#: backend/templates/recruitment.html:19
+msgid ""
+"\n"
+"          Join Us in Shaping the Future of Education in Uzbekistan!\n"
+"          "
+msgstr ""
+
+#: backend/templates/school.html:19
+msgid ""
+"\n"
+"          Umumtaʼlim maktablarining hovli, kirish qismi va koridorlarini "
+"bezatish boʻyicha namunaviy tavsiyalardan\n"
+"          fotolavhalar\n"
+"          "
+msgstr ""
+
+#: backend/templates/terms.html:18
+msgid ""
+"\n"
+"            Ta'limga doir terminlar\n"
+"          "
+msgstr ""
+
+#: backend/translations.py:5
+msgid "Viloyat rahbari"
+msgstr ""
+
+#: backend/translations.py:6
+msgid "Viloyat rahbarlari"
+msgstr ""
+
+#: backend/translations.py:7
+msgid "Foydali havola"
+msgstr ""
+
+#: backend/translations.py:8
+msgid "Foydali havolalar"
+msgstr ""
+
+#: backend/translations.py:9
+msgid "Fayllar kategoriyasi"
+msgstr ""
+
+#: backend/translations.py:10
+msgid "Fayllar kategoriyalari"
+msgstr ""
+
+#: backend/translations.py:11
+msgid "Fayl"
+msgstr ""
+
+#: backend/translations.py:14
+msgid "Viloyatlar"
+msgstr ""
+
+#: backend/translations.py:15 backend/translations.py:114
+#: backend/translations.py:147
+msgid "Tuman"
+msgstr ""
+
+#: backend/translations.py:16
+msgid "Tumanlar"
+msgstr ""
+
+#: backend/translations.py:17 backend/translations.py:18
+msgid "Ko'p so'raladigan savollar"
+msgstr ""
+
+#: backend/translations.py:19 backend/translations.py:20
+msgid "Murojaatlar"
+msgstr ""
+
+#: backend/translations.py:21
+msgid "Xodim"
+msgstr ""
+
+#: backend/translations.py:22
+msgid "Xodimlar"
+msgstr ""
+
+#: backend/translations.py:23
+msgid "Yangiliklar turi"
+msgstr ""
+
+#: backend/translations.py:24
+msgid "Yangiliklar turlari"
+msgstr ""
+
+#: backend/translations.py:25 backend/translations.py:97
+#: backend/translations.py:103
+msgid "Yangiliklar kategoriyasi"
+msgstr ""
+
+#: backend/translations.py:26
+msgid "Yangiliklar kategoriyalari"
+msgstr ""
+
+#: backend/translations.py:27
+msgid "Yangilik"
+msgstr ""
+
+#: backend/translations.py:29 backend/translations.py:30
 msgid "Statistika"
 msgstr ""
 
-#: backend/translations.py:29
+#: backend/translations.py:31
 msgid "Taklif"
 msgstr ""
 
-#: backend/translations.py:30
+#: backend/translations.py:32
 msgid "Takliflar"
 msgstr ""
 
-#: backend/translations.py:31 backend/translations.py:32
+#: backend/translations.py:33 backend/translations.py:34
 msgid "Takliflar statistikasi"
 msgstr ""
 
-#: backend/translations.py:33 backend/translations.py:132
+#: backend/translations.py:35 backend/translations.py:136
 msgid "Shaxs turi"
 msgstr ""
 
-#: backend/translations.py:34
+#: backend/translations.py:36
 msgid "Shaxs turlari"
 msgstr ""
 
-#: backend/translations.py:35
+#: backend/translations.py:37
 msgid "Shaxs"
 msgstr ""
 
-#: backend/translations.py:36
+#: backend/translations.py:38
 msgid "Shaxslar"
 msgstr ""
 
-#: backend/translations.py:37 backend/translations.py:38
+#: backend/translations.py:39 backend/translations.py:40
 msgid "Galereya"
 msgstr ""
 
-#: backend/translations.py:44
+#: backend/translations.py:41
+msgid "Tuman rahbari"
+msgstr ""
+
+#: backend/translations.py:42
+msgid "Tuman rahbarlari"
+msgstr ""
+
+#: backend/translations.py:48
 msgid "Nomi"
 msgstr ""
 
-#: backend/translations.py:45
+#: backend/translations.py:49
 msgid "Havola"
 msgstr ""
 
-#: backend/translations.py:46 backend/translations.py:87
-#: backend/translations.py:158
+#: backend/translations.py:50 backend/translations.py:91
+#: backend/translations.py:166
 msgid "Rasm"
 msgstr ""
 
-#: backend/translations.py:49
+#: backend/translations.py:53
 msgid "Kategoriya nomi"
 msgstr ""
 
-#: backend/translations.py:52
+#: backend/translations.py:56
 msgid "Sarlavha"
 msgstr ""
 
-#: backend/translations.py:53
+#: backend/translations.py:57
 msgid "Tavsif"
 msgstr ""
 
-#: backend/translations.py:54
+#: backend/translations.py:58
 #: venv/lib/python3.13/site-packages/django/db/models/fields/__init__.py:2642
 msgid "URL"
 msgstr ""
 
-#: backend/translations.py:58
+#: backend/translations.py:62
 msgid "Viloyat nomi"
 msgstr ""
 
-#: backend/translations.py:59
+#: backend/translations.py:63
 msgid "Kod"
 msgstr ""
 
-#: backend/translations.py:60
+#: backend/translations.py:64
 msgid "Faol"
 msgstr ""
 
-#: backend/translations.py:63
+#: backend/translations.py:67
 msgid "Tuman nomi"
 msgstr ""
 
-#: backend/translations.py:67
+#: backend/translations.py:71
 msgid "Savol"
 msgstr ""
 
-#: backend/translations.py:68
+#: backend/translations.py:72
 msgid "Javob"
 msgstr ""
 
-#: backend/translations.py:69
+#: backend/translations.py:73
 msgid "Tartib"
 msgstr ""
 
-#: backend/translations.py:72
+#: backend/translations.py:76
 msgid "Mavzu"
 msgstr ""
 
-#: backend/translations.py:76 backend/translations.py:128
-msgid "Email"
-msgstr ""
-
-#: backend/translations.py:78
+#: backend/translations.py:82
 msgid "Ilova"
 msgstr ""
 
-#: backend/translations.py:82 backend/translations.py:108
+#: backend/translations.py:86 backend/translations.py:112
 msgid "To'liq ism"
 msgstr ""
 
-#: backend/translations.py:83 backend/translations.py:123
+#: backend/translations.py:87 backend/translations.py:127
 msgid "Lavozim"
 msgstr ""
 
-#: backend/translations.py:84
+#: backend/translations.py:88
 msgid "Ish kuni"
 msgstr ""
 
-#: backend/translations.py:85
+#: backend/translations.py:89
 msgid "Ish vaqtining boshlanishi"
 msgstr ""
 
-#: backend/translations.py:86
+#: backend/translations.py:90
 msgid "Ish vaqtining tugashi"
 msgstr ""
 
-#: backend/translations.py:90 backend/translations.py:98
+#: backend/translations.py:94 backend/translations.py:102
 msgid "Yangilik turi"
 msgstr ""
 
-#: backend/translations.py:96
+#: backend/translations.py:100
 msgid "Yangilik sarlavhasi"
 msgstr ""
 
-#: backend/translations.py:97
+#: backend/translations.py:101
 msgid "Yangilik rasmi"
 msgstr ""
 
-#: backend/translations.py:100
+#: backend/translations.py:104
 msgid "Yangilik tavsifi"
 msgstr ""
 
-#: backend/translations.py:101
+#: backend/translations.py:105
 msgid "Xeshteg"
 msgstr ""
 
-#: backend/translations.py:104
+#: backend/translations.py:108
 msgid "Statistika nomi"
 msgstr ""
 
-#: backend/translations.py:105
+#: backend/translations.py:109
 msgid "Soni"
 msgstr ""
 
-#: backend/translations.py:116
+#: backend/translations.py:120
 msgid "Takliflar statistikasi nomi"
 msgstr ""
 
-#: backend/translations.py:117
+#: backend/translations.py:121
 msgid "Takliflar soni"
 msgstr ""
 
-#: backend/translations.py:120
+#: backend/translations.py:124
 msgid "Shaxs turi nomi"
 msgstr ""
 
-#: backend/translations.py:124
-msgid "Biografiya"
-msgstr ""
-
-#: backend/translations.py:125
+#: backend/translations.py:129
 msgid "Qabul vaqtining boshlanishi"
 msgstr ""
 
-#: backend/translations.py:126
+#: backend/translations.py:130
 msgid "Qabul vaqtining tugashi"
 msgstr ""
 
-#: backend/translations.py:129
+#: backend/translations.py:133
 msgid "Telegram sahifasi"
 msgstr ""
 
-#: backend/translations.py:130
-msgid "Mehnat faoliyati"
-msgstr ""
-
-#: backend/translations.py:131
+#: backend/translations.py:135
 msgid "Vazifalar"
 msgstr ""
 
-#: backend/translations.py:135
+#: backend/translations.py:139
 msgid "Galereya sarlavhasi"
 msgstr ""
 
-#: backend/translations.py:136
+#: backend/translations.py:140
 msgid "Galereya tavsifi"
 msgstr ""
 
-#: backend/translations.py:137
+#: backend/translations.py:141
 msgid "Kontent turi"
 msgstr ""
 
-#: backend/translations.py:138
+#: backend/translations.py:142
 msgid "Galereya rasmi"
 msgstr ""
 
-#: backend/translations.py:139
+#: backend/translations.py:143
 msgid "Video URL"
 msgstr ""
 
+#: backend/translations.py:144
+msgid "Manzil"
+msgstr ""
+
 #: backend/translations.py:145
-msgid "Dushanba"
+msgid "Joylashuvning ko'rdinatlari (latitude)"
 msgstr ""
 
 #: backend/translations.py:146
+msgid "Joylashuvning ko'rdinatlari (longitude)"
+msgstr ""
+
+#: backend/translations.py:153
+msgid "Dushanba"
+msgstr ""
+
+#: backend/translations.py:154
 msgid "Seshanba"
 msgstr ""
 
-#: backend/translations.py:147
+#: backend/translations.py:155
 msgid "Chorshanba"
 msgstr ""
 
-#: backend/translations.py:148
+#: backend/translations.py:156
 msgid "Payshanba"
 msgstr ""
 
-#: backend/translations.py:149
+#: backend/translations.py:157
 msgid "Juma"
 msgstr ""
 
-#: backend/translations.py:150
+#: backend/translations.py:158
 msgid "Shanba"
 msgstr ""
 
-#: backend/translations.py:151
+#: backend/translations.py:159
 msgid "Yakshanba"
 msgstr ""
 
-#: backend/translations.py:159
+#: backend/translations.py:167
 msgid "Video"
 msgstr ""
 
-#: backend/translations.py:165
+#: backend/translations.py:173
 msgid "Ish vaqtining boshlanishi (24 soatlik format)"
 msgstr ""
 
-#: backend/translations.py:166
+#: backend/translations.py:174
 msgid "Ish vaqtining tugashi (24 soatlik format)"
 msgstr ""
 
-#: backend/translations.py:167
+#: backend/translations.py:175
 msgid "Viloyat uchun noyob identifikator"
 msgstr ""
 
-#: backend/translations.py:168
+#: backend/translations.py:176
 msgid "Faqat rasmlar uchun"
 msgstr ""
 
-#: backend/translations.py:169
+#: backend/translations.py:177
 msgid "Faqat videolar uchun"
 msgstr ""
 
-#: backend/translations.py:174
+#: backend/translations.py:182
 msgid "Rasm yuklanishi shart"
 msgstr ""
 
-#: backend/translations.py:175
+#: backend/translations.py:183
 msgid "Video URL kiritilishi shart"
 msgstr ""
 
-#: backend/views.py:18
+#: backend/views.py:31
 msgid "Taklifingiz muvaffaqiyatli yuborildi"
 msgstr ""
 
-#: backend/views.py:21 backend/views.py:59
+#: backend/views.py:34 backend/views.py:169 backend/views.py:241
 msgid "Xatolik yuz berdi. Iltimos qayta urinib ko'ring"
 msgstr ""
 
-#: backend/views.py:56
+#: backend/views.py:166
 msgid "Murojaat muvaffaqiyatli yuborildi"
+msgstr ""
+
+#: backend/views.py:239
+msgid "Ovozingiz muvaffaqiyatli qabul qilindi"
 msgstr ""
 
 #: mysite/settings.py:129 mysite/settings.py:134
