@@ -78,12 +78,21 @@ def murojaat(request):
     return render(request, 'murojaat.html', context)
 
 from django.shortcuts import render, get_object_or_404
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 from .models import News, City
 
 def get_cities(request, region_id):
-    cities = City.objects.filter(region_id=region_id, is_active=True).values('id', 'name')
+    cities = City.objects.filter(region_id=region_id).values()
     return JsonResponse(list(cities), safe=False)
+
+def get_leaders(request, region_id):
+    try:
+        leaders = Leader.objects.filter(region_id=region_id).values()
+        
+        all_leaders = list(leaders)
+        return JsonResponse(all_leaders, safe=False)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
 
 def news_list(request):
     news_items = News.objects.all().order_by('-created_at')

@@ -216,9 +216,6 @@ class Leader(models.Model):
     
     def __str__(self):
         return self.fullname
-    
-    def __str__(self):
-        return f"{self.get_option_display()} - {self.count}"
 
 class Offer(models.Model):
     CATEGORY_CHOICES = CHOICES['CATEGORY_CHOICES']
