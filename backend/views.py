@@ -84,6 +84,9 @@ def open(request):
 def ijro(request):
     return render(request, 'ijro.html')
 
+def investment(request):
+    return render(request, 'investment.html')
+
 def murojaat(request):
     if request.method == 'POST':
         try:
