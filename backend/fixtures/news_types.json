@@ -14,9 +14,130 @@
         "model": "backend.newstype",
         "pk": 2,
         "fields": {
-            "name": "Gender equality",
-            "name_uz": "Gender tengligi",
-            "name_ru": "Гендерное равенство",
+            "name": "Tenders",
+            "name_uz": "Tenderlar",
+            "name_ru": "Тендеры",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 3,
+        "fields": {
+            "name": "Reports",
+            "name_uz": "Hisobotlar",
+            "name_ru": "Отчеты",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 4,
+        "fields": {
+            "name": "Management news",
+            "name_uz": "Boshqarma yangiliklari",
+            "name_ru": "Новости управления",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 5,
+        "fields": {
+            "name": "Media about us",
+            "name_uz": "OAV biz haqimizda",
+            "name_ru": "СМИ о нас",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 6,
+        "fields": {
+            "name": "Lectures",
+            "name_uz": "Ma`ruzalar",
+            "name_ru": "Лекции",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 7,
+        "fields": {
+            "name": "Press conferences",
+            "name_uz": "Matbuot anjumanlari",
+            "name_ru": "Пресс-конференции",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 8,
+        "fields": {
+            "name": "Conferences",
+            "name_uz": "Konferensiyalar",
+            "name_ru": "Конференции",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 9,
+        "fields": {
+            "name": "Helps",
+            "name_uz": "Yordam",
+            "name_ru": "Помощь",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 10,
+        "fields": {
+            "name": "Competitions",
+            "name_uz": "Tanlovlar",
+            "name_ru": "Конкурсы",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 11,
+        "fields": {
+            "name": "Infographics",
+            "name_uz": "Infografika",
+            "name_ru": "Инфографика",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 12,
+        "fields": {
+            "name": "Statements",
+            "name_uz": "Bayonotlar",
+            "name_ru": "Заявления",
+            "created_at": "2024-01-01T00:00:00Z",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "backend.newstype",
+        "pk": 13,
+        "fields": {
+            "name": "Propaganda materials on corruption",
+            "name_uz": "Korrupsiyaga oid targ’ibot materiallari",
+            "name_ru": "Пропагандистские материалы о коррупции",
             "created_at": "2024-01-01T00:00:00Z",
             "updated_at": "2024-01-01T00:00:00Z"
         }
