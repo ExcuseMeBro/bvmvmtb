@@ -66,6 +66,9 @@ def persons(request, cat_id):
 def purpose(request):
     return render(request, 'purpose.html')
 
+def terms(request):
+    return render(request, 'terms.html')
+
 def murojaat(request):
     if request.method == 'POST':
         try:
