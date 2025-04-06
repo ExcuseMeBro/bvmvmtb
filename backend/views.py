@@ -99,6 +99,15 @@ def employees(request):
 
     return render(request, 'employees.html', context)
 
+def opendatadb(request):
+    data = Opendata.objects.all()
+
+    context = {
+        'data': data,
+    }
+
+    return render(request, 'opendata.html', context)
+
 def murojaat(request):
     if request.method == 'POST':
         try:

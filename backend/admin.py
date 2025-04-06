@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.utils.translation import gettext as _
 from .models import FAQ, Employee, Region, EmailForm, NewsType, News, Statistics, UsefulLink, City, Offer, OfferStats, Files, FilesCategory, Persons, PersonType, Gallery, Leader, DistrictLeader, About
+from .models import Opendata
 
 @admin.register(EmailForm)
 class EmailFormAdmin(admin.ModelAdmin):
@@ -169,3 +170,10 @@ class GalleryAdmin(admin.ModelAdmin):
                 ('Kontent', {'fields': ('video_url',)}),
             )
         return fieldsets
+
+
+@admin.register(Opendata)
+class OpendataAdmin(admin.ModelAdmin):
+    list_display = ('title', 'link', 'created_at')
+    search_fields = ('title', 'link')
+    ordering = ('-created_at',)

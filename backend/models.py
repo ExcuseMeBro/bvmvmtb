@@ -369,3 +369,16 @@ class DistrictLeader(models.Model):
     
     def __str__(self):
         return f"{self.fullname} - {self.city.name}"
+
+class Opendata(models.Model):
+    title = models.CharField(max_length=255)
+    link = models.URLField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = 'Opendata'
+        verbose_name_plural = 'Opendata'
+
+    def __str__(self):
+        return self.title
