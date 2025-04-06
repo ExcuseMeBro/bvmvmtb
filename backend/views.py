@@ -69,6 +69,9 @@ def purpose(request):
 def terms(request):
     return render(request, 'terms.html')
 
+def school(request):
+    return render(request, 'school.html')
+
 def murojaat(request):
     if request.method == 'POST':
         try:

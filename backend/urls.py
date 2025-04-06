@@ -9,6 +9,7 @@ urlpatterns = [
     path('murojaat', views.murojaat, name='murojaat'),
     path('purpose', views.purpose, name='purpose'),
     path('terms', views.terms, name='terms'),
+    path('school', views.school, name='school'),
     path('persons/<int:cat_id>/', views.persons, name='persons'),
     path('api/leaders/<int:region_id>/', views.get_leaders, name='get_leaders'),
     path('api/city_leader/<int:city_id>/', views.get_city_leader, name='get_city_leader'),

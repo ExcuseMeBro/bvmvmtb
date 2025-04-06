@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section data-w-id="1b8a36f8-cc33-f35d-6e70-422da3371bbc" class="blog-one-hero tution-fees-hero"
+  style="background-image: linear-gradient(#000000db, #0000004a), linear-gradient(#000000d1, #0c0c0c00 30%), url('https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67695bc2103d24f42d5b520c_blog-three-bg.webp'); background-repeat: no-repeat; background-size: cover;">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="blog-one-hero-content tution-fee">
+      <div class="subheading color-white">
+        {% blocktranslate %}Ta'lim{% endblocktranslate %}
+      </div>
+      <div class="headinng-one-margin overflow-hidden">
+        <h1 class="slide-title no-margin color-white" style="
+          transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
+            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform-style: preserve-3d;
+        ">
+          {% blocktranslate %}
+          Umumtaʼlim maktablarining hovli, kirish qismi va koridorlarini bezatish boʻyicha namunaviy tavsiyalardan
+          fotolavhalar
+          {% endblocktranslate %}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="w-layout-blockcontainer container w-container">
+  <br>
+  <iframe allowfullscreen="" frameborder="0" height="700" id="fitvid0" scrolling="no"
+    src="https://www.youtube.com/embed/g6WzwT9Y2Ag" width="1200" style="border-radius: 12px;"></iframe>
+</div>
+{% endblock %}
