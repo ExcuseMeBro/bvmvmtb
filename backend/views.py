@@ -110,6 +110,13 @@ def egov(request):
 def open(request):
     return render(request, 'open.html')
 
+def faqs(request):
+    faqs = FAQ.objects.all()
+    context = {
+        'faqs': faqs,
+    }
+    return render(request, 'faqs.html', context)
+
 def ijro(request):
     return render(request, 'ijro.html')
 

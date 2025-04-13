@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<section data-w-id="1b8a36f8-cc33-f35d-6e70-422da3371bbc" class="blog-one-hero tution-fees-hero"
+  style="background-image: linear-gradient(#000000db, #0000004a), linear-gradient(#000000d1, #0c0c0c00 30%), url('{% static "images/faqs.png" %}'); background-repeat: no-repeat; background-size: cover;">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="blog-one-hero-content tution-fee">
+      <div class="subheading color-white">
+        {% blocktranslate %}Asosiy{% endblocktranslate %}
+      </div>
+      <div class="headinng-one-margin overflow-hidden">
+        <h1 class="slide-title no-margin color-white" style="
+          transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1)
+            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+          transform-style: preserve-3d;
+        ">
+          {% blocktranslate %}Ko'p beriladigan savollar{% endblocktranslate %}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="w-layout-blockcontainer container w-container">
+  <section class="faq-one">
+    <div class="w-layout-blockcontainer container w-container">
+      <div data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9c37" class="w-layout-hflex faq-one-wrap" id="faq">
+        <div class="faq-content-wrap">
+          <div class="subheading">faq</div>
+          <div class="heading-two-margin overflow-hidden">
+            <h2 data-w-id="0a5fff99-f98f-dbda-54b4-adcb817c9c3c" class="slide-title no-margin">
+              {% blocktranslate %} Ko'p beriladigan savollar {% endblocktranslate %}
+            </h2>
+          </div>
+          <p class="no-margin">
+            {% blocktranslate %} O'zingizni qiziqtirgan savollarga tezda javob olishingiz mumkin {% endblocktranslate %}
+          </p>
+          <div data-wf--faq-style-one--variant="base" class="accrodian-one-wrap">
+            {% for faq in faqs %}
+            <div data-w-id="f8be738e-e704-aa09-efbb-b40cf55ca73a" class="w-layout-hflex accrodian-one" style="opacity: 0">
+              <div class="w-layout-vflex faq-three-text">
+                <div class="accrodian-one-toggle">
+                  <div class="heading-style-h6 line-break">
+                    {{ faq.question }}
+                  </div>
+                  <div class="accrodan-one-arrow" style="
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)
+                  rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                  skew(0deg, 0deg);
+                transform-style: preserve-3d;
+                flex-shrink: 0 !important;
+              ">
+                    <img loading="lazy"
+                      src="https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/675925a4f2806d85fb576f38_Vector(2).svg"
+                      alt="icon" />
+                  </div>
+                </div>
+                <div class="overflow-none" style="height: 0px">
+                  <p class="faq-three-description">
+                    {{ faq.answer }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="faq-image-wrap position-relative border-radius-twenty">
+          <img width="1015" height="677" alt="image"
+            src="{% static 'images/675925a4f2806d85fb576f3c_faq-one-image.webp'%}"
+            loading="lazy"
+            sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1439px) 98vw, 1290px"
+            class="border-radius-twenty image-full-height image-full-width" />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
