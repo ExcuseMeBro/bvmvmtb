@@ -166,7 +166,9 @@ DAISY_SETTINGS = {
     'SITE_HEADER': 'BUXEDU ADMIN PANEL',
     'INDEX_TITLE': 'Hi, welcome to your dashboard',
     'SITE_LOGO': '/static/images/favicon.png',
-    'EXTRA_STYLES': [],
+    'EXTRA_STYLES': [
+        '/static/css/admin.css'
+    ],
     'EXTRA_SCRIPTS': [],
     'LOAD_FULL_STYLES': False,
     'SHOW_CHANGELIST_FILTER': False,
