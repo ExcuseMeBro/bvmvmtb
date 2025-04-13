@@ -4964,7 +4964,7 @@ blockquote {
 }
 
 .video-content-wrap {
-  background-image: linear-gradient(90deg, #000, #0000 56% 100%, #000000b8), url("https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/67724aa30cd7990bf2055a8b_home-two-cta.webp");
+  background-image: linear-gradient(90deg, #000, #0000 56% 100%, #000000b8), url("/static/images/info.png");
   background-position: 0 0, 50%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -8393,7 +8393,7 @@ blockquote {
 }
 
 .pricing-middlie-wrap {
-  background-image: url("https://cdn.prod.website-files.com/66f66b14a7360285e4700cb8/676aa10a0073d104ba778063_pricng-middle-bg.webp");
+  background-image: url("/static/images/appeal.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
