@@ -33,7 +33,7 @@ def home(request):
         except Exception as e:
             messages.error(request, _('Xatolik yuz berdi. Iltimos qayta urinib ko\'ring'))
     
-    faqs = FAQ.objects.all()
+    faqs = FAQ.objects.all()[:4]
     statistics = Statistics.objects.all()
     links = UsefulLink.objects.all()
     news_items = News.objects.all().order_by('-created_at')[:8]
