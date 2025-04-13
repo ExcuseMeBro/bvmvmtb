@@ -84,7 +84,7 @@ class City(models.Model):
         return self.name
 
 class FAQ(models.Model):
-    question = models.CharField(FIELD_NAMES['question'], max_length=200)
+    question = models.CharField(FIELD_NAMES['question'], max_length=1000)
     answer = models.TextField(FIELD_NAMES['answer'])
     order = models.IntegerField(FIELD_NAMES['order'], default=0)
     created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
