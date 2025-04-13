@@ -30,7 +30,7 @@
       {{ file.title }} | <span style="color: #999;">{{ file.created_at }}</span>
     </p>
     <div class="download-container" style="text-align: center; margin: 40px 0;">
-      <a href="{{ file.url }}" class="download-btn" style="display: inline-flex;
+      <a href="{{ file.get_download_url }}" class="download-btn" style="display: inline-flex;
                 align-items: center;
                 padding: 15px 30px;
                 background-color: #2B59C3;

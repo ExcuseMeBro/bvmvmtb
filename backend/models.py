@@ -35,7 +35,7 @@ class FilesCategory(models.Model):
 
 class Files(models.Model):
     title = models.CharField(FIELD_NAMES['title'])
-    url = models.URLField(FIELD_NAMES['url'])
+    url = models.FileField(FIELD_NAMES['url'], upload_to='files/')
     category = models.ForeignKey(FilesCategory, on_delete=models.CASCADE, verbose_name=FIELD_NAMES['category'])
     created_at = models.DateTimeField(_('Created At'), auto_now_add=True)
     updated_at = models.DateTimeField(_('Updated At'), auto_now=True)
@@ -47,6 +47,11 @@ class Files(models.Model):
     
     def __str__(self):
         return self.title
+        
+    def get_download_url(self):
+        if self.url:
+            return self.url.url
+        return ''
 
 class Region(models.Model):
     name = models.CharField(FIELD_NAMES['region_name'], max_length=100)

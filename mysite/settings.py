@@ -176,14 +176,14 @@ DAISY_SETTINGS = {
             'name': 'Group',
             'hide': False,
             'app': 'users',
-            'divider_title': "Management",
+            'divider_title': "Sozlamalar",
         },
         'social_django': {
             'icon': 'fa-solid fa-users-gear',
         },
         'backend': {
             'icon': 'fa-solid fa-user-group',
-            'name': 'MANAGEMENTS',
+            'name': 'Admin boshqaruvi',
             'hide': False,
             'app': 'clients',
         },

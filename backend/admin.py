@@ -94,6 +94,29 @@ class FilesAdmin(admin.ModelAdmin):
     list_filter = ('category', 'created_at', 'updated_at')
     search_fields = ('title',)
     ordering = ('-created_at',)
+    
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.base_fields['url'].widget = admin.widgets.AdminFileWidget()
+        form.base_fields['url'].help_text = 'Upload a file'
+        return form
+    
+    def save_model(self, request, obj, form, change):
+        if 'url' in request.FILES:
+            file = request.FILES['url']
+            obj.url = f'files/{file.name}'
+            # Save the file to the media directory
+            import os
+            from django.conf import settings
+            file_path = os.path.join(settings.MEDIA_ROOT, 'files', file.name)
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
+            with open(file_path, 'wb+') as destination:
+                for chunk in file.chunks():
+                    destination.write(chunk)
+        super().save_model(request, obj, form, change)
+    
+    def get_fields(self, request, obj=None):
+        return ['url', 'title', 'category']
 
 @admin.register(Persons)
 class PersonsAdmin(admin.ModelAdmin):
